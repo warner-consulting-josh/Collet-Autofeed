@@ -39,7 +39,7 @@ command to run if program contains helper info
 Contributors names and contact info
 
 Josh Warner  
-[email](joshua@warner-consulting.com)
+joshua@warner-consulting.com
 
 ## Version History
 
