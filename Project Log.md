@@ -14,3 +14,13 @@ Notes on what I did each day so that I can keep track of my changes and remember
 ```
 - Installed ToolPrint_plugin.py on OLD Pathpilot VM and verified it is working
 
+**01/23/2024**
+- Added "UnexpectedMaker ProS3 [0100]" to USB Device filter with USB 3.0 Controller enabled
+  - CIRCUITPY drive shows up in Linux
+- Added 99-ProS3.rules to /etc/udev/rules.d
+```
+ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="UnexpectedMaker",ATTRS{product}=="ProS3",SYMLINK+="ProS3",GROUP="dialout",MODE="0666"
+```
+- Modified TinyS3io.py to ProS3Cool.py and tryed to get a serial connection working
+  - Plugin runs but does not successfully invoke TryToConnect()
+  - Need to look into syntax and figure out why it isn't calling the function
