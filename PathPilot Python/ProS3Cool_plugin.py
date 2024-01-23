@@ -51,22 +51,33 @@ class UserPlugin(plugin):
     def TryToConnect(self):
         # look for UDEV names =  /dev/TinyS3
         self.ShowMsg('Trying to connect...')
-        for symlink in glob.glob(deviceName):
+        
+        devices = glob.glob(deviceName)
+        self.ShowMsg('Found devices: {}'.format(devices)) # Debugging to check the devices list
+
+        if not devices:
+            self.ShowMsg('No devises found matching the pattern')
+
+        for symlink in devices:
             try:
                 self.comPort.port = symlink
                 self.comPort.baudrate = 115200
                 self.comPort.timeout = 1
                 self.comPort.open()
                 self.ShowMsg('Connected to ' + symlink)
-                #return True
+                return True # Return True as soon as connection is successful
             except serial.SerialException as e:
                 self.ShowMsg('Failed to open "{}" - {}'.format(symlink, str(e)))
-        
-        return False
-        # main loop to watch the current tool and send data to the TinyS3
+                return False # Return False if no connections were successful
+            
+        # main loop to watch the current tool and send data to the ProS3
     def ProS3Cool(self):
         self.ShowMsg('ProS3Cool thread is running')
-        self.comPort.TryToConnect()
+
+        # Initial serial connection attempt
+        if not self.TryToConnect():
+            self.ShowMsg('Initial connection attempt failed')
+            return # Exit the thread if unable to connect
 
         while True:
             # make sure hal status info is up to date
@@ -84,18 +95,21 @@ class UserPlugin(plugin):
                 else:
                     # tool hasn't changed, so sleep for longer before checking again
                     time.sleep(LONG_SLEEP_TIME)
-            else:
-                self.comPort.TryToConnect()    
-            
-            try:
-                response = self.comPort.readline()
-                if response:
-                    self.ShowMsg(response)
-            except serial.serialutil.SerialException as e:
-                self.ShowMsg('An error occurred while reading from the serial port: ' + str(e))
-                #serIn = self.comPort.readline()
-                #self.ShowMsg(str(serIn))
 
+                try:
+                    response = self.comPort.readline()
+                    if response:
+                        self.ShowMsg(response)
+                except serial.serialutil.SerialException as e:
+                    self.ShowMsg('An error occurred while reading from the serial port: ' + str(e))
+                    #serIn = self.comPort.readline()
+                    #self.ShowMsg(str(serIn))
+            else:
+                self.ShowMsg('Connection lost. Trying to reconnect...')
+                if not self.TryToConnect():
+                    self.ShowMsg('Reconneciton attempt failed')
+                    break # Exit the loop if unable to reconnect    
+            
             # with a new tool, short sleep before checking again
             time.sleep(SHORT_SLEEP_TIME)
                 
