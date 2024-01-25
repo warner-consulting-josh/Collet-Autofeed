@@ -29,3 +29,8 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - Previously: `self.ComPor.TryToConnect()`
   - Corrected: `self.TryToConnect()`
 - Added some debug and error prevention to ProS3_plugin.py
+
+**01/24/2023**
+- Worked on getting the ProS3 to respond to data sent by the ProS3Cool plugin
+- Got the microcontroller to respond to serial data sent using Mu
+- Currently getting a unicode? error that causes the ProS3 to exit it's code loop and enter the REPL
