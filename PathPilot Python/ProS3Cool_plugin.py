@@ -84,14 +84,14 @@ class UserPlugin(plugin):
             self.halStatus.poll()   
             # check if the serial port is still open, if not try to reconnect
             if self.comPort.is_open:
-                self.ShowMsg('Still connected to ProS3')
+                #self.ShowMsg('Still connected to ProS3')
                 # what is the current tool?
                 if self.halStatus.tool_in_spindle != self.lastTool:
                     # current tool is a new tool
                     self.lastTool = self.halStatus.tool_in_spindle
                     self.ShowMsg('Current Tool: %s' % (self.halStatus.tool_in_spindle))
-                    #self.comPort.write((str(self.halStatus.tool_in_spindle) + '\r\n').encode('utf8'))
-                    #time.sleep(SHORT_SLEEP_TIME)
+                    self.comPort.write((str(self.halStatus.tool_in_spindle) + '\r\n').encode('utf8'))
+                    time.sleep(SHORT_SLEEP_TIME)
                 else:
                     # tool hasn't changed, so sleep for longer before checking again
                     time.sleep(LONG_SLEEP_TIME)
