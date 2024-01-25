@@ -30,7 +30,15 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - Corrected: `self.TryToConnect()`
 - Added some debug and error prevention to ProS3_plugin.py
 
-**01/24/2023**
+**01/24/2024**
 - Worked on getting the ProS3 to respond to data sent by the ProS3Cool plugin
 - Got the microcontroller to respond to serial data sent using Mu
 - Currently getting a unicode? error that causes the ProS3 to exit it's code loop and enter the REPL
+
+**01/25/2024**
+- Successfully established 2 way serial communication between the ProS3_plugin.py code and the ProS3 microcontroller
+  - Needed to disable modemmanager in linux because it was causing the ProS3 to enter REPL
+  - run `sudo service modemmanager stop` in the linux terminal
+  - Need to investigate handling the issue in the microcontroller's code
+  - Need to uninstall the modemmanager
+  - Need to create script in linux to check if modemmanager is running at startup and kill it
