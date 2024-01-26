@@ -42,3 +42,10 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - Need to investigate handling the issue in the microcontroller's code
   - Need to uninstall the modemmanager
   - Need to create script in linux to check if modemmanager is running at startup and kill it
+
+**01/26/2024**
+- Worked on electronics side instead of code
+  - want to get a relay output circuit put together so that I can toggle a solenoid using the code
+- Got a first draft of the relay driver circuit drawn in KiCAD and approved by Andrew and Jordan
+  - using optocoupler to drive a relay with an indicator LED and freewheel/flyback diode in parallel across the relay coil
+  - want to use active low pins to drive the circuit according to Andrew
