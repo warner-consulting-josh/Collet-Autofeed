@@ -8,12 +8,17 @@ Need to find ways of ensuring that modemmanager does not kick the ProS3 into REP
 - See if there is a way to ignore the commands in the circuitpython code
 
 **Electronics**
-Need to design PCBA
+Need to design PCBA - Use [KiCAD](https://www.kicad.org/)
 - Relay outputs
   - Look at this [suggestion](https://electronics.stackexchange.com/questions/449872/relay-control-by-using-microcontroller) using optocouplers
+    - Andrew suggested that I don't need the external BJT since the chosen optocoupler has an internal one sufficient to drive the relay directly
+    - added an indicator LED across the relay coil directly so that we know when the relay is supposed to be on visually
   - Relay Options:
-    - [R57-1D.5-24D](https://www.digikey.com/en/products/detail/nte-electronics-inc/R57-1D-5-24D/11651064)
     - [G5V-1-T90 DC24](https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/G5V-1-T90-DC24/6650357)
+  - LED:
+    - [150120BS75000](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150120BS75000/4489933)
+  - Optocoupler:
+    - [PC365NJ0000F](https://www.digikey.com/en/products/detail/sharp-socle-technology/PC365NJ0000F/720501)
 - Connection to solenoids
   - VDW22JA by SMC bought [here](https://us.misumi-ec.com/vona2/detail/221006494761/?HissuCode=VDW22JA&PNSearch=VDW22JA&searchFlow=results2type&KWSearch=VDW22JA&Tab=catalog&curSearch=%7b%22field%22%3a%22%40search%22%2c%22seriesCode%22%3a%22221006494761%22%2c%22innerCode%22%3a%22%22%2c%22sort%22%3a1%2c%22specSortFlag%22%3a0%2c%22allSpecFlag%22%3a0%2c%22page%22%3a1%2c%22pageSize%22%3a%2260%22%2c%2200000030955%22%3a%22b%22%2c%2200000030968%22%3a%22g%22%2c%2200000030971%22%3a%22b%22%2c%2200000030965%22%3a%22mdm00000000000003%22%2c%22SP910002396%22%3a%22mdm00000000000006%22%2c%22SP910002397%22%3a%22mdm00000000000001%22%2c%22SP910002399%22%3a%22mdm00000000000001%22%2c%22SP910002400%22%3a%22mdm00000000000001%22%2c%22SP910002401%22%3a%22mdm00000000000001%22%2c%22SP910002402%22%3a%22mdm00000000000001%22%2c%22fixedInfo%22%3a%22innerCode%3aMDM00012160730%7c19%22%7d)
   - Power consumption: 3W
