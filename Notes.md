@@ -11,6 +11,7 @@ Need to find ways of ensuring that modemmanager does not kick the ProS3 into REP
 Need to design PCBA
 - Relay outputs
   - Look at this [guide](https://www.dnatechindia.com/Interfacing-Relay-to-Microcontroller.html) on relay circuit
+  - Or this [suggestion](https://electronics.stackexchange.com/questions/449872/relay-control-by-using-microcontroller) using optocouplers
 - Connection to solenoids
 - Socket for ProS3?
 - Power input
