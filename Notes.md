@@ -28,4 +28,6 @@ Need to design PCBA - Use [KiCAD](https://www.kicad.org/)
   - ESP32-S3 GPIO pins each can source 40mA max, prefer to keep at 20mA (does this need power other than USB?)
 - Power input
   - 3.3v or 5v for ProS3?
-  - 24v for solenoids?
+    - can accept both, will be getting some power from the usb (500mA?)
+    - might want isolated voltage regulator for powering optcouplers? (total current draw = ?)
+  - 24v for solenoids and relays
