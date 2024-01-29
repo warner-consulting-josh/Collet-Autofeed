@@ -49,3 +49,10 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - Got a first draft of the relay driver circuit drawn in KiCAD and approved by Andrew and Jordan
   - using optocoupler to drive a relay with an indicator LED and freewheel/flyback diode in parallel across the relay coil
   - want to use active low pins to drive the circuit according to Andrew
+
+**01/29/2024**
+- Talked with Andrew about pin modes for output
+  - Want to go with push pull if using on board voltage regulator (current plan)
+  - use open drain with internal pull up if using separate voltage regulator
+- Verified oring sizing for manifold block using Erik online gland calculator
+- Ordered oring and screws to connect top and bottom half of manifold block
