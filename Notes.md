@@ -12,6 +12,9 @@ Need to design PCBA - Use [KiCAD](https://www.kicad.org/)
 - Relay outputs
   - Look at this [suggestion](https://electronics.stackexchange.com/questions/449872/relay-control-by-using-microcontroller) using optocouplers
     - Andrew suggested that I don't need the external BJT since the chosen optocoupler has an internal one sufficient to drive the relay directly
+    - Andrew suggested to use active low signal with push pull mode if using the on board voltage regulator
+      - if using a separate voltage regulator, use open drain mode with internal pull up resistor enabled
+      - [here](https://docs.circuitpython.org/en/latest/shared-bindings/digitalio/index.html) is how to set the pin mode
     - added an indicator LED across the relay coil directly so that we know when the relay is supposed to be on visually
   - Relay Options:
     - [G5V-1-T90 DC24](https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/G5V-1-T90-DC24/6650357)
