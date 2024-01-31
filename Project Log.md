@@ -56,3 +56,10 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - use open drain with internal pull up if using separate voltage regulator
 - Verified oring sizing for manifold block using Erik online gland calculator
 - Ordered oring and screws to connect top and bottom half of manifold block
+
+**01/30/2024**
+- Looked into adding a watchdog timer to reboot the ProS3 in the event of a communication failure or code error
+  - Will need the watchdog timer running on the ProS3 and periodic data being sent by the plugin inside of pathpilot
+  - Want to set up the pathpilot plugin to send data every ~2 seconds (pick some time interval that feels comfortable) and call feed() on the ProS3 every time data is received
+- Also looked at non-blocking LED blink
+  - Will want to make the responses to serial communication non blocking on the ProS3 and make the serial write commands in pathpilot nonblocking
