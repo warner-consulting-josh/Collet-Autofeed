@@ -1,38 +1,57 @@
 import board
-import digitalio
 import neopixel
 import time
 import supervisor
 import sys
+import microcontroller
+from watchdog import WatchDogMode, WatchDogTimeout
 
-# Assuming NEOPIXEL is available
+# Initialize NeoPixel LED
 pix = neopixel.NeoPixel(board.NEOPIXEL, 1)
-pix.fill((0, 0, 0))  # Initialize with the LED off
+pix.fill((0, 0, 0))  # LED off initially
 serial = sys.stdin
 oldData = None
+led_on_time = 0
+blink_duration = 0.5
+
+# Prepare Watchdog but don't start it yet
+watchdog = microcontroller.watchdog
+watchdog.timeout = 45  # Set a suitable timeout
+watchdog.mode = WatchDogMode.RESET
+watchdog_started = False
 
 while True:
     if supervisor.runtime.serial_bytes_available:
-        dataIn = ''
-        char = serial.read(1)  # Read one character at a time
-        while char != '\n' and char:  # Continue until newline or empty string (indicating no more data)
-            if char.isdigit() or char in ['-', '\r']:  # Accept digits and negative sign
-                dataIn += char
-            char = serial.read(1)
-        dataIn = dataIn.strip()
+        dataIn = serial.readline().strip()  # Read and strip the incoming data
 
+        # Check if the incoming data is the specific string to start the watchdog
+        if dataIn == "ProS3" and not watchdog_started:
+            watchdog.feed()  # Start feeding the watchdog to keep it from resetting the board
+            watchdog_started = True
+            print("Watchdog timer started.")
+            continue  # Skip the rest of the loop after starting the watchdog
+
+        # Process other data as before
         try:
-            dataInt = int(dataIn)
-            if dataInt != oldData:
-                oldData = dataInt  # Update oldData to the new value
-                pix.fill((0, 100, 0))  # Change color to green
-                time.sleep(0.5)  # Wait for half a second
-                pix.fill((0, 0, 0))  # Turn off the LED
-                print('ProS3 sees tool:' + str(dataInt))
+            if watchdog_started:  # Only process numbers if the watchdog has been started
+                dataInt = int(dataIn)
+                if dataInt != oldData:
+                    oldData = dataInt
+                    pix.fill((0, 100, 0))  # Turn on LED
+                    led_on_time = time.monotonic()  # Record the time LED was turned on
+                    print('ProS3 sees tool:' + str(dataInt))
+                    watchdog.feed()
         except ValueError:
-            print(f"Received non-integer data")
-        except Exception as e:  # General exception handler for anything unexpected
+            print("Received non-integer data")
+        except Exception as e:
             print(f"An unexpected error occurred: {e}")
-        except UnicodeError:
-            # Handle cases where there's a Unicode-related error
-            print("Received data with invalid Unicode characters.")
+
+    current_time = time.monotonic()
+
+    # Implement non-blocking LED turn-off
+    if current_time - led_on_time >= blink_duration and pix[0] != (0, 0, 0):
+        pix.fill((0, 0, 0))  # Turn off LED
+
+    # Continue feeding the watchdog if it has been started
+    #if watchdog_started:
+        #watchdog.feed()
