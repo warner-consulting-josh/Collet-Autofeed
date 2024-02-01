@@ -63,3 +63,12 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - Want to set up the pathpilot plugin to send data every ~2 seconds (pick some time interval that feels comfortable) and call feed() on the ProS3 every time data is received
 - Also looked at non-blocking LED blink
   - Will want to make the responses to serial communication non blocking on the ProS3 and make the serial write commands in pathpilot nonblocking
+ 
+**02/01/2024**
+- Tried adding a watchdog timer triggered by first successful serial communication on a 2 second timer
+  - 2 seconds is way too fast for development purposes, and watchdog should be triggered by a specific serial command/start phrase
+  - Got stuck in a boot loop here's how to fix:
+    - To get into safe mode, follow these steps:
+      1. Press the [RESET] button to reset the ESP32-S3 chip
+      2. After the RGB LED has gone purple and then off, press and hold the [BOOT] button for a few seconds
+      Your board should now be in safe mode.
