@@ -20,6 +20,9 @@ watchdog.timeout = 45  # Set a suitable timeout
 watchdog.mode = WatchDogMode.RESET
 watchdog_started = False
 
+# Check the reset reason
+print(microcontroller.cpu.reset_reason)
+
 while True:
     if supervisor.runtime.serial_bytes_available:
         dataIn = serial.readline().strip()  # Read and strip the incoming data
@@ -28,6 +31,7 @@ while True:
         if dataIn == "ProS3" and not watchdog_started:
             watchdog.feed()  # Start feeding the watchdog to keep it from resetting the board
             watchdog_started = True
+            print(microcontroller.cpu.reset_reason)
             print("Watchdog timer started.")
             continue  # Skip the rest of the loop after starting the watchdog
 
