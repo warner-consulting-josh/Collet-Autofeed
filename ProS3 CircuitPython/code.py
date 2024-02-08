@@ -3,55 +3,66 @@ import neopixel
 import time
 import supervisor
 import sys
+import digitalio
 import microcontroller
-from watchdog import WatchDogMode, WatchDogTimeout
 
 # Initialize NeoPixel LED
-pix = neopixel.NeoPixel(board.NEOPIXEL, 1)
-pix.fill((0, 0, 0))  # LED off initially
+pix = neopixel.NeoPixel(board.NEOPIXEL, 1, auto_write=False)
+pix.fill((0, 0, 0))
+
+# List of tuples correlating serial number inputs to GPIO pins
+pin_mappings = [
+    (5, board.IO43),  # Example: (serial_number, GPIO_pin)
+    # Add more mappings here as needed
+]
+
+# Create and initialize GPIO pins based on the mappings
+output_pins = {}
+for number, pin_id in pin_mappings:
+    pin = digitalio.DigitalInOut(pin_id)
+    pin.direction = digitalio.Direction.OUTPUT
+    # Pins are in push-pull mode by default when configured as digital outputs
+    pin.value = True  # Set high (inactive) for active low logic
+    output_pins[number] = pin
+    
 serial = sys.stdin
 oldData = None
-led_on_time = 0
+led_on_time = None
 blink_duration = 0.5
 
-# Prepare Watchdog but don't start it yet
-watchdog = microcontroller.watchdog
-watchdog.timeout = 45  # Set a suitable timeout
-watchdog.mode = WatchDogMode.RESET
-watchdog_started = False
+print(microcontroller.cpu.reset_reason)
 
 while True:
+    current_time = time.monotonic()
+    
+    # Implement non-blocking LED blink-off logic
+    if led_on_time is not None and current_time - led_on_time >= blink_duration:
+        pix.fill((0, 0, 0))
+        pix.show()
+        #led_on_time = None
+
     if supervisor.runtime.serial_bytes_available:
         dataIn = serial.readline().strip()  # Read and strip the incoming data
 
-        # Check if the incoming data is the specific string to start the watchdog
-        if dataIn == "ProS3" and not watchdog_started:
-            watchdog.feed()  # Start feeding the watchdog to keep it from resetting the board
-            watchdog_started = True
-            print("Watchdog timer started.")
-            continue  # Skip the rest of the loop after starting the watchdog
-
-        # Process other data as before
         try:
-            if watchdog_started:  # Only process numbers if the watchdog has been started
-                dataInt = int(dataIn)
-                if dataInt != oldData:
-                    oldData = dataInt
-                    pix.fill((0, 100, 0))  # Turn on LED
-                    led_on_time = time.monotonic()  # Record the time LED was turned on
-                    print('ProS3 sees tool:' + str(dataInt))
-                    watchdog.feed()
+            dataInt = int(dataIn)
+            if dataInt != oldData:
+                oldData = dataInt
+                # Blink the LED
+                pix.fill((0, 100, 0))
+                pix.show()
+                led_on_time = current_time
+                
+                # Turn off all GPIO pins initially
+                for pin in output_pins.values():
+                    pin.value = True  # Set high (inactive)
+
+                # Then, if the number is in the mappings, turn on the corresponding GPIO pin
+                if dataInt in output_pins:
+                    output_pins[dataInt].value = False  # Active low logic
+                
+                print(f'Activated by serial number: {dataInt}')
         except ValueError:
             print("Received non-integer data")
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
-
-    current_time = time.monotonic()
-
-    # Implement non-blocking LED turn-off
-    if current_time - led_on_time >= blink_duration and pix[0] != (0, 0, 0):
-        pix.fill((0, 0, 0))  # Turn off LED
-
-    # Continue feeding the watchdog if it has been started
-    #if watchdog_started:
-        #watchdog.feed()
