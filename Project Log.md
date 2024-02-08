@@ -86,3 +86,13 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
     - Talk with EW and make a plan
 - Added `print(microcontroller.cpu.reset_reason)` to display the reason for the last time the code was stopped
   - would like to have this displayed on a screen, along with current tool, up time since last reset?
+
+**02/07/2024**
+- Removed watchdog timer and added code to toggle gpio pin based on serial input
+  - Successfully implemented active low gpio triggering
+- Breadboarded relay circuit but had trouble getting relay to trigger
+
+**02/08/2024**
+- Found issue with breadboard circuit
+  - Flyback diode was reversed which prevented the relay from triggering
+- Having some issues with the timing of the LED blink, so will need to look at difference between old and new code
