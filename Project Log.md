@@ -96,3 +96,14 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - Found issue with breadboard circuit
   - Flyback diode was reversed which prevented the relay from triggering
 - Having some issues with the timing of the LED blink, so will need to look at difference between old and new code
+
+**02/12/2024**
+- Added KiCAD to github repository for version control and sync across computers
+- Added 24v monitor circuit to circuit schematic
+  - Plan to send an error/pause command up to the plugin if 24v power is lost
+- Added 4 pin connector for power in of same style as ribbon cable connector that goes to the solenoid connection daughter board
+  - Plan to have input daughter board with power in and USB in
+- Looked at screens
+  - Currently have small monochrome OLED [screen](https://www.adafruit.com/product/938)
+  - Maybe want bigger [screen?](https://www.adafruit.com/product/5872)
+    - Look into power requirements, and how difficult it is to drive each screen
