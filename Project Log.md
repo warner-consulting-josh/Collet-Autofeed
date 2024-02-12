@@ -72,3 +72,27 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
       1. Press the [RESET] button to reset the ESP32-S3 chip
       2. After the RGB LED has gone purple and then off, press and hold the [BOOT] button for a few seconds
       Your board should now be in safe mode.
+
+**02/05/2024**
+- Adjusted watchdog timer to 45s and implemented a keyword to start watchdog ('ProS3')
+  - Not sure that keyword is working as intended
+  - watchdog timer stays active through resets, may need to actively disable it in code until the keyword is received
+  - need to work through the logic of what should happen in the event of failure:
+    - Pause the g-code running on the tormach?
+    - keep the current coolant solenoid energized? or turn them all off?
+    - restart g-code if connection to microcontroller reestablished?
+    - wait for user input?
+    - only pause if connection not reestablished with X seconds?
+    - Talk with EW and make a plan
+- Added `print(microcontroller.cpu.reset_reason)` to display the reason for the last time the code was stopped
+  - would like to have this displayed on a screen, along with current tool, up time since last reset?
+
+**02/07/2024**
+- Removed watchdog timer and added code to toggle gpio pin based on serial input
+  - Successfully implemented active low gpio triggering
+- Breadboarded relay circuit but had trouble getting relay to trigger
+
+**02/08/2024**
+- Found issue with breadboard circuit
+  - Flyback diode was reversed which prevented the relay from triggering
+- Having some issues with the timing of the LED blink, so will need to look at difference between old and new code
