@@ -358,6 +358,10 @@
     [
       "b14b409f-5174-4f0c-b56e-0f620ad960f8",
       "Relay Circuit 8"
+    ],
+    [
+      "3e3ccaf3-28fc-483d-ba21-ff253f5b1972",
+      "24v Monitor Circuit"
     ]
   ],
   "text_variables": {}
