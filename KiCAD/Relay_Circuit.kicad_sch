@@ -118,10 +118,10 @@
       (property "Value" "150120BS75000" (at 5.08 -7.62 0)
         (effects (font (size 1.524 1.524)))
       )
-      (property "Footprint" "LED_150120RS75000_WRE" (at 0 0 0)
+      (property "Footprint" "LED_150120RS75000_WRE" (at 0 10.16 0)
         (effects (font (size 1.27 1.27) italic) hide)
       )
-      (property "Datasheet" "150120BS75000" (at 0 0 0)
+      (property "Datasheet" "150120BS75000" (at 0 7.62 0)
         (effects (font (size 1.27 1.27) italic) hide)
       )
       (property "ki_locked" "" (at 0 0 0)
@@ -286,11 +286,11 @@
           (stroke (width 0.2032) (type default))
           (fill (type none))
         )
-        (pin unspecified line (at 10.16 0 180) (length 2.54)
+        (pin passive line (at 10.16 0 180) (length 2.54)
           (name "" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin unspecified line (at 0 0 0) (length 2.54)
+        (pin passive line (at 0 0 0) (length 2.54)
           (name "" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
         )
@@ -1102,6 +1102,8 @@
     (uuid f0dbf826-f36b-4144-b5d6-ed7ecdbf8a3d)
   )
 
+  (no_connect (at 196.85 66.04) (uuid 2049a7c0-f57d-41e0-ad65-f89c3dead348))
+
   (wire (pts (xy 175.26 63.5) (xy 175.26 69.85))
     (stroke (width 0) (type default))
     (uuid 029c7f41-cffd-46cd-8dfa-b808bddd6ef2)
@@ -1235,25 +1237,25 @@
           (reference "K1") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1b4c4683-ae7a-43db-9c55-2e017b2b64f6"
-          (reference "K1") (unit 1)
+          (reference "K2") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c99ad83c-1e55-4897-95dc-696fc040ab27"
-          (reference "K1") (unit 1)
+          (reference "K3") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/bf76bbb3-62c3-43bd-a097-b9f452e57b35"
-          (reference "K1") (unit 1)
+          (reference "K4") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c4c73976-bc86-4ae3-8f28-ea5e6a098449"
-          (reference "K1") (unit 1)
+          (reference "K5") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1e7f4279-2019-4687-9b9a-14c5bef026a1"
-          (reference "K1") (unit 1)
+          (reference "K6") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/e9594ab2-eb4a-412d-b212-c8b9b51a6168"
-          (reference "K1") (unit 1)
+          (reference "K7") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/b14b409f-5174-4f0c-b56e-0f620ad960f8"
-          (reference "K1") (unit 1)
+          (reference "K8") (unit 1)
         )
       )
     )
@@ -1282,25 +1284,25 @@
           (reference "R2") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1b4c4683-ae7a-43db-9c55-2e017b2b64f6"
-          (reference "R2") (unit 1)
+          (reference "R4") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/bf76bbb3-62c3-43bd-a097-b9f452e57b35"
-          (reference "R2") (unit 1)
+          (reference "R8") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1e7f4279-2019-4687-9b9a-14c5bef026a1"
-          (reference "R2") (unit 1)
+          (reference "R12") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/b14b409f-5174-4f0c-b56e-0f620ad960f8"
-          (reference "R2") (unit 1)
+          (reference "R16") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c99ad83c-1e55-4897-95dc-696fc040ab27"
-          (reference "R2") (unit 1)
+          (reference "R6") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c4c73976-bc86-4ae3-8f28-ea5e6a098449"
-          (reference "R2") (unit 1)
+          (reference "R10") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/e9594ab2-eb4a-412d-b212-c8b9b51a6168"
-          (reference "R2") (unit 1)
+          (reference "R14") (unit 1)
         )
       )
     )
@@ -1329,25 +1331,25 @@
           (reference "R1") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1b4c4683-ae7a-43db-9c55-2e017b2b64f6"
-          (reference "R1") (unit 1)
+          (reference "R3") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/bf76bbb3-62c3-43bd-a097-b9f452e57b35"
-          (reference "R1") (unit 1)
+          (reference "R7") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1e7f4279-2019-4687-9b9a-14c5bef026a1"
-          (reference "R1") (unit 1)
+          (reference "R11") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/b14b409f-5174-4f0c-b56e-0f620ad960f8"
-          (reference "R1") (unit 1)
+          (reference "R15") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c99ad83c-1e55-4897-95dc-696fc040ab27"
-          (reference "R1") (unit 1)
+          (reference "R5") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c4c73976-bc86-4ae3-8f28-ea5e6a098449"
-          (reference "R1") (unit 1)
+          (reference "R9") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/e9594ab2-eb4a-412d-b212-c8b9b51a6168"
-          (reference "R1") (unit 1)
+          (reference "R13") (unit 1)
         )
       )
     )
@@ -1356,7 +1358,7 @@
   (symbol (lib_id "PC365NJ0000F:PC365NJ0000F") (at 146.05 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9a64382c-cca9-4c2f-857c-6bcbf1776ab0)
-    (property "Reference" "U1" (at 146.05 85.09 0)
+    (property "Reference" "U2" (at 146.05 85.09 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "PC365NJ0000F" (at 146.05 87.63 0)
@@ -1387,75 +1389,28 @@
     (instances
       (project "ColletAutoFeed_RelayBoard"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/f85cc271-3b11-4af6-88e7-0089384d0a70"
-          (reference "U1") (unit 1)
+          (reference "U2") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1b4c4683-ae7a-43db-9c55-2e017b2b64f6"
-          (reference "U1") (unit 1)
+          (reference "U3") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/bf76bbb3-62c3-43bd-a097-b9f452e57b35"
-          (reference "U1") (unit 1)
+          (reference "U5") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1e7f4279-2019-4687-9b9a-14c5bef026a1"
-          (reference "U1") (unit 1)
+          (reference "U7") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/b14b409f-5174-4f0c-b56e-0f620ad960f8"
-          (reference "U1") (unit 1)
+          (reference "U9") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c99ad83c-1e55-4897-95dc-696fc040ab27"
-          (reference "U1") (unit 1)
+          (reference "U4") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c4c73976-bc86-4ae3-8f28-ea5e6a098449"
-          (reference "U1") (unit 1)
+          (reference "U6") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/e9594ab2-eb4a-412d-b212-c8b9b51a6168"
-          (reference "U1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "LED_150120BS75000:150120BS75000") (at 162.56 66.04 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a0f42713-3838-4380-8e9d-1481481eac38)
-    (property "Reference" "LED1" (at 153.67 69.85 90)
-      (effects (font (size 1.524 1.524)) (justify left))
-    )
-    (property "Value" "150120BS75000" (at 140.97 72.39 90)
-      (effects (font (size 1.524 1.524)) (justify left))
-    )
-    (property "Footprint" "LED_150120RS75000_WRE" (at 162.56 66.04 0)
-      (effects (font (size 1.27 1.27) italic) hide)
-    )
-    (property "Datasheet" "150120BS75000" (at 162.56 66.04 0)
-      (effects (font (size 1.27 1.27) italic) hide)
-    )
-    (pin "1" (uuid bba3c9e1-066b-4f1f-af09-3f038e0a956f))
-    (pin "2" (uuid 4b7b999b-978f-4fe1-86e7-a0535c1bb92a))
-    (instances
-      (project "ColletAutoFeed_RelayBoard"
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/f85cc271-3b11-4af6-88e7-0089384d0a70"
-          (reference "LED1") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1b4c4683-ae7a-43db-9c55-2e017b2b64f6"
-          (reference "LED1") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/bf76bbb3-62c3-43bd-a097-b9f452e57b35"
-          (reference "LED1") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1e7f4279-2019-4687-9b9a-14c5bef026a1"
-          (reference "LED1") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/b14b409f-5174-4f0c-b56e-0f620ad960f8"
-          (reference "LED1") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c99ad83c-1e55-4897-95dc-696fc040ab27"
-          (reference "LED1") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c4c73976-bc86-4ae3-8f28-ea5e6a098449"
-          (reference "LED1") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/e9594ab2-eb4a-412d-b212-c8b9b51a6168"
-          (reference "LED1") (unit 1)
+          (reference "U8") (unit 1)
         )
       )
     )
@@ -1464,11 +1419,11 @@
   (symbol (lib_id "Diode:1N4148") (at 175.26 73.66 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ac6e89e9-790d-4ea4-9f6e-59564b0c1461)
-    (property "Reference" "D1" (at 177.8 72.39 90)
-      (effects (font (size 1.27 1.27)) (justify left))
+    (property "Reference" "D1" (at 177.8 74.93 0)
+      (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "1N4148" (at 179.07 73.66 0)
-      (effects (font (size 1.27 1.27)) (justify left))
+    (property "Value" "1N4148" (at 180.34 74.93 0)
+      (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 175.26 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -1490,25 +1445,72 @@
           (reference "D1") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1b4c4683-ae7a-43db-9c55-2e017b2b64f6"
-          (reference "D1") (unit 1)
+          (reference "D2") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/bf76bbb3-62c3-43bd-a097-b9f452e57b35"
-          (reference "D1") (unit 1)
+          (reference "D4") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1e7f4279-2019-4687-9b9a-14c5bef026a1"
-          (reference "D1") (unit 1)
+          (reference "D6") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/b14b409f-5174-4f0c-b56e-0f620ad960f8"
-          (reference "D1") (unit 1)
+          (reference "D8") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c99ad83c-1e55-4897-95dc-696fc040ab27"
-          (reference "D1") (unit 1)
+          (reference "D3") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c4c73976-bc86-4ae3-8f28-ea5e6a098449"
-          (reference "D1") (unit 1)
+          (reference "D5") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/e9594ab2-eb4a-412d-b212-c8b9b51a6168"
-          (reference "D1") (unit 1)
+          (reference "D7") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "LED_150120BS75000:150120BS75000") (at 162.56 66.04 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid beee0de6-72f3-4499-b9d3-269edea2783a)
+    (property "Reference" "LED1" (at 160.02 69.85 90)
+      (effects (font (size 1.524 1.524)) (justify right))
+    )
+    (property "Value" "150120BS75000" (at 160.02 72.39 90)
+      (effects (font (size 1.524 1.524)) (justify right))
+    )
+    (property "Footprint" "LED_150120BS75000:LED_150120RS75000_WRE" (at 172.72 66.04 0)
+      (effects (font (size 1.27 1.27) italic) hide)
+    )
+    (property "Datasheet" "150120BS75000" (at 170.18 66.04 0)
+      (effects (font (size 1.27 1.27) italic) hide)
+    )
+    (pin "1" (uuid a2289288-e121-4ca5-97a7-2ae99c4c2b23))
+    (pin "2" (uuid 0dbc5afa-eaa1-4469-8057-355f97f2fc33))
+    (instances
+      (project "ColletAutoFeed_RelayBoard"
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/f85cc271-3b11-4af6-88e7-0089384d0a70"
+          (reference "LED1") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1b4c4683-ae7a-43db-9c55-2e017b2b64f6"
+          (reference "LED2") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c99ad83c-1e55-4897-95dc-696fc040ab27"
+          (reference "LED3") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/bf76bbb3-62c3-43bd-a097-b9f452e57b35"
+          (reference "LED4") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c4c73976-bc86-4ae3-8f28-ea5e6a098449"
+          (reference "LED5") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1e7f4279-2019-4687-9b9a-14c5bef026a1"
+          (reference "LED6") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/e9594ab2-eb4a-412d-b212-c8b9b51a6168"
+          (reference "LED7") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/b14b409f-5174-4f0c-b56e-0f620ad960f8"
+          (reference "LED8") (unit 1)
         )
       )
     )
@@ -1517,7 +1519,7 @@
   (symbol (lib_id "power:GND") (at 167.64 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c794732e-e392-40a1-b3fe-6daabd7f5f7c)
-    (property "Reference" "#PWR03" (at 167.64 118.11 0)
+    (property "Reference" "#PWR05" (at 167.64 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 167.64 116.84 0)
@@ -1533,28 +1535,28 @@
     (instances
       (project "ColletAutoFeed_RelayBoard"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/f85cc271-3b11-4af6-88e7-0089384d0a70"
-          (reference "#PWR03") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1b4c4683-ae7a-43db-9c55-2e017b2b64f6"
-          (reference "#PWR04") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c99ad83c-1e55-4897-95dc-696fc040ab27"
           (reference "#PWR05") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/bf76bbb3-62c3-43bd-a097-b9f452e57b35"
-          (reference "#PWR06") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c4c73976-bc86-4ae3-8f28-ea5e6a098449"
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1b4c4683-ae7a-43db-9c55-2e017b2b64f6"
           (reference "#PWR07") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1e7f4279-2019-4687-9b9a-14c5bef026a1"
-          (reference "#PWR08") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/e9594ab2-eb4a-412d-b212-c8b9b51a6168"
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c99ad83c-1e55-4897-95dc-696fc040ab27"
           (reference "#PWR09") (unit 1)
         )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/bf76bbb3-62c3-43bd-a097-b9f452e57b35"
+          (reference "#PWR011") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c4c73976-bc86-4ae3-8f28-ea5e6a098449"
+          (reference "#PWR013") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1e7f4279-2019-4687-9b9a-14c5bef026a1"
+          (reference "#PWR015") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/e9594ab2-eb4a-412d-b212-c8b9b51a6168"
+          (reference "#PWR017") (unit 1)
+        )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/b14b409f-5174-4f0c-b56e-0f620ad960f8"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -1563,7 +1565,7 @@
   (symbol (lib_id "power:+24V") (at 152.4 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fdbf6f38-545d-47af-91c5-1e13cd6e452b)
-    (property "Reference" "#PWR02" (at 152.4 64.77 0)
+    (property "Reference" "#PWR04" (at 152.4 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+24V" (at 152.4 55.88 0)
@@ -1579,28 +1581,28 @@
     (instances
       (project "ColletAutoFeed_RelayBoard"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/f85cc271-3b11-4af6-88e7-0089384d0a70"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1b4c4683-ae7a-43db-9c55-2e017b2b64f6"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c99ad83c-1e55-4897-95dc-696fc040ab27"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/bf76bbb3-62c3-43bd-a097-b9f452e57b35"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c4c73976-bc86-4ae3-8f28-ea5e6a098449"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1e7f4279-2019-4687-9b9a-14c5bef026a1"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/e9594ab2-eb4a-412d-b212-c8b9b51a6168"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/b14b409f-5174-4f0c-b56e-0f620ad960f8"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )

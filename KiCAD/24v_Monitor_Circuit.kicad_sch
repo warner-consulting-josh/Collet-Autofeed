@@ -556,7 +556,7 @@
   (symbol (lib_id "power:+24V") (at 111.76 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0655a873-ac8e-40da-aaf8-8ad70624ba58)
-    (property "Reference" "#PWR011" (at 111.76 80.01 0)
+    (property "Reference" "#PWR020" (at 111.76 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+24V" (at 111.76 71.12 0)
@@ -572,7 +572,7 @@
     (instances
       (project "ColletAutoFeed_RelayBoard"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/3e3ccaf3-28fc-483d-ba21-ff253f5b1972"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -581,7 +581,7 @@
   (symbol (lib_id "PC365NJ0000F:PC365NJ0000F") (at 133.35 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 07fc3e5c-7916-4dec-a3fd-4f62bd01644d)
-    (property "Reference" "U3" (at 133.35 77.47 0)
+    (property "Reference" "U10" (at 133.35 77.47 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "PC365NJ0000F" (at 133.35 80.01 0)
@@ -612,7 +612,7 @@
     (instances
       (project "ColletAutoFeed_RelayBoard"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/3e3ccaf3-28fc-483d-ba21-ff253f5b1972"
-          (reference "U3") (unit 1)
+          (reference "U10") (unit 1)
         )
       )
     )
@@ -621,10 +621,10 @@
   (symbol (lib_id "Device:R") (at 111.76 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b562f3bb-6be2-4b4a-be44-e49c96f49fe2)
-    (property "Reference" "R3" (at 114.3 105.41 0)
+    (property "Reference" "R17" (at 114.3 105.41 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "R" (at 114.3 107.95 0)
+    (property "Value" "2.28kΩ" (at 114.3 107.95 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "" (at 109.982 106.68 90)
@@ -638,7 +638,7 @@
     (instances
       (project "ColletAutoFeed_RelayBoard"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/3e3ccaf3-28fc-483d-ba21-ff253f5b1972"
-          (reference "R3") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
     )
@@ -647,7 +647,7 @@
   (symbol (lib_id "power:GND") (at 111.76 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d4a07cd1-68cf-4ffb-892e-4332deb2b9cf)
-    (property "Reference" "#PWR012" (at 111.76 119.38 0)
+    (property "Reference" "#PWR021" (at 111.76 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 111.76 118.11 0)
@@ -663,7 +663,7 @@
     (instances
       (project "ColletAutoFeed_RelayBoard"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/3e3ccaf3-28fc-483d-ba21-ff253f5b1972"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
