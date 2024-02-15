@@ -1177,7 +1177,7 @@
     (property "Value" "1761685-6" (at 48.26 149.86 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "1761685-6:TE_1761685-6" (at 46.99 139.7 0)
+    (property "Footprint" "Vertical Header - Locking:TE_1761685-6" (at 46.99 139.7 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (property "Datasheet" "" (at 46.99 139.7 0)
