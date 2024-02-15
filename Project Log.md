@@ -107,3 +107,11 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - Currently have small monochrome OLED [screen](https://www.adafruit.com/product/938)
   - Maybe want bigger [screen?](https://www.adafruit.com/product/5872)
     - Look into power requirements, and how difficult it is to drive each screen
+   
+**02/15/2024**
+- Got KiCAD integrated fully into github using a submodule for the custom libraries
+  - Created a separate repository for the [custom libraries](https://github.com/warner-consulting-josh/Warner-Consulting-Libraries.git)
+  - Used git bash to add submodule to Collet-Autofeed repository which acts like a symbolic link pointing back to the libraries repository
+    - `git submodule add https://github.com/warner-consulting-josh/Warner-Consulting-Libraries.git KiCAD/Warner-Consulting-Libraries`
+  - Need to use `git submodule update --remote --merge` any time there are changes to the libraries repository (adding componnets, updating step files, etc.)
+- Evaluated several header connectors and replaced the Wurth one with a TE AMP-Latch [connector](https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/1761685-6/2187846)
