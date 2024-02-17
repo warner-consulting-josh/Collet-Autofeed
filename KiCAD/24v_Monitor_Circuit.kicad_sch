@@ -5,6 +5,353 @@
   (paper "A4")
 
   (lib_symbols
+    (symbol "CreeLED Green:C503B-GCN-CY0C0792" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+      (property "Reference" "LED" (at 5.08 -4.445 0)
+        (effects (font (size 1.524 1.524)))
+      )
+      (property "Value" "C503B-GCN-CY0C0792" (at 5.08 -7.62 0)
+        (effects (font (size 1.524 1.524)))
+      )
+      (property "Footprint" "C503B" (at 0 2.54 0)
+        (effects (font (size 1.27 1.27) italic) hide)
+      )
+      (property "Datasheet" "C503B-GCN-CY0C0792" (at -2.54 6.35 0)
+        (effects (font (size 1.27 1.27) italic) hide)
+      )
+      (property "ki_locked" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "ki_keywords" "C503B-GCN-CY0C0792" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "C503B" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "C503B-GCN-CY0C0792_1_1"
+        (polyline
+          (pts
+            (xy 2.54 0)
+            (xy 3.4798 0)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 3.175 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 3.81 -1.905)
+            (xy 6.35 0)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 3.81 1.905)
+            (xy 3.81 -1.905)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 5.08 3.175)
+            (xy 6.35 4.445)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 6.35 -1.905)
+            (xy 6.35 1.905)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 6.35 0)
+            (xy 3.81 1.905)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 6.35 0)
+            (xy 7.62 0)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 6.35 4.445)
+            (xy 6.985 3.81)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 6.985 2.54)
+            (xy 8.255 3.81)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 6.985 3.81)
+            (xy 8.255 5.08)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 7.62 5.08)
+            (xy 8.255 4.445)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 8.255 3.81)
+            (xy 8.89 3.175)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 8.255 4.445)
+            (xy 8.255 5.08)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 8.255 5.08)
+            (xy 7.62 5.08)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 8.89 3.175)
+            (xy 10.16 4.445)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 9.525 4.445)
+            (xy 10.16 3.81)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 10.16 3.81)
+            (xy 10.16 4.445)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 10.16 4.445)
+            (xy 9.525 4.445)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (pin passive line (at 10.16 0 180) (length 2.54)
+          (name "" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 0 0) (length 2.54)
+          (name "" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (symbol "C503B-GCN-CY0C0792_1_2"
+        (polyline
+          (pts
+            (xy -5.08 7.62)
+            (xy -4.445 8.255)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -5.08 8.255)
+            (xy -5.08 7.62)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -4.445 6.35)
+            (xy -3.81 6.985)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -4.445 8.255)
+            (xy -5.08 8.255)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -4.445 9.525)
+            (xy -3.81 10.16)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -4.445 10.16)
+            (xy -4.445 9.525)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -3.81 6.985)
+            (xy -5.08 8.255)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -3.81 8.255)
+            (xy -3.175 8.89)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -3.81 10.16)
+            (xy -4.445 10.16)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -3.175 5.08)
+            (xy -4.445 6.35)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -3.175 8.89)
+            (xy -4.445 10.16)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -2.54 6.985)
+            (xy -3.81 8.255)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.905 3.81)
+            (xy 1.905 3.81)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0 3.4798)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 3.175)
+            (xy 0 3.81)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 6.35)
+            (xy -1.905 3.81)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 6.35)
+            (xy 0 7.62)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.905 3.81)
+            (xy 0 6.35)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.905 6.35)
+            (xy -1.905 6.35)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (pin unspecified line (at 0 10.16 270) (length 2.54)
+          (name "" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin unspecified line (at 0 0 90) (length 2.54)
+          (name "" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "R" (at 2.032 0 90)
         (effects (font (size 1.27 1.27)))
@@ -514,7 +861,17 @@
     )
   )
 
+  (junction (at 111.76 110.49) (diameter 0) (color 0 0 0 0)
+    (uuid 1bb1ec13-d659-4f17-a87d-35e9877d0305)
+  )
+  (junction (at 111.76 85.09) (diameter 0) (color 0 0 0 0)
+    (uuid 8d5a6937-b4c5-43b1-8148-60075df5e240)
+  )
 
+  (wire (pts (xy 96.52 85.09) (xy 111.76 85.09))
+    (stroke (width 0) (type default))
+    (uuid 0c6b79e3-84c6-4538-9a12-6bc3f378881d)
+  )
   (wire (pts (xy 148.59 85.09) (xy 160.02 85.09))
     (stroke (width 0) (type default))
     (uuid 1b9264f6-c95c-466b-ab16-362ed5dcee96)
@@ -522,6 +879,14 @@
   (wire (pts (xy 111.76 76.2) (xy 111.76 85.09))
     (stroke (width 0) (type default))
     (uuid 32569006-187f-4e35-abad-65bafb3a5327)
+  )
+  (wire (pts (xy 96.52 97.79) (xy 96.52 102.87))
+    (stroke (width 0) (type default))
+    (uuid 42237799-4d05-4417-8ec4-f38d479f3e74)
+  )
+  (wire (pts (xy 96.52 110.49) (xy 111.76 110.49))
+    (stroke (width 0) (type default))
+    (uuid 4c811885-cbcf-49d6-9782-d8b8ab790a5a)
   )
   (wire (pts (xy 111.76 100.33) (xy 111.76 102.87))
     (stroke (width 0) (type default))
@@ -534,6 +899,10 @@
   (wire (pts (xy 111.76 85.09) (xy 118.11 85.09))
     (stroke (width 0) (type default))
     (uuid da6cbf30-69ca-4733-ba5a-d1db318106df)
+  )
+  (wire (pts (xy 96.52 87.63) (xy 96.52 85.09))
+    (stroke (width 0) (type default))
+    (uuid dc8a254b-3612-4efd-872c-21db38b733a6)
   )
   (wire (pts (xy 118.11 100.33) (xy 111.76 100.33))
     (stroke (width 0) (type default))
@@ -578,16 +947,42 @@
     )
   )
 
+  (symbol (lib_id "Device:R") (at 96.52 106.68 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 5380aa92-675b-4501-8bea-e5662a869247)
+    (property "Reference" "R18" (at 99.06 105.41 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "1.04kΩ" (at 99.06 107.95 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" (at 94.742 106.68 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 96.52 106.68 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid 1b7aa8f1-3bcf-49f4-a460-81b881594d1d))
+    (pin "1" (uuid 2a5bd945-db12-4785-9fcf-ad83408279d8))
+    (instances
+      (project "ColletAutoFeed_RelayBoard"
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/3e3ccaf3-28fc-483d-ba21-ff253f5b1972"
+          (reference "R18") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "PC365NJ0000F:PC365NJ0000F") (at 133.35 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 07fc3e5c-7916-4dec-a3fd-4f62bd01644d)
+    (uuid 7a457e0d-6bf1-4b3a-bca5-17be6cfc9bb6)
     (property "Reference" "U10" (at 133.35 77.47 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "PC365NJ0000F" (at 133.35 80.01 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "PC365NJ0000F:SOIC254P700X280-4N" (at 133.35 92.71 0)
+    (property "Footprint" "PC365NJ0000F:PC365NJ0000F" (at 133.35 92.71 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (property "Datasheet" "" (at 133.35 92.71 0)
@@ -605,14 +1000,40 @@
     (property "STANDARD" "IPC-7351B" (at 133.35 92.71 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
-    (pin "1" (uuid 9d5dbca5-a59f-4e18-aab8-a97e12fd6f83))
-    (pin "4" (uuid 272b709a-af1a-4796-9ab7-00ba00e29028))
-    (pin "3" (uuid 08ce82ef-15de-463b-a190-eec0d8195a46))
-    (pin "2" (uuid e79dcc55-d7a4-4079-8b9f-c6ffdb6faccb))
+    (pin "2" (uuid 6ba67c11-e385-4d58-a919-5b5ad4f4ce6e))
+    (pin "4" (uuid 1caeb259-fad0-42f6-be0c-499e821f0084))
+    (pin "3" (uuid 67ef1fc3-a8b0-4c40-9944-671c27c1580a))
+    (pin "1" (uuid 5ecf694c-8449-4694-8711-7a68035de0b7))
     (instances
       (project "ColletAutoFeed_RelayBoard"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/3e3ccaf3-28fc-483d-ba21-ff253f5b1972"
           (reference "U10") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "CreeLED Green:C503B-GCN-CY0C0792") (at 96.52 87.63 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid a937ce82-991f-443d-b612-48c97001409d)
+    (property "Reference" "LED9" (at 93.98 91.44 90)
+      (effects (font (size 1.524 1.524)) (justify right))
+    )
+    (property "Value" "C503B-GCN-CY0C0792" (at 93.98 93.98 90)
+      (effects (font (size 1.524 1.524)) (justify right))
+    )
+    (property "Footprint" "CreeLED Green:C503B_GCN_CY0C0792" (at 96.52 87.63 0)
+      (effects (font (size 1.27 1.27) italic) hide)
+    )
+    (property "Datasheet" "C503B-GCN-CY0C0792" (at 96.52 87.63 0)
+      (effects (font (size 1.27 1.27) italic) hide)
+    )
+    (pin "1" (uuid 15ae9005-13d5-494c-896e-0cf5139acd30))
+    (pin "2" (uuid d4f09542-467d-4f0a-89d8-715bcfa44494))
+    (instances
+      (project "ColletAutoFeed_RelayBoard"
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/3e3ccaf3-28fc-483d-ba21-ff253f5b1972"
+          (reference "LED9") (unit 1)
         )
       )
     )
