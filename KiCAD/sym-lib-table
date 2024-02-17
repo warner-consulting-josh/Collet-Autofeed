@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "ProS3")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/ProS3/ProS3.kicad_sym")(options "")(descr ""))
   (lib (name "Vertical Header - Locking")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/Vertical Header - Locking/1761685-6.kicad_sym")(options "")(descr ""))
+  (lib (name "Molex 206832-0202")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/Molex/2068320202.kicad_sym")(options "")(descr ""))
 )
