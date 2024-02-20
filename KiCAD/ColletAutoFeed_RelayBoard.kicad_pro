@@ -468,7 +468,34 @@
       "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "Net-(D1-A)": "power",
+      "Net-(D2-A)": "power",
+      "Net-(D3-A)": "power",
+      "Net-(D4-A)": "power",
+      "Net-(D5-A)": "power",
+      "Net-(D6-A)": "power",
+      "Net-(D7-A)": "power",
+      "Net-(D8-A)": "power",
+      "Net-(LED1-Pad1)": "power",
+      "Net-(LED2-Pad1)": "power",
+      "Net-(LED3-Pad1)": "power",
+      "Net-(LED4-Pad1)": "power",
+      "Net-(LED5-Pad1)": "power",
+      "Net-(LED6-Pad1)": "power",
+      "Net-(LED7-Pad1)": "power",
+      "Net-(LED8-Pad1)": "power",
+      "Net-(LED9-Pad1)": "power",
+      "Net-(R1-Pad2)": "signal",
+      "Net-(R11-Pad2)": "signal",
+      "Net-(R13-Pad2)": "signal",
+      "Net-(R15-Pad2)": "signal",
+      "Net-(R17-Pad1)": "power",
+      "Net-(R3-Pad2)": "signal",
+      "Net-(R5-Pad2)": "signal",
+      "Net-(R7-Pad2)": "signal",
+      "Net-(R9-Pad2)": "signal"
+    },
     "netclass_patterns": [
       {
         "netclass": "signal",
@@ -545,6 +572,14 @@
       {
         "netclass": "power",
         "pattern": "+24V"
+      },
+      {
+        "netclass": "signal",
+        "pattern": "/Relay Circuit 1/Opto_in"
+      },
+      {
+        "netclass": "power",
+        "pattern": "/S3"
       }
     ]
   },
