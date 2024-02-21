@@ -1339,7 +1339,7 @@
     (property "Value" "210Ω" (at 125.73 88.9 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" (at 125.73 94.488 90)
+    (property "Footprint" "Resistor:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal-JW" (at 125.73 94.488 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 125.73 92.71 0)

@@ -6,4 +6,5 @@
   (lib (name "CreeLED Blue")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/CreeLED/Blue LED/C503B_BCN_CV0Z0461.pretty")(options "")(descr ""))
   (lib (name "CreeLED Green")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/CreeLED/Green LED/C503B_GCN_CY0C0792.pretty")(options "")(descr ""))
   (lib (name "PC365NJ0000F")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/PC365NJ0000F/PC365NJ0000F.pretty")(options "")(descr ""))
+  (lib (name "Resistor")(type "KiCad")(uri "C:/Users/JWarner/Documents/Personal Projects Scratchpad/Collet Autofeed/Warner-Consulting-Libraries/Resistor Customized/Resistor.pretty")(options "")(descr ""))
 )
