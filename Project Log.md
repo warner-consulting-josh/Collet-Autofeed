@@ -41,7 +41,7 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - run `sudo service modemmanager stop` in the linux terminal
   - Need to investigate handling the issue in the microcontroller's code
   - Need to uninstall the modemmanager
-  - Need to create script in linux to check if modemmanager is running at startup and kill it
+    - `sudo apt-get purge modemmanager`
 
 **01/26/2024**
 - Worked on electronics side instead of code
@@ -115,3 +115,16 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
     - `git submodule add https://github.com/warner-consulting-josh/Warner-Consulting-Libraries.git KiCAD/Warner-Consulting-Libraries`
   - Need to use `git submodule update --remote --merge` any time there are changes to the libraries repository (adding componnets, updating step files, etc.)
 - Evaluated several header connectors and replaced the Wurth one with a TE AMP-Latch [connector](https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/1761685-6/2187846)
+
+**03/01/2024**
+- Successfully integrated basic display code with serial read code
+  - Displayed current tool number on OLED using Mu, Pathpilot virtual machine, and actual lathe
+- Need to decide what information to display
+  - Current tool
+  - Reason for last restart
+  - Up time?
+    - Will this cause issues with code blocking?
+- Need to get larger screen
+  - E-ink?
+  - Big OLED?
+  - Colored screen?
