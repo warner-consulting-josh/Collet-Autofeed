@@ -1,13 +1,23 @@
 # Notes
 
 **Code**
+
 Need to find ways of ensuring that modemmanager does not kick the ProS3 into REPL
 - Try this: [Addition to rules file](https://www.metrel.si/support/confluence/mpd/en/software-troubleshooting/how-to-communicate-with-instruments-under-linux#:~:text=On%20most%20Linux%20distributions%20ModemManager,to%20use%20specific%20USB%20device)
 - and this: [rules file](https://www.downtowndougbrown.com/2016/10/fix-for-usb-serial-port-being-opened-by-modemmanager-at-startup/)
 - [remove modemmanager](https://superuser.com/questions/568502/usb-device-blocked-at-startup-by-modem-manager) if the above doesn't work
 - See if there is a way to ignore the commands in the circuitpython code
 
+Need to figure out how I got custom M-codes fucntioning in the past to prompt the user for bar length and part type
+- Look into remap.py and figure out what you did with it before
+- Have a file named custom_m_code.py
+  - Figure out how to plug this into pathpilot
+  - Do I copy paste into the existing tormach remap file?
+  - Do I add something to toplevel.py?
+- Try following instructions [here](https://forum.linuxcnc.org/20-g-code/33642-custom-m-code-python)
+
 **Electronics**
+
 Need to design PCBA - Use [KiCAD](https://www.kicad.org/)
 - Relay outputs
   - Look at this [suggestion](https://electronics.stackexchange.com/questions/449872/relay-control-by-using-microcontroller) using optocouplers
