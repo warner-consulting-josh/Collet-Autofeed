@@ -128,3 +128,12 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - E-ink?
   - Big OLED?
   - Colored screen?
+
+**09/03/2024**
+- Powered up breadboard circuit and confirmed code works and displays current tool
+  - Confirmed code working with Mu, and Pathpilot virtual machine
+- Tried to get wrapper .nc program running for multiple part operation
+  - Ran into issue with remapped M-Codes
+  - Need to investigate further because I had this working before
+  - Look into remap.py and the INI file for the lathe
+  - Have python with remaps defined, need to figure out how exactly it was integrated into pathpilot
