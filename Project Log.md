@@ -137,3 +137,10 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - Need to investigate further because I had this working before
   - Look into remap.py and the INI file for the lathe
   - Have python with remaps defined, need to figure out how exactly it was integrated into pathpilot
+
+**09/05/2024**
+- Worked on getting custom M-code working again
+- Did not find anything terribly useful
+  - Most links seem to just point back at the one post that shows how to make the M codes but doesn't have a solution to the index out error
+- This was working at some point in the past
+  - Maybe boot up old laptop and see if you can make it function there
