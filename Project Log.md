@@ -144,3 +144,12 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - Most links seem to just point back at the one post that shows how to make the M codes but doesn't have a solution to the index out error
 - This was working at some point in the past
   - Maybe boot up old laptop and see if you can make it function there
+
+**09/06/2024**
+- Continued working on getting custom M-codes working
+- Booted old laptop and have functioning code in onld version of pathpilot
+- Same code does not work in new version of pathpilot
+- Code is having trouble calling dialog = Tk()
+  - When I run this on it's own in python, it works
+  - It looks like pathpilot is using python 2.7, not 3.x
+- Added an error message to M20 and it forced an error immediately on loading Gcode, not when I run it
