@@ -15,6 +15,13 @@ Need to figure out how I got custom M-codes fucntioning in the past to prompt th
   - Do I copy paste into the existing tormach remap file?
   - Do I add something to toplevel.py?
 - Try following instructions [here](https://forum.linuxcnc.org/20-g-code/33642-custom-m-code-python)
+- Confirmed to have working version of remapped M-codes on old pathpilot virtual machine
+  - Looking into differences between two versions
+  - Found some minor differences, but correcting the file in the new pathpilot did not address the issue
+    - This is likely a pathpilot version difference that is causing the problem, something with Tkinter.py
+  - The issue is occuring when calling M22, it seems like M20 is parsed immediately when the Gcode is loaded
+    - Is my list being lost?
+    - Add lots of comments/error messages to figure out where things are going wrong
 
 **Electronics**
 
