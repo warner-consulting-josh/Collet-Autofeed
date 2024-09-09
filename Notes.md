@@ -22,6 +22,10 @@ Need to figure out how I got custom M-codes fucntioning in the past to prompt th
   - The issue is occuring when calling M22, it seems like M20 is parsed immediately when the Gcode is loaded
     - Is my list being lost?
     - Add lots of comments/error messages to figure out where things are going wrong
+- **parameter file name is missing**
+  - This is caused when you comment out one of the remap definitions
+  - Will cause linuxcnc to hang and become non-responsive
+  - If you have anything called out as remapped in the ini file make sure it is defined in the remap.py file
 
 **Electronics**
 
