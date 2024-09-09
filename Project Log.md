@@ -153,3 +153,12 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - When I run this on it's own in python, it works
   - It looks like pathpilot is using python 2.7, not 3.x
 - Added an error message to M20 and it forced an error immediately on loading Gcode, not when I run it
+
+**09/09/2024**
+- Continued with custom M-codes
+- Caused and then fixed error: parameter file name missing
+  - Don't comment out any of the remaps in the remap file
+- Currently dealing with is_calable(oword.m22remap) = FALSE
+- Stripped the remapped M-code functions down to only displaying messages that they were called, but no message shows up, likely due to the above
+- Probably also part of why the dialog boxes are not functioning
+- Further research on the linuxcnc forum required
