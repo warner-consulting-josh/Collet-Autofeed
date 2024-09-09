@@ -26,6 +26,8 @@ Need to figure out how I got custom M-codes fucntioning in the past to prompt th
   - This is caused when you comment out one of the remap definitions
   - Will cause linuxcnc to hang and become non-responsive
   - If you have anything called out as remapped in the ini file make sure it is defined in the remap.py file
+- is_callable(oword.m22remap) = FALSE
+  - Need to figure out how to fix this to get messages to print, probably also part of the issue in getting the dialog boxes working
 
 **Electronics**
 
