@@ -162,3 +162,8 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - Stripped the remapped M-code functions down to only displaying messages that they were called, but no message shows up, likely due to the above
 - Probably also part of why the dialog boxes are not functioning
 - Further research on the linuxcnc forum required
+
+**09/10/2024**
+- Figured out how to snapshot virtualbox
+- Updated pathpilot inside virtualbox to latest version 2.10.1
+- This erased my changes in the .ini and custom M-code stuff, so I will need to re-introduce them to test if this still has the issue with nested python calls
