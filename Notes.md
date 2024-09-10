@@ -28,6 +28,12 @@ Need to figure out how I got custom M-codes fucntioning in the past to prompt th
   - If you have anything called out as remapped in the ini file make sure it is defined in the remap.py file
 - is_callable(oword.m22remap) = FALSE
   - Need to figure out how to fix this to get messages to print, probably also part of the issue in getting the dialog boxes working
+  - This error is related to python files calling other python files
+    - You can only go 2 layers deep before it stops functioning
+    - Effecctively that means all python needs to be in remap.py because it can't call other python files properly
+    - linuxcnc forum user bevins discovered this bug and it doesn't appear to have been fixed as of yet
+    - likely this makes it impossible to use the custom M-code architecture for user prompting under newer versions of pathpilot
+    - will check with latest release 2.10.1
 
 **Electronics**
 
