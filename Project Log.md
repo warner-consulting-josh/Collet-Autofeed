@@ -167,3 +167,18 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - Figured out how to snapshot virtualbox
 - Updated pathpilot inside virtualbox to latest version 2.10.1
 - This erased my changes in the .ini and custom M-code stuff, so I will need to re-introduce them to test if this still has the issue with nested python calls
+
+**09/24/2024**
+- As far as I can tell, I will not be able to get user prompting running under later versions of PathPilot
+  - Will need to revert machine to v2.2.4 (figure out latest version that will work)
+- Got subroutine code working
+  - Needed endif statement for every if statement (elseif does not function as endif)
+  - Needed endsub for one of the routines
+- Got external named subroutine working
+  - Needed to add subroutine path to .ini file
+  - Need to make sure subroutine file is executable
+  - o<filename> sub/endsub/call (where filename is the name of the subroutine file without the .nc extension)
+- Moved groove and advance code into external subroutine
+- Need to move body and nut code into external subroutines
+- Need to add grooving stock requirement to part per bar calculations
+- Need to add part number override for running n parts explicitly until we get user prompting working
