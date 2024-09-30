@@ -182,3 +182,20 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - Need to move body and nut code into external subroutines
 - Need to add grooving stock requirement to part per bar calculations
 - Need to add part number override for running n parts explicitly until we get user prompting working
+
+**09/30/2024**
+- Got the code transfered over to the lathe and have collets running multiples at a time
+  - Need to copy the working code from the lathe into the github so that it is accurately represented
+- Looked at the state of electronics
+  - Enclosure and connectors that I had previously ordered
+  - Drew a crude architecture diagram, need to transfer that into a more refined format draw.io?
+  - Plan to have small enclosure on lathe bed with connections to relays on a board that connects to a larger (10 pin) cable
+  - 10 pin cable connects to main board in housing that is stationary
+    - Either mounted on wall or on operator console
+  - Main board enclosure has screeen, relays, microcontroller, power connection, relay control connection, USB connection
+    - USB will be pass through (have gland pieces)
+    - Power and relay control will be snap lock type connectors
+    - No ribbon cable, no daughterboard in this enclosure
+    - Will need to mount screen in here somehow
+      - Don't want to block relay LEDs
+      - Can use little connector cable directly from micro, or could use pins and headers
