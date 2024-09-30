@@ -63,3 +63,14 @@ Need to design PCBA - Use [KiCAD](https://www.kicad.org/)
     - can accept both, will be getting some power from the usb (500mA?)
     - might want isolated voltage regulator for powering optcouplers? (total current draw = ?)
   - 24v for solenoids and relays
+
+High Level Architecture
+- Main board with micro controller socket, relays, LEDs, screen connection
+  - Housed in waterproof enclosure with clear top, either on wall or next to operator screen
+- Daughter board with relay connector sockets, big cable connector socket
+  - Housed in waterproof enclosure mounted to lathe bed
+  - Single cable running back to main board
+- Connector board with socket for power, big cable, and USB (maybe passthrough)
+  - Housed in same enclosure as Main board
+  - Connects to main board with ribbon cable
+- Board for screen?
