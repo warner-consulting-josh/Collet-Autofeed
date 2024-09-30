@@ -73,4 +73,6 @@ High Level Architecture
 - Connector board with socket for power, big cable, and USB (maybe passthrough)
   - Housed in same enclosure as Main board
   - Connects to main board with ribbon cable
+  - Might instead be just snap lock connectors for power and relay control 
 - Board for screen?
+- Need to make diagram (draw.io?)
