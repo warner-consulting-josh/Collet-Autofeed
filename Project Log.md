@@ -199,3 +199,10 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
     - Will need to mount screen in here somehow
       - Don't want to block relay LEDs
       - Can use little connector cable directly from micro, or could use pins and headers
+     
+**10/03/2024**
+- Drew a basic architecture diagram in draw.io
+- Started designing relay connector board and enclosure
+  - Will use 10 pin connector and snap lock to connect to PCB with 8x 2 pin connectors
+  - Plan to machine enclosure from solid piece of delrin and use O-ring to seal lid
+    - 3D print before machining to ensure everything fits
