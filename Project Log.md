@@ -206,3 +206,11 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - Will use 10 pin connector and snap lock to connect to PCB with 8x 2 pin connectors
   - Plan to machine enclosure from solid piece of delrin and use O-ring to seal lid
     - 3D print before machining to ensure everything fits
+   
+**10/08/2024**
+- Finished design of relay connector board enclosure
+- Need to double check O-ring gland design
+- Will be machined from large block of delrin with clear acrylic lid
+- Need to adjust mounting board to fit new design
+- Need to work on PCB layout for connector board
+- Need to work on design of enclosure for main board with screen
