@@ -47,7 +47,7 @@ inner_sprite = displayio.TileGrid(inner_bitmap, pixel_shader=inner_palette, x=BO
 splash.append(inner_sprite)
 
 # Add Tool Number Label
-ToolNumberLabelArea = label.Label(terminalio.FONT, text=" "*20, color=0xFFFFFF)
+ToolNumberLabelArea = label.Label(terminalio.FONT, text=" "*20, color=0xFFFFFF, scale=2)
 ToolNumberLabelArea.anchor_point = (0.0, 0.0)
 ToolNumberLabelArea.anchored_position = (2, 1)
 splash.append(ToolNumberLabelArea)
@@ -103,8 +103,8 @@ while True:
                 if dataInt in output_pins:
                     output_pins[dataInt].value = False  # Active low logic
 
-                print(f'Tool Number: {dataInt}')
-                ToolNumberLabelArea.text = f'Tool Number: {dataInt}'
+                print(f'Tool: {dataInt}')
+                ToolNumberLabelArea.text = f'Tool: {dataInt}'
         except ValueError:
             print("Received non-integer data")
         except Exception as e:
