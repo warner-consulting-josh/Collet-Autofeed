@@ -214,3 +214,13 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - Need to adjust mounting board to fit new design
 - Need to work on PCB layout for connector board
 - Need to work on design of enclosure for main board with screen
+
+**10/11/2024**
+- Tried using big screen, looked like more effort than I was up for this morning
+- Do we actually need big screen?
+  - Screen is more of a diagnostic tool/passive information display
+  - Focus should be on getting system functional and then adding features later if we want them
+  - Design enclosure for small screen and deal with big screen later
+- System is fucntioning, so we should get some PCBs and enclosure
+- Need to machine solenoid manifold
+- Need to machine connector board enclosure
