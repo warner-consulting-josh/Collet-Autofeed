@@ -2,3 +2,4 @@
 [submodule "KiCAD/Warner-Consulting-Libraries"]
 	path = KiCAD/Warner-Consulting-Libraries
 	url = https://github.com/warner-consulting-josh/Warner-Consulting-Libraries.git
+	ignore = dirty
