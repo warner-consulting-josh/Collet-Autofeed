@@ -226,5 +226,12 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - Need to machine connector board enclosure
 
 **10/14/2024**
-- added `ignore = dirty` to gitmodule file to deal with untracked changes issue in github
-- started placing components into mcmaster washdown enclosure, but had to deal with github issues for most of the morning
+- Added `ignore = dirty` to gitmodule file to deal with untracked changes issue in github
+- Started placing components into mcmaster washdown enclosure, but had to deal with github issues for most of the morning
+
+**10/15/2024**
+- Replaced ribbon cable connector with 10-pin molex connector on main board schematic
+- Started placing connectors and board supports in mcmaster enclosure model
+- Fixed issues with libraries and added library for molex connector
+- Need to double check that libraries are properly syncing because one of my footprints was missing
+- Need to add board clearance to board support piece
