@@ -224,3 +224,7 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - System is fucntioning, so we should get some PCBs and enclosure
 - Need to machine solenoid manifold
 - Need to machine connector board enclosure
+
+**10/14/2024**
+- added `ignore = dirty` to gitmodule file to deal with untracked changes issue in github
+- started placing components into mcmaster washdown enclosure, but had to deal with github issues for most of the morning
