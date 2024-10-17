@@ -8,4 +8,5 @@
   (lib (name "PC365NJ0000F")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/PC365NJ0000F/PC365NJ0000F.pretty")(options "")(descr ""))
   (lib (name "Resistor")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/Resistor Customized/Resistor.pretty")(options "")(descr ""))
   (lib (name "xw4m-10d2-h1ds")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/Omron/xw4m-10d2-h1ds.pretty")(options "")(descr ""))
+  (lib (name "xw4m-02d1-h1da")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/Omron/xw4m-02d1-h1da.pretty")(options "")(descr ""))
 )

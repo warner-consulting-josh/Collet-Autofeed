@@ -7,4 +7,5 @@
   (lib (name "CreeLED Green")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/CreeLED/Green LED/C503B_GCN_CY0C0792.kicad_sym")(options "")(descr ""))
   (lib (name "PC365NJ0000F")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/PC365NJ0000F/PC365NJ0000F.kicad_sym")(options "")(descr ""))
   (lib (name "xw4m-10d2-h1ds")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/Omron/xw4m-10d2-h1ds.kicad_sym")(options "")(descr ""))
+  (lib (name "xw4m-02d1-h1da")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/Omron/xw4m-02d1-h1da.kicad_sym")(options "")(descr ""))
 )
