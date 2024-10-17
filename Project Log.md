@@ -235,3 +235,9 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - Fixed issues with libraries and added library for molex connector
 - Need to double check that libraries are properly syncing because one of my footprints was missing
 - Need to add board clearance to board support piece
+
+**10/17/2024**
+- Actually fixed issue with submodule
+  - Had created file inside mirrored folder instead of in base repository folder, see notes for details
+- Added 2 pin power connector to schematic
+- Updated board outline to new size and started positioning components
