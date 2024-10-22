@@ -241,3 +241,10 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - Had created file inside mirrored folder instead of in base repository folder, see notes for details
 - Added 2 pin power connector to schematic
 - Updated board outline to new size and started positioning components
+
+**10/22/2024**
+- Placed components on PCB and completed initial routing
+- Still need to add power and ground planes
+- Need to figure out why labels are not showing on silk screen
+- Need to add silk screen demarkations for solenoid to LED correlations
+- Probably should add a logo and some other identifying information to the silk screen as well
