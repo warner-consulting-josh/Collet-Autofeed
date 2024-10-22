@@ -1,169 +1,158 @@
-02-25 09:51:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 392:Plugin executed on: 'win32'
-02-25 09:51:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 393:Plugin executed with python version: '3.9.16 (main, Oct 13 2023, 05:50:11) [MSC v.1936 64 bit (AMD64)]'
-02-25 09:51:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 394:KiCad build version: 7.0.10
-02-25 09:51:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 395:Plugin version: 2.1.3
-02-25 09:51:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 396:Frame repr: <wx._core.Frame object at 0x0000013ED46CFDC0>
-02-25 09:51:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 420:Preparing replicator with K1 as a reference
-02-25 09:51:55 com_github_MitjaNemec_ReplicateLayout.replicate_layout 117:getting a list of all footprints on board
-02-25 09:51:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 468:source anchor footprint is 'K1'
+10-22 08:25:05 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 392:Plugin executed on: 'win32'
+10-22 08:25:05 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 393:Plugin executed with python version: '3.9.16 (main, Oct 13 2023, 05:50:11) [MSC v.1936 64 bit (AMD64)]'
+10-22 08:25:05 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 394:KiCad build version: 7.0.10
+10-22 08:25:05 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 395:Plugin version: 2.1.3
+10-22 08:25:05 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 396:Frame repr: <wx._core.Frame object at 0x00000271BC3B4940>
+10-22 08:25:05 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 420:Preparing replicator with K1 as a reference
+10-22 08:25:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 117:getting a list of all footprints on board
+10-22 08:25:05 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 468:source anchor footprint is 'K1'
 Located on: ['Relay Circuit 1']
 With filenames: ['Relay_Circuit.kicad_sch']
 With sheet_id:['Relay Circuit 1']
-02-25 09:51:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 475:Corresponding footprints are 
+10-22 08:25:05 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 475:Corresponding footprints are 
 [('K7', ['Relay Circuit 7']), ('K3', ['Relay Circuit 3']), ('K5', ['Relay Circuit 5']), ('K6', ['Relay Circuit 6']), ('K1', ['Relay Circuit 1']), ('K4', ['Relay Circuit 4']), ('K2', ['Relay Circuit 2']), ('K8', ['Relay Circuit 8'])]
-02-25 09:51:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 487:Showing dialog
-02-25 09:51:55 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'Relay Circuit 1', file:'Relay_Circuit.kicad_sch'
-02-25 09:51:55 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['Relay Circuit 2'], ['Relay Circuit 3'], ['Relay Circuit 4'], ['Relay Circuit 5'], ['Relay Circuit 6'], ['Relay Circuit 7'], ['Relay Circuit 8']]
-02-25 09:51:55 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1464:Level selected: ['Relay Circuit 1']
-02-25 09:51:55 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1299:Filtering list of tracks
-02-25 09:51:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 493:Toolbar position: wx.Point(2109, 121)
-02-25 09:51:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 498:Dialog position: wx.Point(1670, 121)
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'Relay Circuit 1', file:'Relay_Circuit.kicad_sch'
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['Relay Circuit 2'], ['Relay Circuit 3'], ['Relay Circuit 4'], ['Relay Circuit 5'], ['Relay Circuit 6'], ['Relay Circuit 7'], ['Relay Circuit 8']]
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 240:Replicating layout
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 240:Starting replication of sheets: [['Relay Circuit 2'], ['Relay Circuit 3'], ['Relay Circuit 4'], ['Relay Circuit 5'], ['Relay Circuit 6'], ['Relay Circuit 7'], ['Relay Circuit 8']]
+10-22 08:25:05 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 487:Showing dialog
+10-22 08:25:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'Relay Circuit 1', file:'Relay_Circuit.kicad_sch'
+10-22 08:25:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['Relay Circuit 2'], ['Relay Circuit 3'], ['Relay Circuit 4'], ['Relay Circuit 5'], ['Relay Circuit 6'], ['Relay Circuit 7'], ['Relay Circuit 8']]
+10-22 08:25:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1464:Level selected: ['Relay Circuit 1']
+10-22 08:25:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1299:Filtering list of tracks
+10-22 08:25:05 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 493:Toolbar position: wx.Point(2103, 121)
+10-22 08:25:05 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 498:Dialog position: wx.Point(1664, 121)
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'Relay Circuit 1', file:'Relay_Circuit.kicad_sch'
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['Relay Circuit 2'], ['Relay Circuit 3'], ['Relay Circuit 4'], ['Relay Circuit 5'], ['Relay Circuit 6'], ['Relay Circuit 7'], ['Relay Circuit 8']]
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 240:Replicating layout
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 240:Starting replication of sheets: [['Relay Circuit 2'], ['Relay Circuit 3'], ['Relay Circuit 4'], ['Relay Circuit 5'], ['Relay Circuit 6'], ['Relay Circuit 7'], ['Relay Circuit 8']]
 on level: ['Relay Circuit 1']
-with tracks=True, zone=True, text=True, text=True, intersecting=False, remove=True, locked footprints=False, group_only=False
-02-25 09:52:05 root 332:updating GUI message: 'Preparing for replication'
-02-25 09:52:05 root 337:updating GUI with: 0
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 310:Getting the list of source footprints
-02-25 09:52:05 root 337:updating GUI with: 0
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 320:Getting the list of all the remaining footprints
-02-25 09:52:05 root 337:updating GUI with: 16
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 327:Getting source tracks
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1299:Filtering list of tracks
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 331:Getting source zones
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 335:Getting source text items
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 339:Getting source drawing items
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 272:Removing tracks and zones, before footprint placement
-02-25 09:52:05 root 332:updating GUI message: 'Removing zones and tracks'
-02-25 09:52:05 root 337:updating GUI with: 0
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1245:Remove bounding box top:56116500, bottom:97729000, Left:109360785, Right:119480785
-02-25 09:52:05 root 337:updating GUI with: 14
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1245:Remove bounding box top:56116500, bottom:97729000, Left:122793820, Right:132913820
-02-25 09:52:05 root 337:updating GUI with: 28
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1245:Remove bounding box top:56116500, bottom:97729000, Left:136226855, Right:146346855
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1245:Remove bounding box top:56116500, bottom:97729000, Left:149659890, Right:159779890
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1245:Remove bounding box top:56116500, bottom:97729000, Left:163092925, Right:173212925
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1245:Remove bounding box top:56116500, bottom:97729000, Left:176525960, Right:186645960
-02-25 09:52:05 root 337:updating GUI with: 85
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1245:Remove bounding box top:56116500, bottom:97729000, Left:189959000, Right:200079000
-02-25 09:52:05 root 332:updating GUI message: 'Replicating footprints'
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 806:Replicating footprints
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Relay Circuit 2']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Relay Circuit 3']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Relay Circuit 4']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Relay Circuit 5']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Relay Circuit 6']
-02-25 09:52:05 root 337:updating GUI with: 59
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Relay Circuit 7']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Relay Circuit 8']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 280:Removing tracks and zones, after footprint placement
-02-25 09:52:05 root 332:updating GUI message: 'Removing zones and tracks'
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1245:Remove bounding box top:56116500, bottom:97729000, Left:109360785, Right:119480785
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1245:Remove bounding box top:56116500, bottom:97729000, Left:122793820, Right:132913820
-02-25 09:52:05 root 337:updating GUI with: 28
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1245:Remove bounding box top:56116500, bottom:97729000, Left:136226855, Right:146346855
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1245:Remove bounding box top:56116500, bottom:97729000, Left:149659890, Right:159779890
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1245:Remove bounding box top:56116500, bottom:97729000, Left:163092925, Right:173212925
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1245:Remove bounding box top:56116500, bottom:97729000, Left:176525960, Right:186645960
-02-25 09:52:05 root 337:updating GUI with: 85
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1245:Remove bounding box top:56116500, bottom:97729000, Left:189959000, Right:200079000
-02-25 09:52:05 root 332:updating GUI message: 'Replicating tracks'
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 977:Replicating tracks
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['Relay Circuit 2']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S2'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S2'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 2'] :[('unconnected-(K1-Pad1)', 'unconnected-(K2-Pad1)'), ('+24V', '+24V'), ('Net-(LED1-Pad1)', 'Net-(LED2-Pad1)'), ('/MCU 3.3v', '/MCU 3.3v'), ('/IO1', '/IO2'), ('GND', 'GND'), ('/S1', '/S2'), ('Net-(D1-A)', 'Net-(D2-A)'), ('Net-(R1-Pad2)', 'Net-(R3-Pad2)')]
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['Relay Circuit 3']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S3'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S3'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 3'] :[('+24V', '+24V'), ('Net-(R1-Pad2)', 'Net-(R5-Pad2)'), ('unconnected-(K1-Pad1)', 'unconnected-(K3-Pad1)'), ('Net-(D1-A)', 'Net-(D3-A)'), ('GND', 'GND'), ('/MCU 3.3v', '/MCU 3.3v'), ('Net-(LED1-Pad1)', 'Net-(LED3-Pad1)'), ('/IO1', '/IO3'), ('/S1', '/S3')]
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['Relay Circuit 4']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S4'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S4'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 4'] :[('+24V', '+24V'), ('/S1', '/S4'), ('unconnected-(K1-Pad1)', 'unconnected-(K4-Pad1)'), ('/MCU 3.3v', '/MCU 3.3v'), ('GND', 'GND'), ('Net-(R1-Pad2)', 'Net-(R7-Pad2)'), ('Net-(LED1-Pad1)', 'Net-(LED4-Pad1)'), ('/IO1', '/IO4'), ('Net-(D1-A)', 'Net-(D4-A)')]
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['Relay Circuit 5']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S5'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S5'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 5'] :[('+24V', '+24V'), ('/S1', '/S5'), ('GND', 'GND'), ('/IO1', '/IO5'), ('/MCU 3.3v', '/MCU 3.3v'), ('Net-(D1-A)', 'Net-(D5-A)'), ('Net-(R1-Pad2)', 'Net-(R9-Pad2)'), ('Net-(LED1-Pad1)', 'Net-(LED5-Pad1)'), ('unconnected-(K1-Pad1)', 'unconnected-(K5-Pad1)')]
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['Relay Circuit 6']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S6'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S6'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 6'] :[('/IO1', '/IO21'), ('+24V', '+24V'), ('GND', 'GND'), ('/MCU 3.3v', '/MCU 3.3v'), ('/S1', '/S6'), ('Net-(D1-A)', 'Net-(D6-A)'), ('unconnected-(K1-Pad1)', 'unconnected-(K6-Pad1)'), ('Net-(R1-Pad2)', 'Net-(R11-Pad2)'), ('Net-(LED1-Pad1)', 'Net-(LED6-Pad1)')]
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['Relay Circuit 7']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S7'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S7'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 7'] :[('+24V', '+24V'), ('unconnected-(K1-Pad1)', 'unconnected-(K7-Pad1)'), ('GND', 'GND'), ('Net-(R1-Pad2)', 'Net-(R13-Pad2)'), ('/IO1', '/IO0'), ('/MCU 3.3v', '/MCU 3.3v'), ('/S1', '/S7'), ('Net-(LED1-Pad1)', 'Net-(LED7-Pad1)'), ('Net-(D1-A)', 'Net-(D7-A)')]
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['Relay Circuit 8']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S8'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S8'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 8'] :[('+24V', '+24V'), ('Net-(D1-A)', 'Net-(D8-A)'), ('Net-(R1-Pad2)', 'Net-(R15-Pad2)'), ('/MCU 3.3v', '/MCU 3.3v'), ('GND', 'GND'), ('unconnected-(K1-Pad1)', 'unconnected-(K8-Pad1)'), ('Net-(LED1-Pad1)', 'Net-(LED8-Pad1)'), ('/IO1', '/IO16'), ('/S1', '/S8')]
-02-25 09:52:05 root 332:updating GUI message: 'Replicating zones'
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1047:Replicating zones
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['Relay Circuit 2']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S2'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S2'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 2'] :[('unconnected-(K1-Pad1)', 'unconnected-(K2-Pad1)'), ('+24V', '+24V'), ('Net-(LED1-Pad1)', 'Net-(LED2-Pad1)'), ('/MCU 3.3v', '/MCU 3.3v'), ('/IO1', '/IO2'), ('GND', 'GND'), ('/S1', '/S2'), ('Net-(D1-A)', 'Net-(D2-A)'), ('Net-(R1-Pad2)', 'Net-(R3-Pad2)')]
-02-25 09:52:05 root 337:updating GUI with: 14
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['Relay Circuit 3']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S3'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S3'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 3'] :[('+24V', '+24V'), ('Net-(R1-Pad2)', 'Net-(R5-Pad2)'), ('unconnected-(K1-Pad1)', 'unconnected-(K3-Pad1)'), ('Net-(D1-A)', 'Net-(D3-A)'), ('GND', 'GND'), ('/MCU 3.3v', '/MCU 3.3v'), ('Net-(LED1-Pad1)', 'Net-(LED3-Pad1)'), ('/IO1', '/IO3'), ('/S1', '/S3')]
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['Relay Circuit 4']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S4'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S4'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 4'] :[('+24V', '+24V'), ('/S1', '/S4'), ('unconnected-(K1-Pad1)', 'unconnected-(K4-Pad1)'), ('/MCU 3.3v', '/MCU 3.3v'), ('GND', 'GND'), ('Net-(R1-Pad2)', 'Net-(R7-Pad2)'), ('Net-(LED1-Pad1)', 'Net-(LED4-Pad1)'), ('/IO1', '/IO4'), ('Net-(D1-A)', 'Net-(D4-A)')]
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['Relay Circuit 5']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S5'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S5'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 5'] :[('+24V', '+24V'), ('/S1', '/S5'), ('GND', 'GND'), ('/IO1', '/IO5'), ('/MCU 3.3v', '/MCU 3.3v'), ('Net-(D1-A)', 'Net-(D5-A)'), ('Net-(R1-Pad2)', 'Net-(R9-Pad2)'), ('Net-(LED1-Pad1)', 'Net-(LED5-Pad1)'), ('unconnected-(K1-Pad1)', 'unconnected-(K5-Pad1)')]
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['Relay Circuit 6']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S6'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S6'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 6'] :[('/IO1', '/IO21'), ('+24V', '+24V'), ('GND', 'GND'), ('/MCU 3.3v', '/MCU 3.3v'), ('/S1', '/S6'), ('Net-(D1-A)', 'Net-(D6-A)'), ('unconnected-(K1-Pad1)', 'unconnected-(K6-Pad1)'), ('Net-(R1-Pad2)', 'Net-(R11-Pad2)'), ('Net-(LED1-Pad1)', 'Net-(LED6-Pad1)')]
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['Relay Circuit 7']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S7'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S7'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 7'] :[('+24V', '+24V'), ('unconnected-(K1-Pad1)', 'unconnected-(K7-Pad1)'), ('GND', 'GND'), ('Net-(R1-Pad2)', 'Net-(R13-Pad2)'), ('/IO1', '/IO0'), ('/MCU 3.3v', '/MCU 3.3v'), ('/S1', '/S7'), ('Net-(LED1-Pad1)', 'Net-(LED7-Pad1)'), ('Net-(D1-A)', 'Net-(D7-A)')]
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['Relay Circuit 8']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S8'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S8'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 8'] :[('+24V', '+24V'), ('Net-(D1-A)', 'Net-(D8-A)'), ('Net-(R1-Pad2)', 'Net-(R15-Pad2)'), ('/MCU 3.3v', '/MCU 3.3v'), ('GND', 'GND'), ('unconnected-(K1-Pad1)', 'unconnected-(K8-Pad1)'), ('Net-(LED1-Pad1)', 'Net-(LED8-Pad1)'), ('/IO1', '/IO16'), ('/S1', '/S8')]
-02-25 09:52:05 root 332:updating GUI message: 'Replicating text'
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1136:Replicating text
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['Relay Circuit 2']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['Relay Circuit 3']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['Relay Circuit 4']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['Relay Circuit 5']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['Relay Circuit 6']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['Relay Circuit 7']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['Relay Circuit 8']
-02-25 09:52:05 root 332:updating GUI message: 'Replicating drawings'
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1187:Replicating drawings
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['Relay Circuit 2']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['Relay Circuit 3']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['Relay Circuit 4']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['Relay Circuit 5']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['Relay Circuit 6']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['Relay Circuit 7']
-02-25 09:52:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['Relay Circuit 8']
-02-25 09:52:06 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 256:Replication complete
-02-25 09:52:06 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 259:Letting the user know there are some issues with replicated design
-02-25 09:52:06 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 263:Looks like the design has an exotic connectivity that the plugin might not handle properly
+with tracks=True, zone=True, text=True, text=True, intersecting=False, remove=False, locked footprints=False, group_only=False
+10-22 08:25:07 root 332:updating GUI message: 'Preparing for replication'
+10-22 08:25:07 root 337:updating GUI with: 0
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 310:Getting the list of source footprints
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 320:Getting the list of all the remaining footprints
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 327:Getting source tracks
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1299:Filtering list of tracks
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 331:Getting source zones
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 335:Getting source text items
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 339:Getting source drawing items
+10-22 08:25:07 root 332:updating GUI message: 'Replicating footprints'
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 806:Replicating footprints
+10-22 08:25:07 root 337:updating GUI with: 0
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Relay Circuit 2']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Relay Circuit 3']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Relay Circuit 4']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Relay Circuit 5']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Relay Circuit 6']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Relay Circuit 7']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Relay Circuit 8']
+10-22 08:25:07 root 332:updating GUI message: 'Replicating tracks'
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 977:Replicating tracks
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['Relay Circuit 2']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'IO16'] and dst net: ['', 'IO0'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.79
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S2'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S2'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 2'] :[('GND', 'GND'), ('/MCU 3.3v', '/MCU 3.3v'), ('Net-(R1-Pad2)', 'Net-(R3-Pad2)'), ('Net-(D1-A)', 'Net-(D2-A)'), ('unconnected-(K1-Pad1)', 'unconnected-(K2-Pad1)'), ('/IO16', '/IO0'), ('/S1', '/S2'), ('+24V', '+24V'), ('Net-(LED1-Pad1)', 'Net-(LED2-Pad1)')]
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['Relay Circuit 3']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S3'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S3'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 3'] :[('GND', 'GND'), ('/MCU 3.3v', '/MCU 3.3v'), ('unconnected-(K1-Pad1)', 'unconnected-(K3-Pad1)'), ('/S1', '/S3'), ('/IO16', '/IO21'), ('Net-(D1-A)', 'Net-(D3-A)'), ('+24V', '+24V'), ('Net-(R1-Pad2)', 'Net-(R5-Pad2)'), ('Net-(LED1-Pad1)', 'Net-(LED3-Pad1)')]
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['Relay Circuit 4']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S4'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S4'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'IO16'] and dst net: ['', 'IO5'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.79
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 4'] :[('/MCU 3.3v', '/MCU 3.3v'), ('GND', 'GND'), ('/S1', '/S4'), ('+24V', '+24V'), ('Net-(LED1-Pad1)', 'Net-(LED4-Pad1)'), ('Net-(R1-Pad2)', 'Net-(R7-Pad2)'), ('unconnected-(K1-Pad1)', 'unconnected-(K4-Pad1)'), ('/IO16', '/IO5'), ('Net-(D1-A)', 'Net-(D4-A)')]
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['Relay Circuit 5']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'IO16'] and dst net: ['', 'IO4'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.79
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S5'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S5'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 5'] :[('Net-(D1-A)', 'Net-(D5-A)'), ('GND', 'GND'), ('/MCU 3.3v', '/MCU 3.3v'), ('Net-(LED1-Pad1)', 'Net-(LED5-Pad1)'), ('/S1', '/S5'), ('+24V', '+24V'), ('/IO16', '/IO4'), ('Net-(R1-Pad2)', 'Net-(R9-Pad2)'), ('unconnected-(K1-Pad1)', 'unconnected-(K5-Pad1)')]
+10-22 08:25:07 root 337:updating GUI with: 43
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['Relay Circuit 6']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'IO16'] and dst net: ['', 'IO3'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.79
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S6'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S6'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 6'] :[('GND', 'GND'), ('Net-(D1-A)', 'Net-(D6-A)'), ('/MCU 3.3v', '/MCU 3.3v'), ('Net-(LED1-Pad1)', 'Net-(LED6-Pad1)'), ('Net-(R1-Pad2)', 'Net-(R11-Pad2)'), ('/S1', '/S6'), ('unconnected-(K1-Pad1)', 'unconnected-(K6-Pad1)'), ('+24V', '+24V'), ('/IO16', '/IO3')]
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['Relay Circuit 7']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S7'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S7'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'IO16'] and dst net: ['', 'IO2'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.79
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 7'] :[('Net-(R1-Pad2)', 'Net-(R13-Pad2)'), ('GND', 'GND'), ('/MCU 3.3v', '/MCU 3.3v'), ('Net-(LED1-Pad1)', 'Net-(LED7-Pad1)'), ('Net-(D1-A)', 'Net-(D7-A)'), ('unconnected-(K1-Pad1)', 'unconnected-(K7-Pad1)'), ('/IO16', '/IO2'), ('+24V', '+24V'), ('/S1', '/S7')]
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['Relay Circuit 8']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S8'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S8'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 8'] :[('GND', 'GND'), ('/MCU 3.3v', '/MCU 3.3v'), ('unconnected-(K1-Pad1)', 'unconnected-(K8-Pad1)'), ('/IO16', '/IO1'), ('Net-(R1-Pad2)', 'Net-(R15-Pad2)'), ('/S1', '/S8'), ('+24V', '+24V'), ('Net-(D1-A)', 'Net-(D8-A)'), ('Net-(LED1-Pad1)', 'Net-(LED8-Pad1)')]
+10-22 08:25:07 root 332:updating GUI message: 'Replicating zones'
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1047:Replicating zones
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['Relay Circuit 2']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'IO16'] and dst net: ['', 'IO0'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.79
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S2'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S2'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 2'] :[('GND', 'GND'), ('/MCU 3.3v', '/MCU 3.3v'), ('Net-(R1-Pad2)', 'Net-(R3-Pad2)'), ('Net-(D1-A)', 'Net-(D2-A)'), ('unconnected-(K1-Pad1)', 'unconnected-(K2-Pad1)'), ('/IO16', '/IO0'), ('/S1', '/S2'), ('+24V', '+24V'), ('Net-(LED1-Pad1)', 'Net-(LED2-Pad1)')]
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['Relay Circuit 3']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S3'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S3'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 3'] :[('GND', 'GND'), ('/MCU 3.3v', '/MCU 3.3v'), ('unconnected-(K1-Pad1)', 'unconnected-(K3-Pad1)'), ('/S1', '/S3'), ('/IO16', '/IO21'), ('Net-(D1-A)', 'Net-(D3-A)'), ('+24V', '+24V'), ('Net-(R1-Pad2)', 'Net-(R5-Pad2)'), ('Net-(LED1-Pad1)', 'Net-(LED3-Pad1)')]
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['Relay Circuit 4']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S4'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S4'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'IO16'] and dst net: ['', 'IO5'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.79
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 4'] :[('/MCU 3.3v', '/MCU 3.3v'), ('GND', 'GND'), ('/S1', '/S4'), ('+24V', '+24V'), ('Net-(LED1-Pad1)', 'Net-(LED4-Pad1)'), ('Net-(R1-Pad2)', 'Net-(R7-Pad2)'), ('unconnected-(K1-Pad1)', 'unconnected-(K4-Pad1)'), ('/IO16', '/IO5'), ('Net-(D1-A)', 'Net-(D4-A)')]
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['Relay Circuit 5']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'IO16'] and dst net: ['', 'IO4'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.79
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S5'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S5'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 5'] :[('Net-(D1-A)', 'Net-(D5-A)'), ('GND', 'GND'), ('/MCU 3.3v', '/MCU 3.3v'), ('Net-(LED1-Pad1)', 'Net-(LED5-Pad1)'), ('/S1', '/S5'), ('+24V', '+24V'), ('/IO16', '/IO4'), ('Net-(R1-Pad2)', 'Net-(R9-Pad2)'), ('unconnected-(K1-Pad1)', 'unconnected-(K5-Pad1)')]
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['Relay Circuit 6']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'IO16'] and dst net: ['', 'IO3'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.79
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S6'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S6'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 6'] :[('GND', 'GND'), ('Net-(D1-A)', 'Net-(D6-A)'), ('/MCU 3.3v', '/MCU 3.3v'), ('Net-(LED1-Pad1)', 'Net-(LED6-Pad1)'), ('Net-(R1-Pad2)', 'Net-(R11-Pad2)'), ('/S1', '/S6'), ('unconnected-(K1-Pad1)', 'unconnected-(K6-Pad1)'), ('+24V', '+24V'), ('/IO16', '/IO3')]
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['Relay Circuit 7']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S7'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S7'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'IO16'] and dst net: ['', 'IO2'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.79
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 7'] :[('Net-(R1-Pad2)', 'Net-(R13-Pad2)'), ('GND', 'GND'), ('/MCU 3.3v', '/MCU 3.3v'), ('Net-(LED1-Pad1)', 'Net-(LED7-Pad1)'), ('Net-(D1-A)', 'Net-(D7-A)'), ('unconnected-(K1-Pad1)', 'unconnected-(K7-Pad1)'), ('/IO16', '/IO2'), ('+24V', '+24V'), ('/S1', '/S7')]
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['Relay Circuit 8']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S8'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'S1'] and dst net: ['', 'S8'], with src_net_depth=2, dst_net_depth=2, src_fp_depth=1, dst_fp_depth=1, match level 0.75
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Relay Circuit 8'] :[('GND', 'GND'), ('/MCU 3.3v', '/MCU 3.3v'), ('unconnected-(K1-Pad1)', 'unconnected-(K8-Pad1)'), ('/IO16', '/IO1'), ('Net-(R1-Pad2)', 'Net-(R15-Pad2)'), ('/S1', '/S8'), ('+24V', '+24V'), ('Net-(D1-A)', 'Net-(D8-A)'), ('Net-(LED1-Pad1)', 'Net-(LED8-Pad1)')]
+10-22 08:25:07 root 332:updating GUI message: 'Replicating text'
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1136:Replicating text
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['Relay Circuit 2']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['Relay Circuit 3']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['Relay Circuit 4']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['Relay Circuit 5']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['Relay Circuit 6']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['Relay Circuit 7']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['Relay Circuit 8']
+10-22 08:25:07 root 332:updating GUI message: 'Replicating drawings'
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1187:Replicating drawings
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['Relay Circuit 2']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['Relay Circuit 3']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['Relay Circuit 4']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['Relay Circuit 5']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['Relay Circuit 6']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['Relay Circuit 7']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['Relay Circuit 8']
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 256:Replication complete
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 259:Letting the user know there are some issues with replicated design
+10-22 08:25:07 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 263:Looks like the design has an exotic connectivity that the plugin might not handle properly
  Make sure that you check the connectivity around:
-Footprint K7, pad 5
-Footprint K4, pad 5
-Footprint K5, pad 5
-Footprint K6, pad 5
-Footprint K3, pad 6
-Footprint K2, pad 5
-Footprint K8, pad 6
-Footprint K7, pad 6
-Footprint K4, pad 6
-Footprint K5, pad 6
-Footprint K6, pad 6
-Footprint K3, pad 5
 Footprint K2, pad 6
 Footprint K8, pad 5
+Footprint U3, pad 2
+Footprint K8, pad 6
+Footprint K7, pad 5
+Footprint K7, pad 6
+Footprint U7, pad 2
+Footprint U6, pad 2
+Footprint K3, pad 5
+Footprint K4, pad 5
+Footprint K6, pad 5
+Footprint K3, pad 6
+Footprint K6, pad 6
+Footprint K4, pad 6
+Footprint U8, pad 2
+Footprint K5, pad 5
+Footprint K5, pad 6
+Footprint K2, pad 5
+Footprint U5, pad 2
 
