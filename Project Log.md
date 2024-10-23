@@ -248,3 +248,9 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - Need to figure out why labels are not showing on silk screen
 - Need to add silk screen demarkations for solenoid to LED correlations
 - Probably should add a logo and some other identifying information to the silk screen as well
+
+**10/23/2024**
+- Replaced PC365NJ0000F surface mount opto-isolator with PC12311NSZ1B through hole
+- Added power and ground fills on top and bottom layers respectively
+- Need to figure out why changes to 10-pin and 2-pin connectors didn't save/propagate to other computer
+- Need to figure out silkscreen labels not showing for components
