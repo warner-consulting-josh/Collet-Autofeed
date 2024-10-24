@@ -254,3 +254,11 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - Added power and ground fills on top and bottom layers respectively
 - Need to figure out why changes to 10-pin and 2-pin connectors didn't save/propagate to other computer
 - Need to figure out silkscreen labels not showing for components
+
+**10/24/2024**
+- Added rectangle representing screen into the silkscreen layer
+- Sketched screen board outline in solidworks in the part file of the box
+- Need to figure out screw size and standoffs
+- Need to add screw holes into main board
+  - Consider 3d printed screen support as alternative
+  - Might be somewhat spidery, but maybe it would work with standoffs
