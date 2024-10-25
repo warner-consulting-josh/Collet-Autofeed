@@ -262,3 +262,9 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - Need to add screw holes into main board
   - Consider 3d printed screen support as alternative
   - Might be somewhat spidery, but maybe it would work with standoffs
+ 
+**10/25/2024**
+- Fixed silkscreen labels for components
+  - Had to mess with library footprints and update the footprints on the pcb
+- Replaced remaining surface mount opto-isolator with through hole
+- Adjusted screen mount to used OTS standoffs
