@@ -1346,7 +1346,7 @@
     (property "Value" "XW4M-02D1-H1DA" (at 111.76 177.8 90)
       (effects (font (size 1.524 1.524)) (justify left))
     )
-    (property "Footprint" "xw4m-02d1-h1da" (at 107.95 167.64 0)
+    (property "Footprint" "xw4m-02d1-h1da:xw4m-02d1-h1da" (at 107.95 167.64 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "Datasheet" "XW4M-02D1-H1DA" (at 107.95 167.64 0)
