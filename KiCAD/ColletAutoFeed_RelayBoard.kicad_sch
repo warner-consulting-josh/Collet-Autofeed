@@ -1315,7 +1315,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 105.41 160.02 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4bdc3909-a897-4908-beb2-2c81e8ff37f7)
-    (property "Reference" "#FLG02" (at 103.505 160.02 0)
+    (property "Reference" "#FLG01" (at 103.505 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 101.6 160.02 90)
@@ -1331,7 +1331,7 @@
     (instances
       (project "ColletAutoFeed_RelayBoard"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d"
-          (reference "#FLG02") (unit 1)
+          (reference "#FLG01") (unit 1)
         )
       )
     )
@@ -1366,7 +1366,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 107.95 160.02 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b615548a-9e26-4df0-939f-6c13092be199)
-    (property "Reference" "#FLG01" (at 109.855 160.02 0)
+    (property "Reference" "#FLG02" (at 109.855 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 111.76 160.02 90)
@@ -1382,7 +1382,7 @@
     (instances
       (project "ColletAutoFeed_RelayBoard"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d"
-          (reference "#FLG01") (unit 1)
+          (reference "#FLG02") (unit 1)
         )
       )
     )

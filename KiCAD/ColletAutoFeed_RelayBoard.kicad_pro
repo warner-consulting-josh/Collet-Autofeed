@@ -490,7 +490,7 @@
       "Net-(R11-Pad2)": "signal",
       "Net-(R13-Pad2)": "signal",
       "Net-(R15-Pad2)": "signal",
-      "Net-(R17-Pad1)": "power",
+      "Net-(R18-Pad1)": "power",
       "Net-(R3-Pad2)": "signal",
       "Net-(R5-Pad2)": "signal",
       "Net-(R7-Pad2)": "signal",
@@ -589,7 +589,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "ColletAutoFeed_RelayBoard.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

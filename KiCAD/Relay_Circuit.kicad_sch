@@ -1550,7 +1550,7 @@
   (symbol (lib_id "power:GND") (at 167.64 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c794732e-e392-40a1-b3fe-6daabd7f5f7c)
-    (property "Reference" "#PWR05" (at 167.64 118.11 0)
+    (property "Reference" "#PWR04" (at 167.64 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 167.64 116.84 0)
@@ -1563,52 +1563,6 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 71e4c851-b55d-47db-a395-673c4c4a57b8))
-    (instances
-      (project "ColletAutoFeed_RelayBoard"
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/f85cc271-3b11-4af6-88e7-0089384d0a70"
-          (reference "#PWR05") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1b4c4683-ae7a-43db-9c55-2e017b2b64f6"
-          (reference "#PWR07") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c99ad83c-1e55-4897-95dc-696fc040ab27"
-          (reference "#PWR09") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/bf76bbb3-62c3-43bd-a097-b9f452e57b35"
-          (reference "#PWR011") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c4c73976-bc86-4ae3-8f28-ea5e6a098449"
-          (reference "#PWR013") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1e7f4279-2019-4687-9b9a-14c5bef026a1"
-          (reference "#PWR015") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/e9594ab2-eb4a-412d-b212-c8b9b51a6168"
-          (reference "#PWR017") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/b14b409f-5174-4f0c-b56e-0f620ad960f8"
-          (reference "#PWR019") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+24V") (at 152.4 60.96 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid fdbf6f38-545d-47af-91c5-1e13cd6e452b)
-    (property "Reference" "#PWR04" (at 152.4 64.77 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+24V" (at 152.4 55.88 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 152.4 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 152.4 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 535be077-16af-4f7d-be5c-5af2ca82b55a))
     (instances
       (project "ColletAutoFeed_RelayBoard"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/f85cc271-3b11-4af6-88e7-0089384d0a70"
@@ -1634,6 +1588,52 @@
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/b14b409f-5174-4f0c-b56e-0f620ad960f8"
           (reference "#PWR018") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+24V") (at 152.4 60.96 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid fdbf6f38-545d-47af-91c5-1e13cd6e452b)
+    (property "Reference" "#PWR03" (at 152.4 64.77 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+24V" (at 152.4 55.88 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 152.4 60.96 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 152.4 60.96 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 535be077-16af-4f7d-be5c-5af2ca82b55a))
+    (instances
+      (project "ColletAutoFeed_RelayBoard"
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/f85cc271-3b11-4af6-88e7-0089384d0a70"
+          (reference "#PWR03") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1b4c4683-ae7a-43db-9c55-2e017b2b64f6"
+          (reference "#PWR05") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c99ad83c-1e55-4897-95dc-696fc040ab27"
+          (reference "#PWR07") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/bf76bbb3-62c3-43bd-a097-b9f452e57b35"
+          (reference "#PWR09") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c4c73976-bc86-4ae3-8f28-ea5e6a098449"
+          (reference "#PWR011") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1e7f4279-2019-4687-9b9a-14c5bef026a1"
+          (reference "#PWR013") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/e9594ab2-eb4a-412d-b212-c8b9b51a6168"
+          (reference "#PWR015") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/b14b409f-5174-4f0c-b56e-0f620ad960f8"
+          (reference "#PWR017") (unit 1)
         )
       )
     )

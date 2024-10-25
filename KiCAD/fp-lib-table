@@ -10,4 +10,5 @@
   (lib (name "xw4m-10d2-h1ds")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/Omron/xw4m-10d2-h1ds.pretty")(options "")(descr ""))
   (lib (name "xw4m-02d1-h1da")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/Omron/xw4m-02d1-h1da.pretty")(options "")(descr ""))
   (lib (name "PC12311NSZ1B")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/PC12311NSZ1B/PC12311NSZ1B.pretty")(options "")(descr ""))
+  (lib (name "D_DO-35_SOD27_P7.62mm_Horizontal-JW")(type "KiCad")(uri "C:/Users/Josh/Dropbox/JOSHUA/Warner Consulting/Collet Autofeed/Warner-Consulting-Libraries/Diode Customized/Diode_THT.pretty/D_DO-35_SOD27_P7.62mm_Horizontal-JW.pretty")(options "")(descr ""))
 )
