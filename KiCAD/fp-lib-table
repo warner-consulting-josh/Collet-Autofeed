@@ -11,4 +11,5 @@
   (lib (name "xw4m-02d1-h1da")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/Omron/xw4m-02d1-h1da.pretty")(options "")(descr ""))
   (lib (name "PC12311NSZ1B")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/PC12311NSZ1B/PC12311NSZ1B.pretty")(options "")(descr ""))
   (lib (name "Diode_THT")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/Diode Customized/Diode_THT.pretty")(options "")(descr ""))
+  (lib (name "Warner Consulting Logo")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/Warner Consulting Logo/Logo.pretty")(options "")(descr ""))
 )
