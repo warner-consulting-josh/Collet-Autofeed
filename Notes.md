@@ -86,3 +86,18 @@ High Level Architecture
   - Might instead be just snap lock connectors for power and relay control 
 - Board for screen?
 - Need to make diagram (draw.io?)
+
+**KiCAD**
+- Silkscreen graphics
+  - Can export .dxf from solidworks in whatver orientation I like
+  - Used Photopea to create .png with stroke applied to lines and front face filled in
+    - Black and white image bigger than I would like the final graphic to be on the board
+  - Import .png into KiCAD image converter
+    - Check the front silkscreen option and the footprint option
+    - Scale to the size I want the graphic to be
+    - Create new folder in the library for the new footprint and a .pretty folder inside that
+    - Save the footprint in the .pretty folder
+  - Push update to submodule up to github
+  - Run submodule update command using gitbash
+  - Add the footprint to the project specific library list
+  - Add footprint onto PCB
