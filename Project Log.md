@@ -268,3 +268,8 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - Had to mess with library footprints and update the footprints on the pcb
 - Replaced remaining surface mount opto-isolator with through hole
 - Adjusted screen mount to used OTS standoffs
+
+**10/28?2024**
+- Figured out how to add custom silkscreen graphics
+- Added logo to silkscreen
+- Fixed issue with step file of LEDs disappearing
