@@ -590,7 +590,7 @@
       "netlist": "",
       "specctra_dsn": "",
       "step": "ColletAutoFeed_RelayBoard.step",
-      "vrml": ""
+      "vrml": "ColletAutoFeed_RelayBoard.wrl"
     },
     "page_layout_descr_file": ""
   },
