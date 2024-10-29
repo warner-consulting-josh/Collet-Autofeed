@@ -273,3 +273,10 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - Figured out how to add custom silkscreen graphics
 - Added logo to silkscreen
 - Fixed issue with step file of LEDs disappearing
+
+**10/29/2024**
+- Added zones and zone labels to silkscreen
+- Added "Addressable Coolant Controller v1.0.0" to silkscreen
+- Added company name, my name and date to silkscreen
+- Need to make connector board and model screen into assembly
+- Need to review finalized board before sending for manufacturing
