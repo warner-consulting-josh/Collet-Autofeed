@@ -280,3 +280,11 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - Added company name, my name and date to silkscreen
 - Need to make connector board and model screen into assembly
 - Need to review finalized board before sending for manufacturing
+
+**10/30/2024**
+- Changed name of KiCAD project to Addressable Coolant Controller
+- Moved KiCAD files into subdirectory named per previous
+- Looked into multi-board project workflow in KiCAD
+  - is not natively supported, but the plugin KiKit can do it
+  - installed KiKit and will try doing a multiboard project
+  - want to have main board and connector board with shared pinout for connector between them
