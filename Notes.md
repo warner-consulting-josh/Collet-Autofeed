@@ -106,4 +106,4 @@ High Level Architecture
   - Need top level schematic with connectors in it
   - Sub-schematics (heirarchical sheets?) for each board
   - no global labels for power or anything else, just local labels
-  - [guide]https://yaqwsx.github.io/KiKit/v1.4/multiboard/#multi-board-workflow-with-kikit
+  - [guide](https://yaqwsx.github.io/KiKit/v1.4/multiboard/#multi-board-workflow-with-kikit)
