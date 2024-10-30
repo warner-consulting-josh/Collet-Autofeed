@@ -101,3 +101,9 @@ High Level Architecture
   - Run submodule update command using gitbash
   - Add the footprint to the project specific library list
   - Add footprint onto PCB
+- Multi-Board
+  - not natively supported, but looks like KiKit can do it
+  - Need top level schematic with connectors in it
+  - Sub-schematics (heirarchical sheets?) for each board
+  - no global labels for power or anything else, just local labels
+  - [guide]https://yaqwsx.github.io/KiKit/v1.4/multiboard/#multi-board-workflow-with-kikit
