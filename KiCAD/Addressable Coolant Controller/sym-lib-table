@@ -1,0 +1,12 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ProS3")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/ProS3/ProS3.kicad_sym")(options "")(descr ""))
+  (lib (name "Vertical Header - Locking")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/Vertical Header - Locking/1761685-6.kicad_sym")(options "")(descr ""))
+  (lib (name "Molex 206832-0202")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/Molex/2068320202.kicad_sym")(options "")(descr ""))
+  (lib (name "CreeLED Blue")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/CreeLED/Blue LED/C503B_BCN_CV0Z0461.kicad_sym")(options "")(descr ""))
+  (lib (name "CreeLED Green")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/CreeLED/Green LED/C503B_GCN_CY0C0792.kicad_sym")(options "")(descr ""))
+  (lib (name "PC365NJ0000F")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/PC365NJ0000F/PC365NJ0000F.kicad_sym")(options "")(descr ""))
+  (lib (name "xw4m-10d2-h1ds")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/Omron/xw4m-10d2-h1ds.kicad_sym")(options "")(descr ""))
+  (lib (name "xw4m-02d1-h1da")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/Omron/xw4m-02d1-h1da.kicad_sym")(options "")(descr ""))
+  (lib (name "PC12311NSZ1B")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/PC12311NSZ1B/PC12311NSZ1B.kicad_sym")(options "")(descr ""))
+)
