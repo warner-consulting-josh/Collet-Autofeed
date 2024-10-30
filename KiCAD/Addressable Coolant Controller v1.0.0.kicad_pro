@@ -407,7 +407,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "ColletAutoFeed_RelayBoard.kicad_pro",
+    "filename": "Addressable Coolant Controller v1.0.0.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -589,8 +589,8 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "ColletAutoFeed_RelayBoard.step",
-      "vrml": "ColletAutoFeed_RelayBoard.wrl"
+      "step": "Addressable Coolant Controller v1.0.0.step",
+      "vrml": "Addressable Coolant Controller v1.0.0.wrl"
     },
     "page_layout_descr_file": ""
   },

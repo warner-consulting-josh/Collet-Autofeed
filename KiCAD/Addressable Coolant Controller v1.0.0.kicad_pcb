@@ -1994,7 +1994,7 @@
 
   (footprint "Warner Consulting Logo:Warner Consulting Logo" (layer "F.Cu")
     (tstamp 7391203d-7ce3-4452-b6d7-510929b8b4c5)
-    (at 98.933 133.096)
+    (at 95.885 133.731)
     (attr board_only exclude_from_pos_files exclude_from_bom)
     (fp_text reference "G***" (at 0 0) (layer "F.SilkS")
         (effects (font (size 1.5 1.5) (thickness 0.3)))
@@ -7147,7 +7147,7 @@
   (gr_text "Sol 1 " (at 43.52114 99.441 90) (layer "F.SilkS") (tstamp 1bf6372c-36c8-4f79-be0c-aef3afa42944)
     (effects (font (size 2 2) (thickness 0.25)) (justify right))
   )
-  (gr_text "Addressable Coolant Controller V1.0.0\nWarner Consulting Inc.\nJosh Warner\n10/29/2024" (at 70.612 166.116) (layer "F.SilkS") (tstamp 2b933dfe-e571-48ae-b8ca-cdeea1ba5895)
+  (gr_text "Addressable Coolant Controller v1.0.0\nWarner Consulting Inc.\nJosh Warner\n10/29/2024" (at 70.612 166.116) (layer "F.SilkS") (tstamp 2b933dfe-e571-48ae-b8ca-cdeea1ba5895)
     (effects (font (size 1.5 1.5) (thickness 0.15)) (justify left bottom))
   )
   (gr_text "Sol 7 " (at 128.71214 99.441 90) (layer "F.SilkS") (tstamp 47b725a6-54e4-4aad-ad29-7792ac72b836)
