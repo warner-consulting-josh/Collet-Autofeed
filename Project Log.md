@@ -288,3 +288,10 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - is not natively supported, but the plugin KiKit can do it
   - installed KiKit and will try doing a multiboard project
   - want to have main board and connector board with shared pinout for connector between them
+ 
+**10/31/2024**
+- Created Multi-Board Test project to figure out the multiple board in one project workflow
+- Made top level schematic with inter-board connector and heirarchical labels to pass pins down into each board sheet
+- Made one PCBnew file with both boards in it
+- Need to figure out annotation for board separation
+  - Something about "virtual footprints"
