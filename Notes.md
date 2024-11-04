@@ -109,3 +109,10 @@ High Level Architecture
   - [guide](https://yaqwsx.github.io/KiKit/v1.4/multiboard/#multi-board-workflow-with-kikit)
   - Board annotation for separation uses "virtual footprint"
     - Not sure if I can just copy and paste from the example document, but will try it
+    - Had to install KiKit libraries
+      - kikit:board is a footprint in the library
+    - Place a copy of kikit:board for each board outline
+    - Rename the ref** text to the name of the board
+      - **No spaces in the name**
+    - Need to make sure arrow point on kikit:board is exactly touching one of the lines in the edge cut for the board
+      - `kikit separate --source "annotation; ref: *board_name*" *source_multi-PCB*.kicad_pcb *destination_single-PCB*.kicad_pcb`
