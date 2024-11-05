@@ -103,16 +103,18 @@ High Level Architecture
   - Add footprint onto PCB
 - Multi-Board
   - not natively supported, but looks like KiKit can do it
-  - Need top level schematic with connectors in it
-  - Sub-schematics (heirarchical sheets?) for each board
+    - install [kikit](https://yaqwsx.github.io/KiKit/v1.4/installation/intro/) using the manager inside KiCAD
+    - then install [backend](https://yaqwsx.github.io/KiKit/v1.4/installation/windows/#installation-on-windows) using KiCAD Command line: `pip install kikit`
+    - finally, install the [libraries](https://yaqwsx.github.io/KiKit/v1.4/installation/gui_and_libs/)
+  - Set up the KiCAD project with a top-level schematic that has sub-schematics in it which each represent a board
+    - The top level schematic will have the board to board connections 
   - no global labels for power or anything else, just local labels
   - [guide](https://yaqwsx.github.io/KiKit/v1.4/multiboard/#multi-board-workflow-with-kikit)
   - Board annotation for separation uses "virtual footprint"
-    - Not sure if I can just copy and paste from the example document, but will try it
-    - Had to install KiKit libraries
-      - kikit:board is a footprint in the library
+    - kikit:board is a footprint in the library
     - Place a copy of kikit:board for each board outline
     - Rename the ref** text to the name of the board
-      - **No spaces in the name**
+      - **No spaces in the name** it will screw with the command for separating the boards
     - Need to make sure arrow point on kikit:board is exactly touching one of the lines in the edge cut for the board
-      - `kikit separate --source "annotation; ref: *board_name*" *source_multi-PCB*.kicad_pcb *destination_single-PCB*.kicad_pcb`
+      - use the coordinate properties from the board outline and paste them into the arrow properties
+    - `kikit separate --source "annotation; ref: *board_name*" *source_multi-PCB*.kicad_pcb *destination_single-PCB*.kicad_pcb`
