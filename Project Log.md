@@ -295,3 +295,15 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - Made one PCBnew file with both boards in it
 - Need to figure out annotation for board separation
   - Something about "virtual footprints"
+
+**11/04/2024**
+- Got multi-board workflow functioning on a test project
+- Added instructions to notes.md on how to implement this workflow
+- Dad asked to add pressure sensor to system to detect coolant flow
+
+**11/05/2024**
+- Ordered pressure sensor from amazon
+  - 0.5v-4.5v output, 5v input, 100psi max
+  - 3 wires: VCC, GND, Output
+  - will need a voltage divider to step down to 3.3v for ProS3
+  - will need to implemnet code to read signal input
