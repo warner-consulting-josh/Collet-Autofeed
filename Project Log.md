@@ -307,3 +307,14 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - 3 wires: VCC, GND, Output
   - will need a voltage divider to step down to 3.3v for ProS3
   - will need to implemnet code to read signal input
+ 
+**11/07/2024**
+- designed voltage divider low pass filter circuit
+  - chose 10Hz as cutoff freq
+  - resistor and capacitor values in Parsify file
+- looked at 12 pin connectors for accomodating the pressure sensor on the connector board
+  - omron internal connectors come in 12 pin variant -> easy change
+  - found 12 pin circular connector from Amphenol
+    - need to evaluate the size impact on connector board enlcosure
+    - components to make a cable are ~$175
+    - premade cables are out of stock but only ~$30 -> 4 week lead time from mouser
