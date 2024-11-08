@@ -318,3 +318,21 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
     - need to evaluate the size impact on connector board enlcosure
     - components to make a cable are ~$175
     - premade cables are out of stock but only ~$30 -> 4 week lead time from mouser
+
+**11/08/2024**
+- found 4 pin connector for pressure sensor
+  - same family as 2 pin connectors for solenoid connections
+- added 9th hole in connector enclosure for pressure sensor connector
+- added 12 pin connector to connector board assembly
+  - need to adjust sketch to match dimensions of new connector
+- added 12 pin board connector and adjusted sketch to match
+  - needed to modify 10 pin connector because SnapEDA kept downloading the wrong one for the 12 pin
+  - will need to add to the library repo
+  - will need to double check footprint
+- ordered 12 pin connector, 12 pin board connector, 12 pin board connector mate, short 12 pin cable, 4 pin connector, 4 pin cable
+- ordered long 12 pin cable from mouser on backorder, 4 week lead time
+- main lathe assemlby is broken and will not open on my computer, will need to remake
+- discussed overall assembly of tooling block, solenoid block, and connector board assembly on big plate
+  - want to be a complete unit
+  - need to make it easier to put on and off the lathe
+  - want to reduce swarf build up in lower corner
