@@ -1018,9 +1018,9 @@
 
   (footprint "PCM_kikit:Board" (layer "F.Cu")
     (tstamp 9aa04dd6-9f59-4f6e-9269-86d220e233c2)
-    (at 39.878 34.163)
+    (at 36.322 34.163)
     (descr "Mark board for extraction")
-    (attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+    (attr through_hole)
     (fp_text reference "B1" (at -4.5 -5) (layer "Dwgs.User")
         (effects (font (size 1 1) (thickness 0.15)) (justify left))
       (tstamp 8b3d568c-6a4a-4b0d-b627-fab4b4c60231)
@@ -1289,7 +1289,7 @@
 
   (gr_rect (start 155.321 34.9885) (end 225.298 128.397)
     (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") (tstamp 812f0a85-5bac-4208-aee6-49e2e9520e26))
-  (gr_rect (start 36.068 34.29) (end 111.125 130.175)
+  (gr_rect (start 36.068 34.163) (end 111.125 130.175)
     (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") (tstamp b4da7718-d598-4ee8-8b01-70e9628d3145))
 
   (segment (start 160.75 46.721998) (end 160.75 86.239) (width 0.25) (layer "F.Cu") (net 1) (tstamp 77c227bc-cb10-4dfa-af1e-f543cbf33a73))

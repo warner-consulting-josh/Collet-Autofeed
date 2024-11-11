@@ -1,0 +1,1 @@
+kikit separate --source "annotation; ref: B1" multiboard.kicad_pcb board_a.kicad_pcb
