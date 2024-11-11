@@ -1257,30 +1257,30 @@
     (pin "6" (uuid 85b55d8d-83ab-4c93-906d-602e1dbf3129))
     (pin "5" (uuid ee656ae3-6d18-4dcf-8b00-3fa1853a63cf))
     (instances
-      (project "ColletAutoFeed_RelayBoard"
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/f85cc271-3b11-4af6-88e7-0089384d0a70"
+      (project "Addressable Coolant Controller"
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/e62a760e-c259-4531-98bc-86b90a2bedbf"
           (reference "K1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1b4c4683-ae7a-43db-9c55-2e017b2b64f6"
-          (reference "K2") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/67f15ca6-662b-4b8a-b540-a2e48d49f414"
+          (reference "K1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c99ad83c-1e55-4897-95dc-696fc040ab27"
-          (reference "K3") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/ed455ca9-960e-4436-b117-323138e12946"
+          (reference "K1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/bf76bbb3-62c3-43bd-a097-b9f452e57b35"
-          (reference "K4") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/30b02bb2-f8cb-4680-8b4d-b295fc1d5eb5"
+          (reference "K1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c4c73976-bc86-4ae3-8f28-ea5e6a098449"
-          (reference "K5") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94e5bb90-2559-4272-9ede-e05d2b13ade3"
+          (reference "K1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1e7f4279-2019-4687-9b9a-14c5bef026a1"
-          (reference "K6") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94790e5e-8f24-4c34-8306-22332d8b1ca9"
+          (reference "K1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/e9594ab2-eb4a-412d-b212-c8b9b51a6168"
-          (reference "K7") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/74392b1e-46e8-4b44-bc27-ba912a8cb60e"
+          (reference "K1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/b14b409f-5174-4f0c-b56e-0f620ad960f8"
-          (reference "K8") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/a5b6bf10-8ef8-4d7b-b15a-e29c9cdfd37d"
+          (reference "K1") (unit 1)
         )
       )
     )
@@ -1304,30 +1304,30 @@
     (pin "2" (uuid 0ea8105f-821e-4f78-9521-0ada933997df))
     (pin "1" (uuid 3d7afc04-fd8b-4766-81e6-e425c1dc8007))
     (instances
-      (project "ColletAutoFeed_RelayBoard"
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/f85cc271-3b11-4af6-88e7-0089384d0a70"
+      (project "Addressable Coolant Controller"
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/e62a760e-c259-4531-98bc-86b90a2bedbf"
           (reference "R2") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1b4c4683-ae7a-43db-9c55-2e017b2b64f6"
-          (reference "R4") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/67f15ca6-662b-4b8a-b540-a2e48d49f414"
+          (reference "R2") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/bf76bbb3-62c3-43bd-a097-b9f452e57b35"
-          (reference "R8") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/ed455ca9-960e-4436-b117-323138e12946"
+          (reference "R2") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1e7f4279-2019-4687-9b9a-14c5bef026a1"
-          (reference "R12") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/30b02bb2-f8cb-4680-8b4d-b295fc1d5eb5"
+          (reference "R2") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/b14b409f-5174-4f0c-b56e-0f620ad960f8"
-          (reference "R16") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94e5bb90-2559-4272-9ede-e05d2b13ade3"
+          (reference "R2") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c99ad83c-1e55-4897-95dc-696fc040ab27"
-          (reference "R6") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94790e5e-8f24-4c34-8306-22332d8b1ca9"
+          (reference "R2") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c4c73976-bc86-4ae3-8f28-ea5e6a098449"
-          (reference "R10") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/74392b1e-46e8-4b44-bc27-ba912a8cb60e"
+          (reference "R2") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/e9594ab2-eb4a-412d-b212-c8b9b51a6168"
-          (reference "R14") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/a5b6bf10-8ef8-4d7b-b15a-e29c9cdfd37d"
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -1368,30 +1368,30 @@
     (pin "3" (uuid 0028b649-f163-42ed-bdc9-784a2ae23a3d))
     (pin "4" (uuid e84b89f6-81f7-4b8b-aa2f-d97499c3d13c))
     (instances
-      (project "ColletAutoFeed_RelayBoard"
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/f85cc271-3b11-4af6-88e7-0089384d0a70"
+      (project "Addressable Coolant Controller"
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/e62a760e-c259-4531-98bc-86b90a2bedbf"
           (reference "U2") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1b4c4683-ae7a-43db-9c55-2e017b2b64f6"
-          (reference "U3") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/67f15ca6-662b-4b8a-b540-a2e48d49f414"
+          (reference "U2") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c99ad83c-1e55-4897-95dc-696fc040ab27"
-          (reference "U4") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/ed455ca9-960e-4436-b117-323138e12946"
+          (reference "U2") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/bf76bbb3-62c3-43bd-a097-b9f452e57b35"
-          (reference "U5") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/30b02bb2-f8cb-4680-8b4d-b295fc1d5eb5"
+          (reference "U2") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c4c73976-bc86-4ae3-8f28-ea5e6a098449"
-          (reference "U6") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94e5bb90-2559-4272-9ede-e05d2b13ade3"
+          (reference "U2") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1e7f4279-2019-4687-9b9a-14c5bef026a1"
-          (reference "U7") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94790e5e-8f24-4c34-8306-22332d8b1ca9"
+          (reference "U2") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/e9594ab2-eb4a-412d-b212-c8b9b51a6168"
-          (reference "U8") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/74392b1e-46e8-4b44-bc27-ba912a8cb60e"
+          (reference "U2") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/b14b409f-5174-4f0c-b56e-0f620ad960f8"
-          (reference "U9") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/a5b6bf10-8ef8-4d7b-b15a-e29c9cdfd37d"
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -1415,30 +1415,30 @@
     (pin "2" (uuid ecb0d092-44be-425d-bf0a-364d776efdd3))
     (pin "1" (uuid dc363689-184c-446f-ba6b-ff1b5023dbd0))
     (instances
-      (project "ColletAutoFeed_RelayBoard"
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/f85cc271-3b11-4af6-88e7-0089384d0a70"
+      (project "Addressable Coolant Controller"
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/e62a760e-c259-4531-98bc-86b90a2bedbf"
           (reference "R1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1b4c4683-ae7a-43db-9c55-2e017b2b64f6"
-          (reference "R3") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/67f15ca6-662b-4b8a-b540-a2e48d49f414"
+          (reference "R1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/bf76bbb3-62c3-43bd-a097-b9f452e57b35"
-          (reference "R7") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/ed455ca9-960e-4436-b117-323138e12946"
+          (reference "R1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1e7f4279-2019-4687-9b9a-14c5bef026a1"
-          (reference "R11") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/30b02bb2-f8cb-4680-8b4d-b295fc1d5eb5"
+          (reference "R1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/b14b409f-5174-4f0c-b56e-0f620ad960f8"
-          (reference "R15") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94e5bb90-2559-4272-9ede-e05d2b13ade3"
+          (reference "R1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c99ad83c-1e55-4897-95dc-696fc040ab27"
-          (reference "R5") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94790e5e-8f24-4c34-8306-22332d8b1ca9"
+          (reference "R1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c4c73976-bc86-4ae3-8f28-ea5e6a098449"
-          (reference "R9") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/74392b1e-46e8-4b44-bc27-ba912a8cb60e"
+          (reference "R1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/e9594ab2-eb4a-412d-b212-c8b9b51a6168"
-          (reference "R13") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/a5b6bf10-8ef8-4d7b-b15a-e29c9cdfd37d"
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -1462,30 +1462,30 @@
     (pin "2" (uuid f216b729-8f07-4799-aac0-c9268cc718a3))
     (pin "1" (uuid d4a60871-6a50-4f64-817c-a95c72c7c5b0))
     (instances
-      (project "ColletAutoFeed_RelayBoard"
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/f85cc271-3b11-4af6-88e7-0089384d0a70"
+      (project "Addressable Coolant Controller"
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/e62a760e-c259-4531-98bc-86b90a2bedbf"
           (reference "LED1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1b4c4683-ae7a-43db-9c55-2e017b2b64f6"
-          (reference "LED2") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/67f15ca6-662b-4b8a-b540-a2e48d49f414"
+          (reference "LED1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c99ad83c-1e55-4897-95dc-696fc040ab27"
-          (reference "LED3") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/ed455ca9-960e-4436-b117-323138e12946"
+          (reference "LED1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/bf76bbb3-62c3-43bd-a097-b9f452e57b35"
-          (reference "LED4") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/30b02bb2-f8cb-4680-8b4d-b295fc1d5eb5"
+          (reference "LED1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c4c73976-bc86-4ae3-8f28-ea5e6a098449"
-          (reference "LED5") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94e5bb90-2559-4272-9ede-e05d2b13ade3"
+          (reference "LED1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1e7f4279-2019-4687-9b9a-14c5bef026a1"
-          (reference "LED6") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94790e5e-8f24-4c34-8306-22332d8b1ca9"
+          (reference "LED1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/e9594ab2-eb4a-412d-b212-c8b9b51a6168"
-          (reference "LED7") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/74392b1e-46e8-4b44-bc27-ba912a8cb60e"
+          (reference "LED1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/b14b409f-5174-4f0c-b56e-0f620ad960f8"
-          (reference "LED8") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/a5b6bf10-8ef8-4d7b-b15a-e29c9cdfd37d"
+          (reference "LED1") (unit 1)
         )
       )
     )
@@ -1515,30 +1515,30 @@
     (pin "2" (uuid 99da200d-5545-402a-ae4b-469258d846e8))
     (pin "1" (uuid 9ed03098-7e3f-40b3-a3fe-d8363a801ab9))
     (instances
-      (project "ColletAutoFeed_RelayBoard"
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/f85cc271-3b11-4af6-88e7-0089384d0a70"
+      (project "Addressable Coolant Controller"
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/e62a760e-c259-4531-98bc-86b90a2bedbf"
           (reference "D1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1b4c4683-ae7a-43db-9c55-2e017b2b64f6"
-          (reference "D2") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/67f15ca6-662b-4b8a-b540-a2e48d49f414"
+          (reference "D1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/bf76bbb3-62c3-43bd-a097-b9f452e57b35"
-          (reference "D4") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/ed455ca9-960e-4436-b117-323138e12946"
+          (reference "D1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1e7f4279-2019-4687-9b9a-14c5bef026a1"
-          (reference "D6") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/30b02bb2-f8cb-4680-8b4d-b295fc1d5eb5"
+          (reference "D1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/b14b409f-5174-4f0c-b56e-0f620ad960f8"
-          (reference "D8") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94e5bb90-2559-4272-9ede-e05d2b13ade3"
+          (reference "D1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c99ad83c-1e55-4897-95dc-696fc040ab27"
-          (reference "D3") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94790e5e-8f24-4c34-8306-22332d8b1ca9"
+          (reference "D1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c4c73976-bc86-4ae3-8f28-ea5e6a098449"
-          (reference "D5") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/74392b1e-46e8-4b44-bc27-ba912a8cb60e"
+          (reference "D1") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/e9594ab2-eb4a-412d-b212-c8b9b51a6168"
-          (reference "D7") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/a5b6bf10-8ef8-4d7b-b15a-e29c9cdfd37d"
+          (reference "D1") (unit 1)
         )
       )
     )
@@ -1561,30 +1561,30 @@
     )
     (pin "1" (uuid 71e4c851-b55d-47db-a395-673c4c4a57b8))
     (instances
-      (project "ColletAutoFeed_RelayBoard"
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/f85cc271-3b11-4af6-88e7-0089384d0a70"
+      (project "Addressable Coolant Controller"
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/e62a760e-c259-4531-98bc-86b90a2bedbf"
           (reference "#PWR04") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1b4c4683-ae7a-43db-9c55-2e017b2b64f6"
-          (reference "#PWR06") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/67f15ca6-662b-4b8a-b540-a2e48d49f414"
+          (reference "#PWR04") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c99ad83c-1e55-4897-95dc-696fc040ab27"
-          (reference "#PWR08") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/ed455ca9-960e-4436-b117-323138e12946"
+          (reference "#PWR04") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/bf76bbb3-62c3-43bd-a097-b9f452e57b35"
-          (reference "#PWR010") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/30b02bb2-f8cb-4680-8b4d-b295fc1d5eb5"
+          (reference "#PWR04") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c4c73976-bc86-4ae3-8f28-ea5e6a098449"
-          (reference "#PWR012") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94e5bb90-2559-4272-9ede-e05d2b13ade3"
+          (reference "#PWR04") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1e7f4279-2019-4687-9b9a-14c5bef026a1"
-          (reference "#PWR014") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94790e5e-8f24-4c34-8306-22332d8b1ca9"
+          (reference "#PWR04") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/e9594ab2-eb4a-412d-b212-c8b9b51a6168"
-          (reference "#PWR016") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/74392b1e-46e8-4b44-bc27-ba912a8cb60e"
+          (reference "#PWR04") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/b14b409f-5174-4f0c-b56e-0f620ad960f8"
-          (reference "#PWR018") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/a5b6bf10-8ef8-4d7b-b15a-e29c9cdfd37d"
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -1607,30 +1607,30 @@
     )
     (pin "1" (uuid 535be077-16af-4f7d-be5c-5af2ca82b55a))
     (instances
-      (project "ColletAutoFeed_RelayBoard"
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/f85cc271-3b11-4af6-88e7-0089384d0a70"
+      (project "Addressable Coolant Controller"
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/e62a760e-c259-4531-98bc-86b90a2bedbf"
           (reference "#PWR03") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1b4c4683-ae7a-43db-9c55-2e017b2b64f6"
-          (reference "#PWR05") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/67f15ca6-662b-4b8a-b540-a2e48d49f414"
+          (reference "#PWR03") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c99ad83c-1e55-4897-95dc-696fc040ab27"
-          (reference "#PWR07") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/ed455ca9-960e-4436-b117-323138e12946"
+          (reference "#PWR03") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/bf76bbb3-62c3-43bd-a097-b9f452e57b35"
-          (reference "#PWR09") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/30b02bb2-f8cb-4680-8b4d-b295fc1d5eb5"
+          (reference "#PWR03") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/c4c73976-bc86-4ae3-8f28-ea5e6a098449"
-          (reference "#PWR011") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94e5bb90-2559-4272-9ede-e05d2b13ade3"
+          (reference "#PWR03") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/1e7f4279-2019-4687-9b9a-14c5bef026a1"
-          (reference "#PWR013") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94790e5e-8f24-4c34-8306-22332d8b1ca9"
+          (reference "#PWR03") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/e9594ab2-eb4a-412d-b212-c8b9b51a6168"
-          (reference "#PWR015") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/74392b1e-46e8-4b44-bc27-ba912a8cb60e"
+          (reference "#PWR03") (unit 1)
         )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/b14b409f-5174-4f0c-b56e-0f620ad960f8"
-          (reference "#PWR017") (unit 1)
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/a5b6bf10-8ef8-4d7b-b15a-e29c9cdfd37d"
+          (reference "#PWR03") (unit 1)
         )
       )
     )
