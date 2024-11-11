@@ -1,0 +1,3 @@
+[submodule "KiCAD/Addressable_Coolant_Controller/Warner-Consulting-Libraries"]
+	path = KiCAD/Addressable_Coolant_Controller/Warner-Consulting-Libraries
+	url = https://github.com/warner-consulting-josh/Warner-Consulting-Libraries
