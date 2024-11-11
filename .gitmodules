@@ -1,5 +1,5 @@
 
 [submodule "KiCAD/Warner-Consulting-Libraries"]
-	path = KiCAD/Addressable Coolant Controller/Warner-Consulting-Libraries/Warner-Consulting-Libraries
+	path = KiCAD/Addressable_Coolant_Controller/Warner-Consulting-Libraries/Warner-Consulting-Libraries
 	url = https://github.com/warner-consulting-josh/Warner-Consulting-Libraries.git
 	ignore = dirty
