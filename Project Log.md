@@ -288,3 +288,51 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - is not natively supported, but the plugin KiKit can do it
   - installed KiKit and will try doing a multiboard project
   - want to have main board and connector board with shared pinout for connector between them
+ 
+**10/31/2024**
+- Created Multi-Board Test project to figure out the multiple board in one project workflow
+- Made top level schematic with inter-board connector and heirarchical labels to pass pins down into each board sheet
+- Made one PCBnew file with both boards in it
+- Need to figure out annotation for board separation
+  - Something about "virtual footprints"
+
+**11/04/2024**
+- Got multi-board workflow functioning on a test project
+- Added instructions to notes.md on how to implement this workflow
+- Dad asked to add pressure sensor to system to detect coolant flow
+
+**11/05/2024**
+- Ordered pressure sensor from amazon
+  - 0.5v-4.5v output, 5v input, 100psi max
+  - 3 wires: VCC, GND, Output
+  - will need a voltage divider to step down to 3.3v for ProS3
+  - will need to implemnet code to read signal input
+ 
+**11/07/2024**
+- designed voltage divider low pass filter circuit
+  - chose 10Hz as cutoff freq
+  - resistor and capacitor values in Parsify file
+- looked at 12 pin connectors for accomodating the pressure sensor on the connector board
+  - omron internal connectors come in 12 pin variant -> easy change
+  - found 12 pin circular connector from Amphenol
+    - need to evaluate the size impact on connector board enlcosure
+    - components to make a cable are ~$175
+    - premade cables are out of stock but only ~$30 -> 4 week lead time from mouser
+
+**11/08/2024**
+- found 4 pin connector for pressure sensor
+  - same family as 2 pin connectors for solenoid connections
+- added 9th hole in connector enclosure for pressure sensor connector
+- added 12 pin connector to connector board assembly
+  - need to adjust sketch to match dimensions of new connector
+- added 12 pin board connector and adjusted sketch to match
+  - needed to modify 10 pin connector because SnapEDA kept downloading the wrong one for the 12 pin
+  - will need to add to the library repo
+  - will need to double check footprint
+- ordered 12 pin connector, 12 pin board connector, 12 pin board connector mate, short 12 pin cable, 4 pin connector, 4 pin cable
+- ordered long 12 pin cable from mouser on backorder, 4 week lead time
+- main lathe assemlby is broken and will not open on my computer, will need to remake
+- discussed overall assembly of tooling block, solenoid block, and connector board assembly on big plate
+  - want to be a complete unit
+  - need to make it easier to put on and off the lathe
+  - want to reduce swarf build up in lower corner
