@@ -957,7 +957,7 @@
     )
     (pin "1" (uuid 7a467527-6688-4f30-b1c0-0a028801f93a))
     (instances
-      (project "Addressable Coolant Controller"
+      (project "Addressable_Coolant_Controller"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/5975585f-6378-4874-929c-f4a5e89e51e7"
           (reference "#PWR019") (unit 1)
         )
@@ -1000,7 +1000,7 @@
     (pin "3" (uuid e8241cf5-bfe0-47da-a26d-1f287c14aeb1))
     (pin "4" (uuid 9757517d-6116-45df-b173-debc3d1e3caf))
     (instances
-      (project "Addressable Coolant Controller"
+      (project "Addressable_Coolant_Controller"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/5975585f-6378-4874-929c-f4a5e89e51e7"
           (reference "U10") (unit 1)
         )
@@ -1026,7 +1026,7 @@
     (pin "2" (uuid 1b7aa8f1-3bcf-49f4-a460-81b881594d1d))
     (pin "1" (uuid 2a5bd945-db12-4785-9fcf-ad83408279d8))
     (instances
-      (project "Addressable Coolant Controller"
+      (project "Addressable_Coolant_Controller"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/5975585f-6378-4874-929c-f4a5e89e51e7"
           (reference "R17") (unit 1)
         )
@@ -1052,7 +1052,7 @@
     (pin "1" (uuid 15ae9005-13d5-494c-896e-0cf5139acd30))
     (pin "2" (uuid d4f09542-467d-4f0a-89d8-715bcfa44494))
     (instances
-      (project "Addressable Coolant Controller"
+      (project "Addressable_Coolant_Controller"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/5975585f-6378-4874-929c-f4a5e89e51e7"
           (reference "LED9") (unit 1)
         )
@@ -1078,7 +1078,7 @@
     (pin "2" (uuid 18502fa7-bf7c-4f99-a1c0-952c96a5d778))
     (pin "1" (uuid f61f6a87-656f-49c8-a6f4-911a00d33588))
     (instances
-      (project "Addressable Coolant Controller"
+      (project "Addressable_Coolant_Controller"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/5975585f-6378-4874-929c-f4a5e89e51e7"
           (reference "R18") (unit 1)
         )
@@ -1103,7 +1103,7 @@
     )
     (pin "1" (uuid 4299342d-ac03-4156-8d36-d6a98a7aac65))
     (instances
-      (project "Addressable Coolant Controller"
+      (project "Addressable_Coolant_Controller"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/5975585f-6378-4874-929c-f4a5e89e51e7"
           (reference "#PWR020") (unit 1)
         )
