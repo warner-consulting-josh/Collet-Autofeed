@@ -359,3 +359,8 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
     - this means I can use 3.3v to power it and won't need a voltage divider for the GPIO
 - want to use a 30psi sensor instead
   - ordered one on amazon in same form factor
+- fixed the broken netclasses in the schematic
+- removed the voltage divider circuit and heirarchical sheet
+- added some info to the title block of the sheet
+  - need a version of the logo with no color in the background
+  - could also make it a blue logo
