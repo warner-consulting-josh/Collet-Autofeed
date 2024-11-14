@@ -498,44 +498,44 @@
     },
     "netclass_patterns": [
       {
-        "netclass": "signal",
-        "pattern": "/MCU 3.3v"
+        "netclass": "power",
+        "pattern": "/Main_Board/MCU 3.3v"
       },
       {
         "netclass": "signal",
-        "pattern": "/IO12"
+        "pattern": "/Main_Board/IO12"
       },
       {
         "netclass": "signal",
-        "pattern": "/IO16"
+        "pattern": "/Main_Board/IO16"
       },
       {
         "netclass": "signal",
-        "pattern": "/IO0"
+        "pattern": "/Main_Board/IO0"
       },
       {
         "netclass": "signal",
-        "pattern": "/IO21"
+        "pattern": "/Main_Board/IO21"
       },
       {
         "netclass": "signal",
-        "pattern": "/IO5"
+        "pattern": "/Main_Board/IO5"
       },
       {
         "netclass": "signal",
-        "pattern": "/IO4"
+        "pattern": "/Main_Board/IO4"
       },
       {
         "netclass": "signal",
-        "pattern": "/IO3"
+        "pattern": "/Main_Board/IO3"
       },
       {
         "netclass": "signal",
-        "pattern": "/IO2"
+        "pattern": "/Main_Board/IO2"
       },
       {
         "netclass": "signal",
-        "pattern": "/IO1"
+        "pattern": "/Main_Board/IO1"
       },
       {
         "netclass": "power",
@@ -543,31 +543,31 @@
       },
       {
         "netclass": "power",
-        "pattern": "/S8"
+        "pattern": "/Main_Board/S8"
       },
       {
         "netclass": "power",
-        "pattern": "/S7"
+        "pattern": "/Main_Board/S7"
       },
       {
         "netclass": "power",
-        "pattern": "/S6"
+        "pattern": "/Main_Board/S6"
       },
       {
         "netclass": "power",
-        "pattern": "/S5"
+        "pattern": "/Main_Board/S5"
       },
       {
         "netclass": "power",
-        "pattern": "/S4"
+        "pattern": "/Main_Board/S4"
       },
       {
         "netclass": "power",
-        "pattern": "/S1"
+        "pattern": "/Main_Board/S1"
       },
       {
         "netclass": "power",
-        "pattern": "/S2"
+        "pattern": "/Main_Board/S2"
       },
       {
         "netclass": "power",
@@ -579,7 +579,27 @@
       },
       {
         "netclass": "power",
-        "pattern": "/S3"
+        "pattern": "/Main_Board/S3"
+      },
+      {
+        "netclass": "power",
+        "pattern": "/Main_Board/S1"
+      },
+      {
+        "netclass": "power",
+        "pattern": "/Main_Board/S2"
+      },
+      {
+        "netclass": "signal",
+        "pattern": "/Main_Board/IO13"
+      },
+      {
+        "netclass": "power",
+        "pattern": "/Main_Board/MCU 3.3v"
+      },
+      {
+        "netclass": "power",
+        "pattern": "/Main_Board/MCU GND"
       }
     ]
   },
@@ -676,10 +696,6 @@
     [
       "14ec54fb-c257-462b-8196-d9734c43cc81",
       "Connector_Board"
-    ],
-    [
-      "3336f71b-3330-4751-8f74-92dd685c2712",
-      "Voltage Divider Circuit"
     ]
   ],
   "text_variables": {}
