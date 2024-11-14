@@ -351,3 +351,11 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - will need to double check component values for voltage divider and order them
 - will need to export board outline from solidworks with placements for the connectors
   - will need to figure out how to line up connector footprints with specified locations on board outline
+
+**11/14/2024**
+- measured pressure response of 100psi pressure sensor
+  - very linear, made an excel sheet to visualize data
+  - output is ratiometric to input voltage
+    - this means I can use 3.3v to power it and won't need a voltage divider for the GPIO
+- want to use a 30psi sensor instead
+  - ordered one on amazon in same form factor
