@@ -336,3 +336,18 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - want to be a complete unit
   - need to make it easier to put on and off the lathe
   - want to reduce swarf build up in lower corner
+
+**11/13/2024**
+- got footprint and symbol customization workflow ironed out
+  - have global libraries of symbol and footprint
+    - tied directly to the Warner-Consulting-Libraries repo
+    - changes here update the repository
+  - after updating the repository files, update the submodule and the changes will be reflected
+- put 12 pin connector into top level schematic
+- added voltage divider circuit into sub sheet and add heirachical label sheet pins to pass the nets in and out
+- assigned IO13 to reading the output from the pressure sensor off the voltage divider
+- fed 5v out from the MCU to power the pressure sensor
+  - pressure sensor is stated to draw ≤3mA, should be safe to power from MCU
+- will need to double check component values for voltage divider and order them
+- will need to export board outline from solidworks with placements for the connectors
+  - will need to figure out how to line up connector footprints with specified locations on board outline
