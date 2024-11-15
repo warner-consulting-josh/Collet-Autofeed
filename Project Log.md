@@ -364,3 +364,11 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - added some info to the title block of the sheet
   - need a version of the logo with no color in the background
   - could also make it a blue logo
+
+**11/15/2024**
+- ordered solder cup version of 12 pin connector
+- fixed 12 pin connector sketches in connector board skeleton
+- sized oring gland in connector board skeleton
+  - make sure that the connector board with all components is able to slide in from the top
+  - make sure oring gland is sized for off the shelf oring
+- need to make keying feature on 12 pin connector cutout
