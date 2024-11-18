@@ -372,3 +372,10 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - make sure that the connector board with all components is able to slide in from the top
   - make sure oring gland is sized for off the shelf oring
 - need to make keying feature on 12 pin connector cutout
+
+**11/18/2024**
+- made subassembly for entire tooling plate with block, solenoid manifold, and connector board
+- adjusted 12 pin connector cutout to have proper shape for keying
+- sized o-ring gland for both solenoid manifold and connector board housing
+- made simplified slant pro assembly
+  - need to adjust range of motion in assembly and finish making the moveable comonents
