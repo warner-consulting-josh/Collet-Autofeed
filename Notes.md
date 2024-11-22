@@ -36,18 +36,6 @@ Need to figure out how I got custom M-codes fucntioning in the past to prompt th
     - will check with latest release 2.10.1
 
 **Electronics**
-
-Need to design PCBA - Use [KiCAD](https://www.kicad.org/)
-- Submodule errors:
-  - If encountering this error message: `The following untracked working tree files would be overwritten by merge:`
-    - Go to the offending file in the submodule directory **inside** the main project direcotry and delete it
-    - **Never** add files to the submodule directory inside the main project directory, **always** add them to the submodule folder outside the project directory
-    - Specifically for this project:
-      - **Never** add here: `C:\Users\Josh\Dropbox\JOSHUA\Warner Consulting\Collet Autofeed\Github\Collet-Autofeed\KiCAD\Warner-Consulting-Libraries`
-      - **Always** add here: `C:\Users\Josh\Dropbox\JOSHUA\Warner Consulting\Collet Autofeed\Warner-Consulting-Libraries`
-    - After adding files to the correct folder, to get them to mirror to the project folder:
-      - Open gitbash in the project directory
-      - `git submodule update --remote --merge`
 - Relay outputs
   - Look at this [suggestion](https://electronics.stackexchange.com/questions/449872/relay-control-by-using-microcontroller) using optocouplers
     - Andrew suggested that I don't need the external BJT since the chosen optocoupler has an internal one sufficient to drive the relay directly
@@ -88,6 +76,21 @@ High Level Architecture
 - Need to make diagram (draw.io?)
 
 **KiCAD**
+Need to design PCBA - Use [KiCAD](https://www.kicad.org/)
+- Submodule errors:
+  - If encountering this error message: `The following untracked working tree files would be overwritten by merge:`
+    - Go to the offending file in the submodule directory **inside** the main project direcotry and delete it
+    - **Never** add files to the submodule directory inside the main project directory, **always** add them to the submodule folder outside the project directory
+    - Specifically for this project:
+      - **Never** add here: `C:\Users\Josh\Dropbox\JOSHUA\Warner Consulting\Collet Autofeed\Github\Collet-Autofeed\KiCAD\Warner-Consulting-Libraries`
+      - **Always** add here: `C:\Users\Josh\Dropbox\JOSHUA\Warner Consulting\Collet Autofeed\Warner-Consulting-Libraries`
+    - After adding files to the correct folder, to get them to mirror to the project folder:
+      - Open gitbash in the project directory
+      - `git submodule update --remote --merge`
+- When you need to edit a footprint, **DO NOT** use the "Edit Library Footprint..." option in the properties tab
+  - Doing so will cause a conflict with the git submodule
+  - Instead, open the global footprint library, make changes, then update the submodule
+    - this is a bit cumbersome, but will avoid errors
 - Silkscreen graphics
   - Can export .dxf from solidworks in whatver orientation I like
   - Used Photopea to create .png with stroke applied to lines and front face filled in
