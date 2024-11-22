@@ -11,4 +11,5 @@
   (lib (name "PC12311NSZ1B")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/PC12311NSZ1B/PC12311NSZ1B.kicad_sym")(options "")(descr ""))
   (lib (name "xw4m-12d2-h1da")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/Omron/xw4m-12d2-h1da.kicad_sym")(options "")(descr ""))
   (lib (name "852-002-213R001")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/NorComp/852-002-213R001.kicad_sym")(options "")(descr ""))
+  (lib (name "852-004-213R004")(type "KiCad")(uri "${KIPRJMOD}/Warner-Consulting-Libraries/NorComp/852-004-213R004.kicad_sym")(options "")(descr ""))
 )
