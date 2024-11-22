@@ -379,3 +379,10 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - sized o-ring gland for both solenoid manifold and connector board housing
 - made simplified slant pro assembly
   - need to adjust range of motion in assembly and finish making the moveable comonents
+
+**11/22/2024**
+- added connector board outline and circular connector locations to the pcb file
+- updated schematic with circular connectors and added the propper netclasses
+- added libraries for the circular connectors
+- updated pcb with changes from schematic and now I need to fix the routing and placement of components
+  - component designators got moved around and now components are all scrambled on the board
