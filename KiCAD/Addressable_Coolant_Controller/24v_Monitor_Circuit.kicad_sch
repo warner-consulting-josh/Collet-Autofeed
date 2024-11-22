@@ -947,7 +947,7 @@
   (symbol (lib_id "power:+24V") (at 111.76 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0655a873-ac8e-40da-aaf8-8ad70624ba58)
-    (property "Reference" "#PWR019" (at 111.76 80.01 0)
+    (property "Reference" "#PWR0101" (at 111.76 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+24V" (at 111.76 71.12 0)
@@ -963,7 +963,7 @@
     (instances
       (project "Addressable_Coolant_Controller"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/5975585f-6378-4874-929c-f4a5e89e51e7"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR0101") (unit 1)
         )
       )
     )
@@ -972,7 +972,7 @@
   (symbol (lib_id "PC12311NSZ1B:PC12311NSZ1B") (at 134.62 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 254fe334-75d6-4874-a22f-07433401458a)
-    (property "Reference" "U5" (at 133.35 77.47 0)
+    (property "Reference" "U9" (at 133.35 77.47 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "PC12311NSZ1B" (at 133.35 80.01 0)
@@ -1006,7 +1006,7 @@
     (instances
       (project "Addressable_Coolant_Controller"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/5975585f-6378-4874-929c-f4a5e89e51e7"
-          (reference "U5") (unit 1)
+          (reference "U9") (unit 1)
         )
       )
     )
@@ -1093,7 +1093,7 @@
   (symbol (lib_id "power:GND") (at 111.76 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d4a07cd1-68cf-4ffb-892e-4332deb2b9cf)
-    (property "Reference" "#PWR020" (at 111.76 119.38 0)
+    (property "Reference" "#PWR0102" (at 111.76 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 111.76 118.11 0)
@@ -1109,7 +1109,7 @@
     (instances
       (project "Addressable_Coolant_Controller"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/5975585f-6378-4874-929c-f4a5e89e51e7"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR0102") (unit 1)
         )
       )
     )

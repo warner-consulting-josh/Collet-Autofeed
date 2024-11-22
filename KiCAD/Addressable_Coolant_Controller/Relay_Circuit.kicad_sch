@@ -1209,7 +1209,7 @@
   (symbol (lib_id "Device:R") (at 162.56 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6650798b-603a-4a6e-8609-bdd112ce1089)
-    (property "Reference" "R2" (at 165.1 81.28 0)
+    (property "Reference" "R1" (at 165.1 81.28 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1.1kΩ" (at 165.1 83.82 0)
@@ -1226,28 +1226,28 @@
     (instances
       (project "Addressable_Coolant_Controller"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/e62a760e-c259-4531-98bc-86b90a2bedbf"
-          (reference "R2") (unit 1)
+          (reference "R1") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/67f15ca6-662b-4b8a-b540-a2e48d49f414"
-          (reference "R4") (unit 1)
+          (reference "R3") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/ed455ca9-960e-4436-b117-323138e12946"
-          (reference "R6") (unit 1)
+          (reference "R5") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/30b02bb2-f8cb-4680-8b4d-b295fc1d5eb5"
-          (reference "R8") (unit 1)
+          (reference "R7") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94e5bb90-2559-4272-9ede-e05d2b13ade3"
-          (reference "R12") (unit 1)
+          (reference "R11") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94790e5e-8f24-4c34-8306-22332d8b1ca9"
-          (reference "R14") (unit 1)
+          (reference "R13") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/74392b1e-46e8-4b44-bc27-ba912a8cb60e"
-          (reference "R16") (unit 1)
+          (reference "R15") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/a5b6bf10-8ef8-4d7b-b15a-e29c9cdfd37d"
-          (reference "R18") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
     )
@@ -1256,7 +1256,7 @@
   (symbol (lib_id "PC12311NSZ1B:PC12311NSZ1B") (at 147.32 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 67057e92-a9e0-4279-bc52-5d4daf3bc3c4)
-    (property "Reference" "U1" (at 146.05 85.09 0)
+    (property "Reference" "U8" (at 146.05 85.09 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "PC12311NSZ1B" (at 146.05 87.63 0)
@@ -1290,28 +1290,28 @@
     (instances
       (project "Addressable_Coolant_Controller"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/e62a760e-c259-4531-98bc-86b90a2bedbf"
-          (reference "U1") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/67f15ca6-662b-4b8a-b540-a2e48d49f414"
-          (reference "U2") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/ed455ca9-960e-4436-b117-323138e12946"
-          (reference "U3") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/30b02bb2-f8cb-4680-8b4d-b295fc1d5eb5"
-          (reference "U4") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94e5bb90-2559-4272-9ede-e05d2b13ade3"
-          (reference "U6") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94790e5e-8f24-4c34-8306-22332d8b1ca9"
-          (reference "U7") (unit 1)
-        )
-        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/74392b1e-46e8-4b44-bc27-ba912a8cb60e"
           (reference "U8") (unit 1)
         )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/67f15ca6-662b-4b8a-b540-a2e48d49f414"
+          (reference "U6") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/ed455ca9-960e-4436-b117-323138e12946"
+          (reference "U4") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/30b02bb2-f8cb-4680-8b4d-b295fc1d5eb5"
+          (reference "U3") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94e5bb90-2559-4272-9ede-e05d2b13ade3"
+          (reference "U2") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94790e5e-8f24-4c34-8306-22332d8b1ca9"
+          (reference "U1") (unit 1)
+        )
+        (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/74392b1e-46e8-4b44-bc27-ba912a8cb60e"
+          (reference "U5") (unit 1)
+        )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/a5b6bf10-8ef8-4d7b-b15a-e29c9cdfd37d"
-          (reference "U9") (unit 1)
+          (reference "U7") (unit 1)
         )
       )
     )
@@ -1320,7 +1320,7 @@
   (symbol (lib_id "Device:R") (at 125.73 92.71 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8985d34d-1c6c-47bd-a9b5-f56fc81cc5c5)
-    (property "Reference" "R1" (at 125.73 86.36 90)
+    (property "Reference" "R2" (at 125.73 86.36 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "210Ω" (at 125.73 88.9 90)
@@ -1337,28 +1337,28 @@
     (instances
       (project "Addressable_Coolant_Controller"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/e62a760e-c259-4531-98bc-86b90a2bedbf"
-          (reference "R1") (unit 1)
+          (reference "R2") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/67f15ca6-662b-4b8a-b540-a2e48d49f414"
-          (reference "R3") (unit 1)
+          (reference "R4") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/ed455ca9-960e-4436-b117-323138e12946"
-          (reference "R5") (unit 1)
+          (reference "R6") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/30b02bb2-f8cb-4680-8b4d-b295fc1d5eb5"
-          (reference "R7") (unit 1)
+          (reference "R8") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94e5bb90-2559-4272-9ede-e05d2b13ade3"
-          (reference "R11") (unit 1)
+          (reference "R12") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/94790e5e-8f24-4c34-8306-22332d8b1ca9"
-          (reference "R13") (unit 1)
+          (reference "R14") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/74392b1e-46e8-4b44-bc27-ba912a8cb60e"
-          (reference "R15") (unit 1)
+          (reference "R16") (unit 1)
         )
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/a5b6bf10-8ef8-4d7b-b15a-e29c9cdfd37d"
-          (reference "R17") (unit 1)
+          (reference "R18") (unit 1)
         )
       )
     )
