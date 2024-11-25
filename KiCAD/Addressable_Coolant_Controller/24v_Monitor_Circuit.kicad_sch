@@ -1041,7 +1041,7 @@
   (symbol (lib_id "CreeLED Green:C503B-GCN-CY0C0792") (at 96.52 87.63 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a937ce82-991f-443d-b612-48c97001409d)
-    (property "Reference" "LED5" (at 93.98 91.44 90)
+    (property "Reference" "LED9" (at 93.98 91.44 90)
       (effects (font (size 1.524 1.524)) (justify right))
     )
     (property "Value" "C503B-GCN" (at 93.98 93.98 90)
@@ -1058,7 +1058,7 @@
     (instances
       (project "Addressable_Coolant_Controller"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/5975585f-6378-4874-929c-f4a5e89e51e7"
-          (reference "LED5") (unit 1)
+          (reference "LED9") (unit 1)
         )
       )
     )
@@ -1067,7 +1067,7 @@
   (symbol (lib_id "Device:R") (at 111.76 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b562f3bb-6be2-4b4a-be44-e49c96f49fe2)
-    (property "Reference" "R10" (at 114.3 105.41 0)
+    (property "Reference" "R99" (at 114.3 105.41 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2.28kΩ" (at 114.3 107.95 0)
@@ -1084,7 +1084,7 @@
     (instances
       (project "Addressable_Coolant_Controller"
         (path "/603d0a2e-fca7-40af-8fa8-51b59d823d4d/9e308de8-a8a3-4754-85bb-a6ac18661119/5975585f-6378-4874-929c-f4a5e89e51e7"
-          (reference "R10") (unit 1)
+          (reference "R99") (unit 1)
         )
       )
     )

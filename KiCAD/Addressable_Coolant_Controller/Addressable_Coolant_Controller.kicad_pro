@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.7,
+          "height": 1.4,
+          "width": 1.4
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -486,15 +486,15 @@
       "Net-(LED7-Pad1)": "power",
       "Net-(LED8-Pad1)": "power",
       "Net-(LED9-Pad1)": "power",
-      "Net-(R10-Pad1)": "power",
-      "Net-(R12-Pad2)": "signal",
-      "Net-(R14-Pad2)": "signal",
-      "Net-(R16-Pad2)": "signal",
-      "Net-(R18-Pad2)": "signal",
-      "Net-(R2-Pad2)": "signal",
-      "Net-(R4-Pad2)": "signal",
-      "Net-(R6-Pad2)": "signal",
-      "Net-(R8-Pad2)": "signal"
+      "Net-(R11-Pad2)": "signal",
+      "Net-(R22-Pad2)": "signal",
+      "Net-(R33-Pad2)": "signal",
+      "Net-(R44-Pad2)": "signal",
+      "Net-(R55-Pad2)": "signal",
+      "Net-(R66-Pad2)": "signal",
+      "Net-(R77-Pad2)": "signal",
+      "Net-(R88-Pad2)": "signal",
+      "Net-(R99-Pad1)": "power"
     },
     "netclass_patterns": [
       {
