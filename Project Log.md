@@ -386,3 +386,11 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - added libraries for the circular connectors
 - updated pcb with changes from schematic and now I need to fix the routing and placement of components
   - component designators got moved around and now components are all scrambled on the board
+
+**11/25/2024**
+- updated all component designators and locations on board
+- fixed netclass issues and rerouted all ratsnest items
+- routed connector board
+  - need to add copper fills for ground plane
+- need to fix missing 3d models on some LEDs
+  - probably need to update the LED footprints at the library level (global library tied to the repository)
