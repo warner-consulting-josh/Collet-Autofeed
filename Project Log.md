@@ -404,3 +404,4 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - need to get a top level assembly functioning
 - need to redo pressure characterization with 30psi sensor
 - need to start coding the pressure sensor into the microcontroller
+- add silkscreen info to connector board
