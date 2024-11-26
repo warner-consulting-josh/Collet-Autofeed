@@ -744,6 +744,38 @@
     [
       "14ec54fb-c257-462b-8196-d9734c43cc81",
       "Connector_Board"
+    ],
+    [
+      "6eff85cc-8f17-446a-bc90-167aa370ee54",
+      "Circular Connector Circuit 1"
+    ],
+    [
+      "6b8d347c-8bf8-4b76-b473-b527cbbb517c",
+      "Circular Connector Circuit 2"
+    ],
+    [
+      "f245efa3-3828-469a-a9c8-741503674637",
+      "Circular Connector Circuit 3"
+    ],
+    [
+      "004a444a-0f6d-4afd-b27b-30dfbf5fd224",
+      "Circular Connector Circuit 4"
+    ],
+    [
+      "7c07119b-e1d0-4159-938b-b63e67c71215",
+      "Circular Connector Circuit 5"
+    ],
+    [
+      "c7e893c0-e12a-44a7-ac6d-5f162a6db576",
+      "Circular Connector Circuit 6"
+    ],
+    [
+      "5a40f748-d4a7-42cf-abd6-c305e0eddc72",
+      "Circular Connector Circuit 7"
+    ],
+    [
+      "393d5a94-217a-48f8-8d3a-6c0836c990ad",
+      "Circular Connector Circuit 8"
     ]
   ],
   "text_variables": {}
