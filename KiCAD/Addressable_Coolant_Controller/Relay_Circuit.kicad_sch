@@ -1373,7 +1373,7 @@
     (property "Value" "C503B-BCN" (at 160.02 72.39 90)
       (effects (font (size 1.524 1.524)) (justify right))
     )
-    (property "Footprint" "CreeLED Blue:C503B_BCN_CV0Z0461" (at 162.56 66.04 0)
+    (property "Footprint" "C503B_BCN_CV0Z0461:C503B_BCN_CV0Z0461" (at 162.56 66.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "Datasheet" "C503B-BCN-CV0Z0461" (at 162.56 66.04 0)

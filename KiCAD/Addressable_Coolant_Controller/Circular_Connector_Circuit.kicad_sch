@@ -497,6 +497,14 @@
     (uuid f38e461f-5d4b-4ee8-84e7-7e65324f9e9e)
   )
 
+  (netclass_flag "" (length 1) (shape round) (at 132.08 97.79 270) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 24b1fb98-3d1a-424c-868b-03df3a3e86da)
+    (property "Netclass" "power" (at 133.08 97.0915 90)
+      (effects (font (size 1.27 1.27) italic) (justify left) hide)
+    )
+  )
+
   (symbol (lib_id "852-002-213R001:852-002-213R001") (at 106.68 87.63 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 084fa829-de4f-440d-a1e9-83b095c43739)
@@ -615,7 +623,7 @@
     (property "Value" "C503B-BCN" (at 129.54 91.44 90)
       (effects (font (size 1.524 1.524)) (justify right))
     )
-    (property "Footprint" "CreeLED Blue:C503B_BCN_CV0Z0461" (at 132.08 85.09 0)
+    (property "Footprint" "C503B_BCN_CV0Z0461:C503B_BCN_CV0Z0461" (at 132.08 85.09 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "Datasheet" "C503B-BCN-CV0Z0461" (at 132.08 85.09 0)

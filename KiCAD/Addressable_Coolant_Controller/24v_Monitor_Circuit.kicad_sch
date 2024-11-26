@@ -1047,7 +1047,7 @@
     (property "Value" "C503B-GCN" (at 93.98 93.98 90)
       (effects (font (size 1.524 1.524)) (justify right))
     )
-    (property "Footprint" "CreeLED Green:C503B_GCN_CY0C0792" (at 96.52 87.63 0)
+    (property "Footprint" "C503B_GCN_CY0C0792:C503B_GCN_CY0C0792" (at 96.52 87.63 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "Datasheet" "C503B-GCN-CY0C0792" (at 96.52 87.63 0)
