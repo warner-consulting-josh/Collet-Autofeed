@@ -394,3 +394,13 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - need to add copper fills for ground plane
 - need to fix missing 3d models on some LEDs
   - probably need to update the LED footprints at the library level (global library tied to the repository)
+
+**11/26/2024**
+- added LEDs to connector board
+- moved LEDs and accompanying resistor and connector into heirarchical sheet for easy circuit and layout duplication
+- fixed LED footprints and missing models
+- added board outline annotations for splitting using kikit
+- exported step file and added to solidworks subassemblies
+- need to get a top level assembly functioning
+- need to redo pressure characterization with 30psi sensor
+- need to start coding the pressure sensor into the microcontroller
