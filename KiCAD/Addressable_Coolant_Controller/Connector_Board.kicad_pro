@@ -55,10 +55,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "lib_footprint_mismatch|133097463|153032516|7391203d-7ce3-4452-b6d7-510929b8b4c5|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|275208281|145034423|95513f6f-7028-4c8b-a514-f5f6fca8f804|00000000-0000-0000-0000-000000000000"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -194,223 +191,12 @@
   "cvpcb": {
     "equivalence_files": []
   },
-  "erc": {
-    "erc_exclusions": [],
-    "meta": {
-      "version": 0
-    },
-    "pin_map": [
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        2
-      ],
-      [
-        0,
-        2,
-        0,
-        1,
-        0,
-        0,
-        1,
-        0,
-        2,
-        2,
-        2,
-        2
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        2
-      ],
-      [
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        2,
-        1,
-        1,
-        2
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        2
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2
-      ],
-      [
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1,
-        2
-      ],
-      [
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        2
-      ],
-      [
-        0,
-        2,
-        1,
-        2,
-        0,
-        0,
-        1,
-        0,
-        2,
-        2,
-        2,
-        2
-      ],
-      [
-        0,
-        2,
-        0,
-        1,
-        0,
-        0,
-        1,
-        0,
-        2,
-        0,
-        0,
-        2
-      ],
-      [
-        0,
-        2,
-        1,
-        1,
-        0,
-        0,
-        1,
-        0,
-        2,
-        0,
-        0,
-        2
-      ],
-      [
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2
-      ]
-    ],
-    "rule_severities": {
-      "bus_definition_conflict": "error",
-      "bus_entry_needed": "error",
-      "bus_to_bus_conflict": "error",
-      "bus_to_net_conflict": "error",
-      "conflicting_netclasses": "error",
-      "different_unit_footprint": "error",
-      "different_unit_net": "error",
-      "duplicate_reference": "error",
-      "duplicate_sheet_names": "error",
-      "endpoint_off_grid": "warning",
-      "extra_units": "error",
-      "global_label_dangling": "warning",
-      "hier_label_mismatch": "error",
-      "label_dangling": "error",
-      "lib_symbol_issues": "warning",
-      "missing_bidi_pin": "warning",
-      "missing_input_pin": "warning",
-      "missing_power_pin": "error",
-      "missing_unit": "warning",
-      "multiple_net_names": "warning",
-      "net_not_bus_member": "warning",
-      "no_connect_connected": "warning",
-      "no_connect_dangling": "warning",
-      "pin_not_connected": "error",
-      "pin_not_driven": "error",
-      "pin_to_pin": "warning",
-      "power_pin_not_driven": "error",
-      "similar_labels": "warning",
-      "simulation_model_issue": "ignore",
-      "unannotated": "error",
-      "unit_value_mismatch": "error",
-      "unresolved_variable": "error",
-      "wire_dangling": "error"
-    }
-  },
   "libraries": {
     "pinned_footprint_libs": [],
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Addressable_Coolant_Controller.kicad_pro",
+    "filename": "Connector_Board.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -471,43 +257,268 @@
       "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "Net-(D1-A)": "power",
-      "Net-(D2-A)": "power",
-      "Net-(D3-A)": "power",
-      "Net-(D4-A)": "power",
-      "Net-(D5-A)": "power",
-      "Net-(D6-A)": "power",
-      "Net-(D7-A)": "power",
-      "Net-(D8-A)": "power",
-      "Net-(LED1-Pad1)": "power",
-      "Net-(LED10-Pad1)": "power",
-      "Net-(LED2-Pad1)": "power",
-      "Net-(LED20-Pad1)": "power",
-      "Net-(LED3-Pad1)": "power",
-      "Net-(LED30-Pad1)": "power",
-      "Net-(LED4-Pad1)": "power",
-      "Net-(LED40-Pad1)": "power",
-      "Net-(LED5-Pad1)": "power",
-      "Net-(LED50-Pad1)": "power",
-      "Net-(LED6-Pad1)": "power",
-      "Net-(LED60-Pad1)": "power",
-      "Net-(LED7-Pad1)": "power",
-      "Net-(LED70-Pad1)": "power",
-      "Net-(LED8-Pad1)": "power",
-      "Net-(LED80-Pad1)": "power",
-      "Net-(LED9-Pad1)": "power",
-      "Net-(R11-Pad2)": "signal",
-      "Net-(R22-Pad2)": "signal",
-      "Net-(R33-Pad2)": "signal",
-      "Net-(R44-Pad2)": "signal",
-      "Net-(R55-Pad2)": "signal",
-      "Net-(R66-Pad2)": "signal",
-      "Net-(R77-Pad2)": "signal",
-      "Net-(R88-Pad2)": "signal",
-      "Net-(R99-Pad1)": "power"
-    },
+    "netclass_assignments": null,
     "netclass_patterns": [
+      {
+        "netclass": "Default",
+        "pattern": "Net-(LED70-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D1-A)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D5-A)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D3-A)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(K2-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(LED10-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R33-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D7-A)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-LDO2_OUT-Pad12)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R22-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(LED40-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R99-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D2-A)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(LED8-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D6-A)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(K5-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-IO35-Pad34)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(J9-Pad4)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(LED30-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(K8-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-IO15-Pad14)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-VBAT-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-IO42-Pad18)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-IO40-Pad20)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-IO34-Pad31)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(LED5-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-RST-Pad26)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(K3-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-IO6-Pad27)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(LED4-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R44-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R77-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-IO41-Pad19)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(K7-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-IO36-Pad32)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-GND-Pad25)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-IO8-Pad29)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R11-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-TX-Pad24)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R55-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(K4-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R66-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D8-A)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(LED80-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-IO39-Pad21)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-IO37-Pad33)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(LED6-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-IO38-Pad22)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(LED20-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(LED60-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(LED50-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(K6-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(LED7-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D4-A)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R88-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(K1-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-5V-Pad3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-IO14-Pad15)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-IO9-Pad30)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-RX-Pad23)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(LED9-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(LED1-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(LED3-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U10-IO7-Pad28)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(LED2-Pad1)"
+      },
       {
         "netclass": "power",
         "pattern": "/Main_Board/MCU 3.3v"
@@ -668,126 +679,15 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "Addressable_Coolant_Controller.step",
-      "vrml": "Addressable_Coolant_Controller.wrl"
+      "step": "",
+      "vrml": ""
     },
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 0,
-    "drawing": {
-      "dashed_lines_dash_length_ratio": 12.0,
-      "dashed_lines_gap_length_ratio": 3.0,
-      "default_line_thickness": 6.0,
-      "default_text_size": 50.0,
-      "field_names": [],
-      "intersheets_ref_own_page": false,
-      "intersheets_ref_prefix": "",
-      "intersheets_ref_short": false,
-      "intersheets_ref_show": false,
-      "intersheets_ref_suffix": "",
-      "junction_size_choice": 3,
-      "label_size_ratio": 0.375,
-      "pin_symbol_size": 25.0,
-      "text_offset_ratio": 0.15
-    },
     "legacy_lib_dir": "",
-    "legacy_lib_list": [],
-    "meta": {
-      "version": 1
-    },
-    "net_format_name": "",
-    "page_layout_descr_file": "",
-    "plot_directory": "",
-    "spice_current_sheet_as_root": false,
-    "spice_external_command": "spice \"%I\"",
-    "spice_model_current_sheet_as_root": true,
-    "spice_save_all_currents": false,
-    "spice_save_all_voltages": false,
-    "subpart_first_id": 65,
-    "subpart_id_separator": 0
+    "legacy_lib_list": []
   },
-  "sheets": [
-    [
-      "603d0a2e-fca7-40af-8fa8-51b59d823d4d",
-      ""
-    ],
-    [
-      "e62a760e-c259-4531-98bc-86b90a2bedbf",
-      "Relay Circuit 8"
-    ],
-    [
-      "67f15ca6-662b-4b8a-b540-a2e48d49f414",
-      "Relay Circuit 6"
-    ],
-    [
-      "ed455ca9-960e-4436-b117-323138e12946",
-      "Relay Circuit 4"
-    ],
-    [
-      "30b02bb2-f8cb-4680-8b4d-b295fc1d5eb5",
-      "Relay Circuit 3"
-    ],
-    [
-      "5975585f-6378-4874-929c-f4a5e89e51e7",
-      "24v Monitor Circuit"
-    ],
-    [
-      "94e5bb90-2559-4272-9ede-e05d2b13ade3",
-      "Relay Circuit 2"
-    ],
-    [
-      "94790e5e-8f24-4c34-8306-22332d8b1ca9",
-      "Relay Circuit 1"
-    ],
-    [
-      "74392b1e-46e8-4b44-bc27-ba912a8cb60e",
-      "Relay Circuit 5"
-    ],
-    [
-      "a5b6bf10-8ef8-4d7b-b15a-e29c9cdfd37d",
-      "Relay Circuit 7"
-    ],
-    [
-      "9e308de8-a8a3-4754-85bb-a6ac18661119",
-      "Main_Board"
-    ],
-    [
-      "14ec54fb-c257-462b-8196-d9734c43cc81",
-      "Connector_Board"
-    ],
-    [
-      "6eff85cc-8f17-446a-bc90-167aa370ee54",
-      "Circular Connector Circuit 1"
-    ],
-    [
-      "6b8d347c-8bf8-4b76-b473-b527cbbb517c",
-      "Circular Connector Circuit 2"
-    ],
-    [
-      "f245efa3-3828-469a-a9c8-741503674637",
-      "Circular Connector Circuit 3"
-    ],
-    [
-      "004a444a-0f6d-4afd-b27b-30dfbf5fd224",
-      "Circular Connector Circuit 4"
-    ],
-    [
-      "7c07119b-e1d0-4159-938b-b63e67c71215",
-      "Circular Connector Circuit 5"
-    ],
-    [
-      "c7e893c0-e12a-44a7-ac6d-5f162a6db576",
-      "Circular Connector Circuit 6"
-    ],
-    [
-      "5a40f748-d4a7-42cf-abd6-c305e0eddc72",
-      "Circular Connector Circuit 7"
-    ],
-    [
-      "393d5a94-217a-48f8-8d3a-6c0836c990ad",
-      "Circular Connector Circuit 8"
-    ]
-  ],
+  "sheets": [],
   "text_variables": {}
 }
