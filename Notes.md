@@ -120,4 +120,7 @@ Need to design PCBA - Use [KiCAD](https://www.kicad.org/)
       - **No spaces in the name** it will screw with the command for separating the boards
     - Need to make sure arrow point on kikit:board is exactly touching one of the lines in the edge cut for the board
       - use the coordinate properties from the board outline and paste them into the arrow properties
+    - cd to folder containing *source_multi-PCB*.kicad_pcb
+      - make sure to save board design before running command
+    - run command for each board
     - `kikit separate --source "annotation; ref: *board_name*" *source_multi-PCB*.kicad_pcb *destination_single-PCB*.kicad_pcb`
