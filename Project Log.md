@@ -404,4 +404,9 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - need to get a top level assembly functioning
 - need to redo pressure characterization with 30psi sensor
 - need to start coding the pressure sensor into the microcontroller
-- add silkscreen info to connector board
+- finalized board designs and sent to JLCPCB for manufacture
+  - shopped around and they were by far cheapest
+- made Warner Consulting logo a soldermask/copper logo and use ENIG for gold apperance on final board
+  -[copper graphic element](https://forum.kicad.info/t/shouldnt-copper-only-symbol-footprints-have-have-solder-mask-removed/45087/2)
+- added "Designed in KiCAD" logo as a copper element for subtle effect
+- do we want to make this design open source?
