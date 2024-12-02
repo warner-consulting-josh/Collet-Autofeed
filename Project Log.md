@@ -410,3 +410,10 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - [copper graphic element](https://forum.kicad.info/t/shouldnt-copper-only-symbol-footprints-have-have-solder-mask-removed/45087/2)
 - added "Designed in KiCAD" logo as a copper element for subtle effect
 - do we want to make this design open source?
+
+**12/02/2024**
+- Created interactive HTML BOM using KiCAD external plugin
+- ordered remainder of board components
+- want to 3D print connector board enclosure and assemble with fasteners and oring
+- want to 3D print main board mount and screen mount
+  - need to order fasteners, standoffs, and enclosure from McMaster
