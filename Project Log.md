@@ -417,3 +417,11 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - want to 3D print connector board enclosure and assemble with fasteners and oring
 - want to 3D print main board mount and screen mount
   - need to order fasteners, standoffs, and enclosure from McMaster
+
+**12/11/2024**
+- Over the last few work days I have populated 1 each of the main board and connector board
+- Fit checked the connector board in a 3D printed enclosure with laser cut lid
+  - laser cutter needs some sort of calibration/maintainence, it was cutting oversized and out of square
+- ordered wires and ferrules to make wiring harness for connector board and main board
+- ordered slightly-nicer-than-amazon-quality ferrule crimpers from Ferrules Direct
+- started 3D print of manifold block to fit check
