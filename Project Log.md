@@ -425,3 +425,7 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - ordered wires and ferrules to make wiring harness for connector board and main board
 - ordered slightly-nicer-than-amazon-quality ferrule crimpers from Ferrules Direct
 - started 3D print of manifold block to fit check
+- fit checked manifold block with all solenoids and pressure sensor
+  - still need to get input fitting and o-ring
+  - still need to check the press-in push-to-connect fittings, but the print geometry was not good in that area
+  - reprint a single widget with those holes facing upwards
