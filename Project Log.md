@@ -429,3 +429,9 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - still need to get input fitting and o-ring
   - still need to check the press-in push-to-connect fittings, but the print geometry was not good in that area
   - reprint a single widget with those holes facing upwards
+
+**12/13/2024**
+- Adjusted design of screen mount and printed so that screen avoids gate in clear enclosure lid and also logo
+- made wiring harness for 24v from bench power supply for testing code changes without being hooked up to lathe
+  - crimp on bootlace ferrules work beautifully in omron connector, insulation is perfectly sized
+- started widget print for fit checking the press-in push-to-connect fittings
