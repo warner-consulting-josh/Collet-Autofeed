@@ -4,6 +4,7 @@ import time
 import supervisor
 import sys
 import digitalio
+import analogio
 import microcontroller
 import displayio
 import terminalio
@@ -51,10 +52,15 @@ ToolNumberLabelArea = label.Label(terminalio.FONT, text=" "*20, color=0xFFFFFF, 
 ToolNumberLabelArea.anchor_point = (0.0, 0.0)
 ToolNumberLabelArea.anchored_position = (2, 1)
 splash.append(ToolNumberLabelArea)
+# Add power indicator label
+PwrLabelArea = label.Label(terminalio.FONT, text=" "*20, color=0xFFFFFF, scale=2)
+PwrLabelArea.anchor_point = (0.0, 1)
+PwrLabelArea.anchored_position = (2, 60)
+splash.append(PwrLabelArea)
 
 # List of tuples correlating serial number inputs to GPIO pins
 pin_mappings = [
-    (5, board.IO43),  # Example: (serial_number, GPIO_pin)
+    (1, board.IO16),(2, board.IO0),(3, board.IO21),(4, board.IO5),(5, board.IO4),(6, board.IO3),(7, board.IO2),(8, board.IO1)   # Example: (serial_number, GPIO_pin)
     # Add more mappings here as needed
 ]
 
@@ -67,21 +73,46 @@ for number, pin_id in pin_mappings:
     pin.value = True  # Set high (inactive) for active low logic
     output_pins[number] = pin
 
+# Define inputs
+pwr_pin = board.IO12
+pwr_monitor = digitalio.DigitalInOut(pwr_pin)
+pwr_monitor.direction = digitalio.Direction.INPUT
+pwr_monitor.pull = digitalio.Pull.DOWN
+
+#variable initialization
 serial = sys.stdin
 oldData = None
 led_on_time = None
 blink_duration = 2.0
+pwr_state = 0
+old_pwr_state = 0
+pwr_text ="off"
+pwr_check_start = 0
+pwr_check_interval = 5.0
 
 print(microcontroller.cpu.reset_reason)
 
 while True:
     current_time = time.monotonic()
 
-    # Implement non-blocking LED blink-off logic
+    # non-blocking LED blink-off logic
     if led_on_time is not None and current_time - led_on_time >= blink_duration:
         pix.fill((0, 0, 0))
         pix.show()
         led_on_time = None
+
+    # Power monitoring code
+    if current_time - pwr_check_start >= pwr_check_interval:
+        pwr_state = pwr_monitor.value
+        if pwr_state:
+            pwr_text = "on"
+        else:
+            pwr_text = "off"
+        if pwr_state != old_pwr_state:
+            print(f'Power: {pwr_text}')
+            PwrLabelArea.text = f'Power: {pwr_text}'
+            old_pwr_state = pwr_state
+        pwr_check_start = current_time
 
     if supervisor.runtime.serial_bytes_available:
         dataIn = serial.readline().strip()  # Read and strip the incoming data
