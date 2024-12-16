@@ -435,3 +435,12 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - made wiring harness for 24v from bench power supply for testing code changes without being hooked up to lathe
   - crimp on bootlace ferrules work beautifully in omron connector, insulation is perfectly sized
 - started widget print for fit checking the press-in push-to-connect fittings
+
+**12/16/2024**
+- Mapped pins in code to board pins and tested function with main board
+- Added power monotor code
+  - will need to figure out how to pass this info back to linuxcnc
+  - will need to figure out how to pass current tool info back to linuxcnc (heartbeat? watchdog? look more deeply into this)
+- need to figure out how to map tool numbers to solenoid numbers (dynamically?)
+  - look at having a preamble in the gcode or something in the python plugin code to communicate this info to the microcontroller
+- Added first step towards having pressure sensor
