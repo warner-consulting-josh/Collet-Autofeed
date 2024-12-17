@@ -444,3 +444,8 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - need to figure out how to map tool numbers to solenoid numbers (dynamically?)
   - look at having a preamble in the gcode or something in the python plugin code to communicate this info to the microcontroller
 - Added first step towards having pressure sensor
+
+**12/17/2024**
+- Received wires from wire barn
+- Started organizing all hardware into Sortimo project box
+  - Using label maker for each bin with description, PN, applicable tool, material, QR code link, etc.
