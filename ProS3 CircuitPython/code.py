@@ -55,8 +55,14 @@ splash.append(ToolNumberLabelArea)
 # Add power indicator label
 PwrLabelArea = label.Label(terminalio.FONT, text=" "*20, color=0xFFFFFF, scale=2)
 PwrLabelArea.anchor_point = (0.0, 1)
-PwrLabelArea.anchored_position = (2, 60)
+PwrLabelArea.anchored_position = (2, 65)
 splash.append(PwrLabelArea)
+# Add pressure label
+PresLabelArea = label.Label(terminalio.FONT, text=" "*20, color=0xFFFFFF, scale=2)
+PresLabelArea.anchor_point = (0.0, 0.5)
+PresLabelArea.anchored_position = (2, 32)
+splash.append(PresLabelArea)
+
 
 # List of tuples correlating serial number inputs to GPIO pins
 pin_mappings = [
@@ -78,6 +84,8 @@ pwr_pin = board.IO12
 pwr_monitor = digitalio.DigitalInOut(pwr_pin)
 pwr_monitor.direction = digitalio.Direction.INPUT
 pwr_monitor.pull = digitalio.Pull.DOWN
+pres_pin = board.IO13
+pres_input = analogio.AnalogIn(pres_pin)
 
 #variable initialization
 serial = sys.stdin
@@ -89,6 +97,9 @@ old_pwr_state = 0
 pwr_text ="off"
 pwr_check_start = 0
 pwr_check_interval = 5.0
+pres_check_start = 0
+pres_check_interval = 1.0
+pres_val = 0
 
 print(microcontroller.cpu.reset_reason)
 
@@ -114,6 +125,14 @@ while True:
             old_pwr_state = pwr_state
         pwr_check_start = current_time
 
+    # Pressure monitoring code
+    if current_time - pres_check_start >= pres_check_interval:
+        pres_val = pres_input.value
+        #print(f'Pres: {pres_val}')
+        PresLabelArea.text = f'Pres: {pres_val}'
+        pres_check_start = current_time
+        
+    # Serial reading code    
     if supervisor.runtime.serial_bytes_available:
         dataIn = serial.readline().strip()  # Read and strip the incoming data
 
