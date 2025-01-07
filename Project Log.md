@@ -449,3 +449,12 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - Received wires from wire barn
 - Started organizing all hardware into Sortimo project box
   - Using label maker for each bin with description, PN, applicable tool, material, QR code link, etc.
+
+**01/01/2055-01/06/2025**
+- Wired pressure sensor up to the 4 pin connector and added code to microcontroller to read ADC input
+  - Need to convert raw ADC value to PSI value
+  - Need to measure ADC value with known pressure to create calibration curve
+- Organized electrical components into Sortimo box with labels
+- Need to make cutouts in enclosure for connectors
+- Need to machine Connector Board enclosure
+- Need to machine solenoid manifold block
