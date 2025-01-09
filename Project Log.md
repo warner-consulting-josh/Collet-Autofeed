@@ -458,3 +458,9 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - Need to make cutouts in enclosure for connectors
 - Need to machine Connector Board enclosure
 - Need to machine solenoid manifold block
+
+**01/09/2025**
+- Used ChatGPT to transition existing PathPilot plugin code into a state machine format
+- Created stat transition diagram and used Draw.io to digitize it
+- Will need to test the code to prove functionality
+- Need to transition microcontroller code to state machine and define what messages to send back to the PathPilot plugin
