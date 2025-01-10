@@ -464,3 +464,12 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
 - Created stat transition diagram and used Draw.io to digitize it
 - Will need to test the code to prove functionality
 - Need to transition microcontroller code to state machine and define what messages to send back to the PathPilot plugin
+
+**01/10/2025**
+- Got the state machine architecture working on for the PathPilot plugin
+- Used ChatGPT to transition the microcontroller code into a state machine format
+  - Will need to creat state transition diagram for microcontroller code
+- Having some issues with funky messages received by the PathPilot plugin
+  - need to figure out exactly what the microcontroller is sending and clean that up
+- Want to have tool number verification
+  - want the PathPilot plugin to get confirmation that the microcontroller has the correct tool
