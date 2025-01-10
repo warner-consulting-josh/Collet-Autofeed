@@ -1,62 +1,46 @@
-# import some python modules
-from asyncore import write
+# coding=utf-8
 from threading import Thread
 import time
 import glob
-
-# we want access to serial ports
 import serial
-import io
 
-# definitions of linuxcnc python interfaces
 import linuxcnc
-import hal
+from ui_hooks import plugin, StateMachine, StateDescriptor
 
-# PathPilot constants
-import constants
-
-# base class for plugins
-from ui_hooks import plugin
-
-# time(s) between checking the tool number right after it has changed
+# Constants
 SHORT_SLEEP_TIME = 1.0
-
-# time(s) between checking the tool number when it hasn't recently changed
 LONG_SLEEP_TIME = 1.0
-
-# symlink to the coolant device
 deviceName = "/dev/ProS3"
 
-# the plugin class
-# one instance is created by ui_hooks.py during system load
-# a python Thread (monitorProbe) is used to check the tool number and spindle status
-#if the spindle is turned on while tool 99 is loaded, abort() is called
+# Define states
+NOT_CONNECTED = 0
+CONNECTED_IDLE = 1
+TOOL_CHANGED = 2
+PROCESSING_RESPONSE = 3
+
+UPDATE_PERIOD = 1.0
 
 class UserPlugin(plugin):
-    # Last tool variable
-    lastTool = 0
     def __init__(self):
-        # initialise the base class, specifying a name for this plugin
-        plugin.__init__(self, 'ProS3Cool')
+        plugin.__init__(self, 'ProS3Cool with State Machine')
 
-        # create the serial object - not currently connected
+        # Initialize serial object
         self.comPort = serial.Serial()
         self.ShowMsg('comPort created')
 
-        # start the worker thread
-        self.TinyS3thread = Thread(target=self.ProS3Cool)
-        self.TinyS3thread.daemon = True
-        self.TinyS3thread.start()
+        # Track the last tool
+        self.lastTool = 0
+
+        # Start the state machine thread
+        self.TinyS3Thread = Thread(target=self.UpdateStateMachine)
+        self.TinyS3Thread.daemon = True
+        self.TinyS3Thread.start()
 
     def TryToConnect(self):
-        # look for UDEV names =  /dev/TinyS3
-        self.ShowMsg('Trying to connect...')
-        
         devices = glob.glob(deviceName)
-        self.ShowMsg('Found devices: {}'.format(devices)) # Debugging to check the devices list
-
+        self.ShowMsg(f'Found devices: {devices}')
         if not devices:
-            self.ShowMsg('No devises found matching the pattern')
+            return False
 
         for symlink in devices:
             try:
@@ -64,53 +48,72 @@ class UserPlugin(plugin):
                 self.comPort.baudrate = 115200
                 self.comPort.timeout = 1
                 self.comPort.open()
-                self.ShowMsg('Connected to ' + symlink)
-                return True # Return True as soon as connection is successful
+                self.ShowMsg(f'Connected to {symlink}')
+                return True
             except serial.SerialException as e:
-                self.ShowMsg('Failed to open "{}" - {}'.format(symlink, str(e)))
-                return False # Return False if no connections were successful
-            
-        # main loop to watch the current tool and send data to the ProS3
-    def ProS3Cool(self):
-        self.ShowMsg('ProS3Cool thread is running')
+                self.ShowMsg(f'Failed to open {symlink}: {e}')
+        return False
 
-        # Initial serial connection attempt
-        if not self.TryToConnect():
-            self.ShowMsg('Initial connection attempt failed')
-            return # Exit the thread if unable to connect
+    def UpdateStateMachine(self):
+        # Create the state machine
+        machine = StateMachine()
+
+        # Add states
+        machine.AddState(NOT_CONNECTED, StateDescriptor("Not Connected", self.EnterNotConnected, self.UpdateNotConnected, None))
+        machine.AddState(CONNECTED_IDLE, StateDescriptor("Connected Idle", self.EnterConnectedIdle, self.UpdateConnectedIdle, None))
+        machine.AddState(TOOL_CHANGED, StateDescriptor("Tool Changed", self.EnterToolChanged, self.UpdateToolChanged, None))
+        machine.AddState(PROCESSING_RESPONSE, StateDescriptor("Processing Response", self.EnterProcessingResponse, self.UpdateProcessingResponse, None))
+
+        # Start in the NOT_CONNECTED state
+        machine.ChangeState(NOT_CONNECTED)
 
         while True:
-            # make sure hal status info is up to date
-            self.halStatus.poll()   
-            # check if the serial port is still open, if not try to reconnect
-            if self.comPort.is_open:
-                #self.ShowMsg('Still connected to ProS3')
-                # what is the current tool?
-                if self.halStatus.tool_in_spindle != self.lastTool:
-                    # current tool is a new tool
-                    self.lastTool = self.halStatus.tool_in_spindle
-                    self.ShowMsg('Current Tool: %s' % (self.halStatus.tool_in_spindle))
-                    self.comPort.write((str(self.halStatus.tool_in_spindle) + '\r\n').encode('utf8'))
-                    time.sleep(SHORT_SLEEP_TIME)
-                else:
-                    # tool hasn't changed, so sleep for longer before checking again
-                    time.sleep(LONG_SLEEP_TIME)
+            time.sleep(UPDATE_PERIOD)
+            self.halStatus.poll()  # Ensure HAL status is up-to-date
+            machine.Update()
 
-                try:
-                    response = self.comPort.readline()
-                    if response:
-                        self.ShowMsg(response)
-                except serial.serialutil.SerialException as e:
-                    self.ShowMsg('An error occurred while reading from the serial port: ' + str(e))
-                    #serIn = self.comPort.readline()
-                    #self.ShowMsg(str(serIn))
-            else:
-                self.ShowMsg('Connection lost. Trying to reconnect...')
-                if not self.TryToConnect():
-                    self.ShowMsg('Reconneciton attempt failed')
-                    break # Exit the loop if unable to reconnect    
-            
-            # with a new tool, short sleep before checking again
-            time.sleep(SHORT_SLEEP_TIME)
-                
-            
+    def EnterNotConnected(self, machine):
+        self.ShowMsg("Entering state 'Not Connected'")
+        self.comPort.close()
+
+    def UpdateNotConnected(self, machine):
+        if self.TryToConnect():
+            machine.ChangeState(CONNECTED_IDLE)
+
+    def EnterConnectedIdle(self, machine):
+        self.ShowMsg("Entering state 'Connected Idle'")
+
+    def UpdateConnectedIdle(self, machine):
+        if not self.comPort.is_open:
+            machine.ChangeState(NOT_CONNECTED)
+            return
+
+        current_tool = self.halStatus.tool_in_spindle
+        if current_tool != self.lastTool:
+            self.lastTool = current_tool
+            machine.ChangeState(TOOL_CHANGED)
+
+    def EnterToolChanged(self, machine):
+        self.ShowMsg(f"Entering state 'Tool Changed' - Tool {self.lastTool}")
+        message = f"{self.lastTool}\r\n".encode('utf8')
+        try:
+            self.comPort.write(message)
+        except serial.SerialException as e:
+            self.ShowMsg(f'Error sending tool data: {e}')
+            machine.ChangeState(NOT_CONNECTED)
+
+    def UpdateToolChanged(self, machine):
+        machine.ChangeState(PROCESSING_RESPONSE)
+
+    def EnterProcessingResponse(self, machine):
+        self.ShowMsg("Entering state 'Processing Response'")
+
+    def UpdateProcessingResponse(self, machine):
+        try:
+            response = self.comPort.readline()
+            if response:
+                self.ShowMsg(f'Received: {response}')
+                machine.ChangeState(CONNECTED_IDLE)
+        except serial.SerialException as e:
+            self.ShowMsg(f'Error reading from serial port: {e}')
+            machine.ChangeState(NOT_CONNECTED)
