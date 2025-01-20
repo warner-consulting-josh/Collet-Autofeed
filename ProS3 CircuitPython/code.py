@@ -93,6 +93,7 @@ class StateMachine:
         self.oldData = None
         self.pwr_check_start = time.monotonic()
         self.pres_check_start = time.monotonic()
+        self.status_report_time = time.monotonic()
 
     def update(self):
         current_time = time.monotonic()
@@ -101,6 +102,7 @@ class StateMachine:
             self.check_power(current_time)
             self.check_pressure(current_time)
             self.read_serial(current_time)
+            self.report_status(current_time)
 
         elif self.state == "PROCESS_SERIAL":
             self.process_serial_data()
@@ -109,14 +111,14 @@ class StateMachine:
             self.blink_led(current_time)
 
     def check_power(self, current_time):
-        if current_time - self.pwr_check_start >= 5.0:
+        if current_time - self.pwr_check_start >= 0.5:
             pwr_state = pwr_monitor.value
             pwr_text = "on" if pwr_state else "off"
             PwrLabelArea.text = 'Power: %s' % pwr_text
             self.pwr_check_start = current_time
 
     def check_pressure(self, current_time):
-        if current_time - self.pres_check_start >= 1.0:
+        if current_time - self.pres_check_start >= 0.5:
             pres_val = pres_input.value
             PresLabelArea.text = 'Pres: %d' % pres_val
             self.pres_check_start = current_time
@@ -132,10 +134,17 @@ class StateMachine:
             except ValueError:
                 print("Non-integer data")
 
+    def report_status(self, current_time):
+        if current_time - self.status_report_time >= 1.0:
+            pwr_status = "on" if pwr_monitor.value else "off"
+            pres_val = pres_input.value
+            print('TOOL:%d PWR:%s PRES:%d' % (self.oldData if self.oldData else 0, pwr_status, pres_val))
+            self.status_report_time = current_time
+
     def process_serial_data(self):
         if self.oldData is not None:
             ToolNumberLabelArea.text = 'Tool: %d' % self.oldData
-            print('%d' % self.oldData)  # Send tool number back over serial
+            #print('%d' % self.oldData)  # Send tool number back over serial
 
             for pin in output_pins.values():
                 pin.value = True
@@ -162,4 +171,3 @@ print(microcontroller.cpu.reset_reason)
 while True:
     state_machine.update()
     time.sleep(0.01)  # Prevent high CPU usage
-
