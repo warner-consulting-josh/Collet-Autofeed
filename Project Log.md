@@ -473,3 +473,13 @@ ACTION=="add",SUBSYSTEMS=="usb",KERNEL=="ttyACM*",ATTRS{manufacturer}=="Unexpect
   - need to figure out exactly what the microcontroller is sending and clean that up
 - Want to have tool number verification
   - want the PathPilot plugin to get confirmation that the microcontroller has the correct tool
+
+**01/20/2025**
+- Got the microcontroller sending it's tool number, power status, and pressure data periodically out over serial
+- Plugin code now listens to that data and has some error responses
+  - If program is running and power has been off for X seconds, stop the program
+  - If program is running and tool number received does not match that in the spindle (after X second delay), stop the program
+- Need to convert pressure integer data into PSI
+  - Then need to do something with that
+    - Check if coolant is supposed to be on, then check if pressure has been trending down/goes below a threshhold, then stop the program
+- Need to look at disconnection failures and attempting to reconnect
