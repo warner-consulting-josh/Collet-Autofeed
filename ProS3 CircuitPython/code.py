@@ -119,8 +119,8 @@ class StateMachine:
 
     def check_pressure(self, current_time):
         if current_time - self.pres_check_start >= 0.5:
-            pres_val = pres_input.value
-            PresLabelArea.text = 'Pres: %d' % pres_val
+            pres_val = (((pres_input.value/65535)*3.3)-0.3968)/0.0258 # pressure (psi) = (((ADC_reading/65535)*V_ref)-V_offset)/Volt_per_PSI
+            PresLabelArea.text = 'PSI: %d' % pres_val
             self.pres_check_start = current_time
 
     def read_serial(self, current_time):
