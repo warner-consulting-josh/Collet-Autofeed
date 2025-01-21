@@ -1,6 +1,6 @@
 # Notes
 
-**Code**
+**PathPilot**
 
 Need to find ways of ensuring that modemmanager does not kick the ProS3 into REPL
 - Try this: [Addition to rules file](https://www.metrel.si/support/confluence/mpd/en/software-troubleshooting/how-to-communicate-with-instruments-under-linux#:~:text=On%20most%20Linux%20distributions%20ModemManager,to%20use%20specific%20USB%20device)
@@ -34,6 +34,12 @@ Need to figure out how I got custom M-codes fucntioning in the past to prompt th
     - linuxcnc forum user bevins discovered this bug and it doesn't appear to have been fixed as of yet
     - likely this makes it impossible to use the custom M-code architecture for user prompting under newer versions of pathpilot
     - will check with latest release 2.10.1
+
+**Microcontroller**
+- Here's some info on the [ADC](https://docs.espressif.com/projects/esp-idf/en/v4.4/esp32s3/api-reference/peripherals/adc.html)
+- Looks like the ADC is set to -11dB (full range of measurement) by [CircuitPython](https://github.com/adafruit/circuitpython/issues/8754)
+  - This means that my conversion to voltage is Vin = (reading / 65535) * reference_voltage
+  - Where reference_voltage is 3.3v
 
 **Electronics**
 - Relay outputs
