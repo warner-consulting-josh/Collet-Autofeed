@@ -11,7 +11,10 @@ SHORT_SLEEP_TIME = 1.0
 LONG_SLEEP_TIME = 1.0
 deviceName = "/dev/ProS3"
 POWER_OFF_THRESHOLD = 5.0  # Seconds power can be off before pausing execution
-TOOL_CHECK_DELAY = 3.0  # Seconds after tool change to check tool number
+TOOL_CHECK_DELAY = 2.0  # Seconds after tool change to check tool number
+PRESSURE_THRESHOLD = 20.0  # PSI minimum pressure threshold
+PRESSURE_DROP_DURATION = 10.0  # Seconds pressure must be below threshold before stopping execution
+CONNECTION_LOSS_THRESHOLD = 10.0  # Seconds connection loss before stopping execution
 
 # Define states
 NOT_CONNECTED = 0
@@ -31,13 +34,16 @@ class UserPlugin(plugin):
         self.last_status_time = time.time()
         self.last_power_on_time = time.time()
         self.last_tool_check_time = None
+        self.last_pressure_drop_time = None
+        self.last_connection_loss_time = None
         self.stat = linuxcnc.stat()
         self.command = linuxcnc.command()
         
-        # Track the last tool and microcontroller-reported tool
+        # Track the last tool and microcontroller-reported values
         self.lastTool = 0
         self.microcontrollerTool = None
         self.power_status = "on"  # Default power status
+        self.pressure_value = 100.0  # Default pressure value (high enough to not trigger)
 
         # Start the state machine thread
         self.TinyS3Thread = Thread(target=self.UpdateStateMachine)
@@ -93,9 +99,9 @@ class UserPlugin(plugin):
 
             self.microcontrollerTool = int(status_data.get("TOOL", 0))
             self.power_status = status_data.get("PWR", "off")
-            pressure_value = int(status_data.get("PRES", 0))
+            self.pressure_value = float(status_data.get("PRES", 100.0))
 
-            self.ShowMsg("Received: Tool: %d, Power: %s, Pressure: %d" % (self.microcontrollerTool, self.power_status, pressure_value))
+            self.ShowMsg("Received: Tool: %d, Power: %s, Pressure: %.2f" % (self.microcontrollerTool, self.power_status, self.pressure_value))
         except Exception as e:
             self.ShowMsg("Error parsing status message: %s" % str(e))
 
@@ -117,6 +123,26 @@ class UserPlugin(plugin):
                 self.ShowMsg("Tool mismatch detected! Pausing execution.")
                 self.command.abort()
             self.last_tool_check_time = None  # Reset after check
+        
+        # Check pressure drop if coolant is on
+        if self.stat.flood and self.pressure_value < PRESSURE_THRESHOLD:
+            if self.last_pressure_drop_time is None:
+                self.last_pressure_drop_time = current_time  # Start tracking time of pressure drop
+            elif (current_time - self.last_pressure_drop_time) >= PRESSURE_DROP_DURATION:
+                self.ShowMsg("Coolant pressure too low for too long! Pausing execution.")
+                self.command.abort()
+        else:
+            self.last_pressure_drop_time = None  # Reset timer when pressure recovers or coolant is off
+        
+        # Check for connection loss
+        if self.stat.task_mode == linuxcnc.MODE_AUTO and not self.comPort.is_open:
+            if self.last_connection_loss_time is None:
+                self.last_connection_loss_time = current_time  # Start tracking connection loss time
+            elif (current_time - self.last_connection_loss_time) >= CONNECTION_LOSS_THRESHOLD:
+                self.ShowMsg("Connection lost for too long! Pausing execution.")
+                self.command.abort()
+        else:
+            self.last_connection_loss_time = None  # Reset timer if connection is restored
 
     def EnterNotConnected(self, machine):
         self.ShowMsg("Entering state 'Not Connected'")
