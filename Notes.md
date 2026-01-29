@@ -105,6 +105,9 @@ Need to design PCBA - Use [KiCAD](https://www.kicad.org/)
   - Instead, open the global footprint library, make changes, then update the submodule
     - this is a bit cumbersome, but will avoid errors
     - Global and project specific libraries of the same component must have different nick-names in order to be able to edit the global library
+  - If `HEAD detached` (updates in global library not reflected in project specific library)
+    - `git switch main`
+    - `git pull` 
 - Silkscreen graphics
   - Can export .dxf from solidworks in whatver orientation I like
   - Used Photopea to create .png with stroke applied to lines and front face filled in
