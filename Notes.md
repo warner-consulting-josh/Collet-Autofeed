@@ -93,6 +93,13 @@ Need to design PCBA - Use [KiCAD](https://www.kicad.org/)
     - After adding files to the correct folder, to get them to mirror to the project folder:
       - Open gitbash in the project directory
       - `git submodule update --remote --merge`
+  - If encountering this error message: `This submodule has modified and untracked changes`
+      - Head into the submodule's directory and make sure there isn't anything being built (an output of some kind) w/o you knowing.
+      - `cd submoduledir/`
+      - `git status`
+  - If you see any untracked files in here, just do this to remove them:
+      - `git reset --hard HEAD`
+      - `git clean -fxd`
 - When you need to edit a footprint, **DO NOT** use the "Edit Library Footprint..." option in the properties tab
   - Doing so will cause a conflict with the git submodule
   - Instead, open the global footprint library, make changes, then update the submodule
